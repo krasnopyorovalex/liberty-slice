@@ -1,0 +1,25 @@
+.why-choose-us {
+    background-color: $mainBg;
+    padding: 123px 0 0 0;
+    .section-title {
+        color: #ffffff;
+        margin: 0;
+    }
+    .section-sub-title {
+        margin: 11px 96px 51px 0;
+    }
+    &-slider {
+        position: relative;
+        .owl-dots {
+            position: absolute;
+            bottom: 127px;
+            left: 421px;
+            button {
+                background-color: #e9dfd1;
+                &.active {
+                    background-color: #cbbbac;
+                }
+            }
+        }
+    }
+}

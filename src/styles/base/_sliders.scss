@@ -1,0 +1,123 @@
+section {
+    .owl-dots {
+        button {
+            width: 12px;
+            height: 12px;
+            background-color: #e9dfd1;
+            border-radius: 50%;
+            & + button {
+                margin: 0 0 0 32px;
+            }
+            &.active {
+                background-color: #cbbbac;
+            }
+        }
+    }
+}
+
+
+.slider-projects {
+    background-color: #fff;
+    &-item {
+        position: relative;
+        &-desc {
+            position: relative;
+            padding: 28px 0 10px;
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: $mainBg;
+                max-width: 1500px;
+                border-radius: 0 0 50px 0;
+            }
+            .title {
+                margin: 0 0 14px;
+                text-transform: uppercase;
+            }
+            .decoration-line {
+                position: absolute;
+                top: 0;
+            }
+        }
+        .btn-box {
+            position: absolute;
+            right: 0;
+            bottom: 163px;
+            left: 0;
+            text-align: center;
+            .btn {
+                border: 3px solid #bdac9a;
+            }
+        }
+    }
+    & + & {
+        margin: 93px 0 0 0;
+    }
+}
+
+.premium-collections, .interior-projects, .sales-leaders-slider-mobile {
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev, .owl-next {
+                position: absolute;
+                top: calc(50% - 88px);
+                width: 23px;
+                height: 53px;
+                background-image: url("../img/slider-nav.png");
+            }
+            .owl-prev {
+                left: 421px;
+            }
+            .owl-next {
+                right: 421px;
+                transform: rotate(180deg);
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            right: 0;
+            bottom: 120px;
+            left: 0;
+            text-align: center;
+            button {
+                background-color: #e9dfd1;
+                &.active {
+                    background-color: #cbbbac;
+                }
+            }
+        }
+    }
+}
+
+.sales-leaders-slider-mobile {
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev, .owl-next {
+                top: calc(50% - 12px);
+                width: 10px;
+                height: 23px;
+                background-image: url("../img/slider-nav-mob.png");
+            }
+            .owl-prev {
+                left: 23px;
+            }
+            .owl-next {
+                right: 23px;
+            }
+            span {
+                display: none;
+            }
+        }
+        .owl-dots {
+            bottom: 100px;
+        }
+    }
+}

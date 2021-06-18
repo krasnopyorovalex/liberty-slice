@@ -1,0 +1,59 @@
+.popup {
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    z-index: 110;
+    top: 204px;
+    left: calc(50% - 216px);
+    width: 433px;
+    padding: 72px 68px 66px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    &.as-cost-calculation {
+        left: calc(50% - 366px);
+        width: 733px;
+        border-radius: 0;
+        padding: 37px 51px 35px 68px;
+        .popup-title {
+            font-size: 36px;
+        }
+    }
+    &-title {
+        margin: 0 0 25px 0;
+        color: #5a6e79;
+        font-size: 22px;
+        font-family: "Bukvarnaya Bold", serif;
+    }
+    &-btn-box {
+        text-align: center;
+        .btn {
+            color: #646462;
+            &:active, &:focus {
+                border: 3px solid #b5a99d;
+            }
+        }
+    }
+    &-close {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        .icon-close {
+            width: 17px;
+            height: 17px;
+            fill: #bdac9a;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.popup-background {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+}

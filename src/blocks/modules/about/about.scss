@@ -1,0 +1,55 @@
+.about-text {
+    .section-sub-title {
+        padding: 11px 33px 11px 42%;
+        text-transform: uppercase;
+    }
+    &-seo {
+        max-width: 1233px;
+        color: #444444;
+        margin: 76px 0 61px 13.4%;
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: left;
+        }
+    }
+}
+.video {
+    padding: 2rem 0 0 0;
+    background-color: #6a8692;
+}
+.about-company {
+    .step-item {
+        margin: 127px 0 0 0;
+        padding: 2rem 0 0 0;
+        background-color: #6a8692;
+        &-info {
+            &-title {
+                align-items: flex-start;
+            }
+        }
+        &:last-child {
+            margin: 127px 0;
+        }
+    }
+}
+.page-about {
+    .authors-slider {
+        margin: 52px 0;
+        .owl-nav {
+            button.owl-prev, button.owl-next {
+                top: calc(50% - 80px);
+                width: 23px;
+                height: 53px;
+                background-image: url("../img/slider-nav-authors-2.png");
+            }
+            button.owl-prev {
+                left: -40px;
+            }
+            button.owl-next {
+                right: -40px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

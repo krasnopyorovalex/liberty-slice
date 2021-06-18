@@ -1,0 +1,76 @@
+.authors {
+    margin: 85px 0;
+    &-slider {
+        position: relative;
+        margin: 81px 0 0 0;
+        &-item {
+            text-align: center;
+            &:hover {
+                .decoration-line {
+                    opacity: 1;
+                }
+            }
+            > div {
+                position: relative;
+                .decoration-line {
+                    position: absolute;
+                    opacity: 0;
+                    bottom: 0;
+                }
+            }
+            .author-name {
+                margin: 20px 0 0 0;
+                color: #2f1f20;
+                font-family: "Bukvarnaya Bold", serif;
+                font-size: 22px;
+            }
+            .author-position {
+                color: #000000;
+                margin: 22px 0 0 0;
+            }
+            .btn-box {
+                margin: 23px 0 0 0;
+                .btn {
+                    display: inline-block;
+                    border: 2px solid #c6c3bc;
+                    font-size: 18px;
+                    text-transform: none;
+                    padding: 14px 30px;
+                    font-family: "Pragmatica", sans-serif;
+                    &:hover {
+                        border-color: #bdac9a;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            button.owl-prev, button.owl-next {
+                position: absolute;
+                top: calc(50% - 25px);
+                width: 12px;
+                height: 20px;
+                background-image: url("../img/slider-nav-authors.png");
+            }
+            button.owl-prev {
+                left: -28px;
+            }
+            button.owl-next {
+                right: -28px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .about-us-box {
+        margin: 54px 0 0 0;
+        .btn {
+            color: #646462;
+            border: 3px solid #c6c3bc;
+            &:hover {
+                color: #ffffff;
+                border: 3px solid #bdac9a;
+                background-color: #bdac9a;
+            }
+        }
+    }
+}

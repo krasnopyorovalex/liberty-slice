@@ -1,0 +1,50 @@
+.section-title {
+    @include sm(font-size, 28px);
+    @include sm(line-height, normal);
+    color: $sectionTitleColor;
+    font-family: "Bukvarnaya Bold", serif;
+    font-size: 68px;
+    line-height: 81px;
+    text-transform: uppercase;
+    padding: 0 0 0 22%;
+}
+.section-sub-title {
+    @include sm(margin, 0 16px);
+    @include sm(font-size, 14px);
+    @include sm(line-height, 20px);
+    @include sm(padding, 11px 20px);
+    display: inline-block;
+    position: relative;
+    padding: 11px 130px 11px 22.3%;
+    color: #ffffff;
+    font-family: "Pragmatica", serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bgSubTitle;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 7px;
+        background-image: $decorationLineBg;
+    }
+    &.sub-title-without-bg {
+        background: none;
+        &:after {
+            display: none;
+        }
+    }
+}
+.section-header {
+    @include sm(margin, 0);
+}
+section {
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}

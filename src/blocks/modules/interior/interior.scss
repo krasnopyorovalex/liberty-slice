@@ -1,0 +1,29 @@
+.interior-h1 {
+    margin: 108px 0 0 0;
+}
+.interior {
+    .text {
+        background-color: rgba(90, 110, 121, 0.6);
+        padding: 57px 34px 60px 44px;
+        font-size: 18px;
+        .btn {
+            margin: 37px 0 0 0;
+        }
+    }
+}
+.sub-page.interior {
+    padding: 0;
+}
+.interior-projects {
+    max-width: 1458px;
+    margin: 24px auto 0;
+    .slider-projects-item-desc {
+        &:after {
+            background-color: #6e8794;
+            width: 85%;
+        }
+    }
+    .owl-nav {
+        display: none;
+    }
+}

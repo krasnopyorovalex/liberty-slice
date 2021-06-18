@@ -1,0 +1,24 @@
+.for-customers {
+    padding: 85px 0 111px 0;
+    background-color: $mainBg;
+    .section-header {
+        margin: 0 0 76px 400px;
+        .section-title {
+            color: #ffffff;
+            padding: 0;
+        }
+    }
+    .row {
+        align-items: flex-start;
+    }
+    .col-text {
+        max-width: 450px;
+        color: #ffffff;
+        p {
+            text-align: left;
+            text-indent: 35px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

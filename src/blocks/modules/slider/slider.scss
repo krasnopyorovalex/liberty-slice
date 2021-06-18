@@ -1,0 +1,147 @@
+.main-slider {
+    @include sm(height, 100vh);
+    color: #ffffff;
+    overflow: hidden;
+    &-item {
+        position: relative;
+        &-desc {
+            @include sm(font-size, 12px);
+            @include sm(left, 60px);
+            @include sm(line-height, 20px);
+            @include sm(top, calc(#{$main-slider-nav} + 180px));
+            position: absolute;
+            top: calc(#{$main-slider-nav} + 235px);
+            right: 0;
+            left: 0;
+            max-width: #{$main-slider-width};
+            line-height: 30px;
+            //margin: 0 auto;
+            p {
+                background-color: $bgMainWithAlpha;
+                font-family: Pragmatica, sans-serif;
+                margin: 0;
+                padding: 38px 32px 38px 28%;
+            }
+            .btn-main-slider-box {
+                @include sm(display, none);
+                margin: 65px 0 0 28%;
+            }
+        }
+        img {
+            @include sm(height, 100vh);
+            @include sm(object-fit, fill);
+        }
+    }
+    &-nav {
+        @include sm(width, 100%);
+        @include sm(left, 60px);
+        @include sm(top, calc(#{$main-slider-nav} - 20px));
+        position: absolute;
+        z-index: 100;
+        top: #{$main-slider-nav};
+        right: 0;
+        left: 0;
+        width: #{$main-slider-width};
+        margin: 0 auto;
+        &-control {
+            @include sm(width, 100%);
+            position: relative;
+            & + & {
+                @include sm(margin, 15px 0 0 0);
+                margin: 0 0 0 108px;
+            }
+            span {
+                @include sm(font-size, 30px);
+                font-family: "Bukvarnaya Bold", serif;
+                font-size: 72px;
+                font-weight: 400;
+                display: block;
+                &:first-child {
+                    @include sm(display, none);
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+            &:first-child {
+                span {
+                    &:first-child {
+                        margin: 0 0 0 20px;
+                    }
+                }
+            }
+            &.active {
+                &:after {
+                    @include sm(display, none);
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 8px;
+                    left: 0;
+                    height: 5px;
+                    background-color: #ffffff;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    a {
+        color: #ffffff;
+    }
+    &.with-arrows {
+        .title {
+            position: absolute;
+            z-index: 100;
+            top: #{$main-slider-nav-with-arrows};
+            right: 0;
+            left: 0;
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 31px;
+            span {
+                font-size: 65px;
+                font-family: "Bukvarnaya Bold", sans-serif;
+            }
+        }
+        .main-slider-item-desc {
+            top: calc(#{$main-slider-nav-with-arrows} + 115px);
+            max-width: 1300px;
+            p {
+                font-size: 16px;
+                padding: 38px 56px 38px 36%;
+            }
+            .btn-main-slider-box {
+                margin: 5px 0 0 28%;
+                text-align: right;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+            left: 0;
+            text-align: center;
+            button.owl-dot:not(.active) {
+                background-color: #ffffff;
+            }
+        }
+        .owl-nav {
+            button.owl-prev, button.owl-next {
+                position: absolute;
+                top: calc(50% + 15px);
+                width: 23px;
+                height: 53px;
+                background-image: url("../img/main-slider-arrow.png");
+            }
+            button.owl-prev {
+                left: 12%;
+            }
+            button.owl-next {
+                right: 15%;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

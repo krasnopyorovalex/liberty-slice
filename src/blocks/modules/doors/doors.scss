@@ -1,0 +1,80 @@
+.sub-page.doors {
+    padding: 0 0 108px 0;
+}
+.doors .first-screen-text .text .btn-box {
+    margin: 0;
+}
+.doors {
+    &-list {
+        padding: 0 0 52px 0;
+        .section-sub-title {
+            padding: 11px 149px 11px 13.4%;
+            font-size: 18px;
+        }
+        .section-header {
+            margin: 0;
+        }
+    }
+    &-categories {
+        margin: 22px 0 0 0;
+        padding: 0 12px 0 0;
+        a {
+            color: #000000;
+            font-size: 16px;
+        }
+        ul {
+            text-align: right;
+            list-style: none;
+            text-transform: uppercase;
+            li {
+                & + li {
+                    margin: 46px 0 0 0;
+                }
+            }
+        }
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 8rem 0;
+        &-item {
+            box-sizing: border-box;
+            width: 48%;
+            margin: 22px 0 0 0;
+            border-radius: 0 0 30px 0;
+            background-color: $mainBg;
+            &:nth-child(2n) {
+                margin-left: 4%;
+            }
+            &:nth-child(n+3) {
+                margin-top: 33px;
+            }
+            &-img {
+                position: relative;
+                .decoration-line {
+                    position: absolute;
+                    bottom: 0;
+                    opacity: 0;
+                }
+            }
+            &-info {
+                padding: 24px 35px;
+                color: #ffffff;
+                font-size: 20px;
+                &-title {
+                }
+                &-cost {
+                    margin: 0 0 0 auto;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                .doors-cards-item-img {
+                    .decoration-line {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

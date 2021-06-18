@@ -1,2 +1,10 @@
 import "%modules%/header/header";
-import "%modules%/footer/footer"
+import "%modules%/slider/slider";
+import "%modules%/sales-leaders/sales-leaders";
+import "%modules%/why-choose-us/why-choose-us";
+import "%modules%/premium-collections/premium-collections";
+import "%modules%/authors/authors";
+import "%modules%/popup/popup";
+import "%modules%/doors/doors";
+import "%modules%/rybrika/rybrika";
+import 'owl.carousel';

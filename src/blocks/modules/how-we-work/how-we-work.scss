@@ -1,0 +1,41 @@
+.how-we-work {
+    padding: 94px 0 0 0;
+    &-item {
+        &-desc {
+            position: relative;
+            padding: 95px 0 0 0;
+            color: #24262a;
+            font-size: 16px;
+            line-height: 24px;
+            &:nth-child(3n+1) {
+                margin-top: 80px;
+            }
+            &-title {
+                margin: 0 0 13px 0;
+                color: #24262a;
+                font-family: "Bukvarnaya Bold", serif;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            &-number {
+                position: absolute;
+                z-index: -1;
+                top: 33%;
+                left: 5%;
+                color: #ece7e3;
+                font-family: "Bukvarnaya Bold", serif;
+                font-size: 396px;
+                text-transform: uppercase;
+                line-height: 220px;
+            }
+        }
+    }
+    .section-body {
+        max-width: 1078px;
+        margin: 0 auto 124px auto;
+        padding: 0 0 22px 0;
+    }
+    .section-header {
+        margin: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.contacts {
+    .first-screen-text {
+        .text {
+            align-items: center;
+            .info {
+                max-width: calc(1020px - 22%);
+                padding: 24px 23px 26px 22%;
+            }
+            .btn-box {
+                max-width: 100%;
+                margin: 0 0 0 37px;
+                .btn {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &-text {
+        .section-sub-title {
+            padding: 11px 31px 11px 22.3%;
+            &.fabrics {
+                padding: 11px 31px 11px 33.3%;
+            }
+        }
+    }
+}
+.contact-item {
+    margin: 53px 0;
+    &:last-child {
+        margin: 53px 0 85px 0;
+    }
+    .title {
+        color: #575757;
+        font-family: "Bukvarnaya Bold", sans-serif;
+        margin: 0 0 15px 0;
+    }
+    &-text {
+        color: #1f1f1f;
+        font-size: 18px;
+        padding: 0 0 0 89px;
+        a {
+            color: #1f1f1f;
+        }
+    }
+}

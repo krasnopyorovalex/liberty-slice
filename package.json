@@ -71,12 +71,8 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
+        "owl.carousel": "^2.3.4",
         "smart-grid": "^2.1.2"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "lint-staged": {
         "!(_*).scss": [

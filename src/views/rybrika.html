@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>New Page</title>
-        <meta name="theme-color" content="#c9e0e04d">
+        <title>Главная</title>
+        <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -26,10 +26,25 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        @@include("../../blocks/modules/header/header.html")
-        <h1>New Page</h1>
-        @@include("../../blocks/modules/footer/footer.html")
-        <script src="js/pageB.js"></script>
+        <section class="first-screen with-absolute-header sub-page p-0">
+            @@include("../blocks/modules/header/header.html")
+            @@include("../blocks/modules/rybrika/rybrika-slider.html")
+        </section>
+        <div class="download uppercase">
+            <a href="#">СКАЧАТЬ КАТАЛОГ КОЛЛЕКЦИИ</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+                </div>
+            </div>
+        </div>
+        @@include("../blocks/modules/rybrika/rybrika.html")
+        @@include("../blocks/modules/why-choose-us/why-choose-us.html")
+        @@include("../blocks/modules/for-customers/for-customers.html")
+        @@include("../blocks/modules/footer/footer.html")
+        <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
 </html>

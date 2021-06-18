@@ -1,0 +1,98 @@
+.form-group {
+    margin: 0 0 13px 0;
+    input, .as-input, textarea {
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #c6c3bc;
+        padding: 20px 22px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        font-size: 14px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &.two-elements {
+        flex-wrap: nowrap;
+        > * {
+            position: relative;
+            width: 48%;
+            &:last-child {
+                margin: 0 0 0 auto;
+            }
+        }
+        .label-file {
+            display: block;
+            color: #000000;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &.personal-data-agree {
+        position: relative;
+        text-align: left;
+        margin: 25px 0 0 0;
+        input[type="checkbox"] {
+            display: none;
+            & + label {
+                &:before {
+                    background: url("../img/unchecked.png");
+                }
+            }
+            &:checked + label {
+                &:before {
+                    background: url("../img/checked.png");
+                }
+            }
+        }
+        label {
+            color: #333537;
+            font-size: 13px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -23px;
+                width: 17px;
+                height: 17px;
+            }
+        }
+        a {
+            color: #333537;
+        }
+    }
+    &.with-captcha {
+        > * {
+            &:first-child {
+                width: 46%;
+            }
+            &:last-child {
+                width: 50%;
+                margin: 0 0 0 auto;
+            }
+        }
+        img {
+            width: auto;
+        }
+    }
+}
+
+.form-cost-calculation {
+    .form-group {
+        textarea {
+            min-height: 114px;
+        }
+        .as-input {
+            background-color: #ece7e3;
+            padding: 16px 22px;
+        }
+    }
+    .popup-btn-box {
+        margin: 30px 0 0 0;
+    }
+    .icon-paper-clip {
+        fill: #000;
+        margin: 0 5px 0 0;
+    }
+}
