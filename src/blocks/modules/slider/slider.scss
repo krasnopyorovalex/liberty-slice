@@ -4,6 +4,7 @@
     overflow: hidden;
     &-item {
         position: relative;
+        overflow: hidden;
         &-desc {
             @include sm(font-size, 12px);
             @include sm(left, 60px);
@@ -16,7 +17,7 @@
             max-width: #{$main-slider-width};
             line-height: 30px;
             //margin: 0 auto;
-            p {
+            > p {
                 background-color: $bgMainWithAlpha;
                 font-family: Pragmatica, sans-serif;
                 margin: 0;
@@ -108,13 +109,26 @@
         .main-slider-item-desc {
             top: calc(#{$main-slider-nav-with-arrows} + 115px);
             max-width: 1300px;
-            p {
+            > p {
                 font-size: 16px;
                 padding: 38px 56px 38px 36%;
             }
             .btn-main-slider-box {
-                margin: 5px 0 0 28%;
+                margin: 47px 0 0 28%;
                 text-align: right;
+            }
+            .door-card-slider-text {
+                background-color: $bgMainWithAlpha;
+                padding: 70px 0 38px 50%;
+                p {
+                    font-size: 20px;
+                }
+                h1 {
+                    color: #d0c8bb;
+                    font-family: "Bukvarnaya Bold", sans-serif;
+                    font-size: 59px;
+                    margin: 0 0 2rem 0;
+                }
             }
         }
         .owl-dots {
@@ -127,21 +141,35 @@
                 background-color: #ffffff;
             }
         }
+    }
+    &.door-card-slider {
+        .main-slider-item-desc {
+            top: calc(30% + 80px);
+            max-width: 750px;
+        }
         .owl-nav {
             button.owl-prev, button.owl-next {
-                position: absolute;
-                top: calc(50% + 15px);
-                width: 23px;
-                height: 53px;
-                background-image: url("../img/main-slider-arrow.png");
+                top: calc(50% + 35px);
             }
-            button.owl-prev {
-                left: 12%;
-            }
-            button.owl-next {
-                right: 15%;
-                transform: rotate(180deg);
-            }
+        }
+    }
+}
+.main-slider, .with-arrows, .door-card-gallery {
+    position: relative;
+    .owl-nav {
+        button.owl-prev, button.owl-next {
+            position: absolute;
+            top: calc(50% + 15px);
+            width: 23px;
+            height: 53px;
+            background-image: url("../img/main-slider-arrow.png");
+        }
+        button.owl-prev {
+            left: 12%;
+        }
+        button.owl-next {
+            right: 15%;
+            transform: rotate(180deg);
         }
     }
 }

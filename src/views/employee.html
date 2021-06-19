@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Контакты</title>
+        <title>Сотрудник</title>
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -26,25 +26,21 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <section class="first-screen sub-page contacts" style="background-image: url('../img/contacts-bg.jpg')">
+        <section class="first-screen not-opacity">
             @@include("../blocks/modules/header/header.html")
-            <div class="first-screen-text">
-                <div class="text">
-                    <h1>салоны продаж</h1>
-                    <div class="flex">
-                        <div class="info">
-                            <p>Пространство в котором мы живем расскажет о нас много. Среда которая нас окружает формирует наше сознание, строит нашу мысль. В современном мире технического прогресса и технологий. с его постоянным подавлением</p>
-                        </div>
-                        <div class="btn-box">
-                            <div class="btn recall-me call-popup" data-target="popup-recall-me">заказать звонок</div>
-                        </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumbs-p-o">
+                        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
                     </div>
                 </div>
             </div>
-        </section>
-        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-        @@include("../blocks/modules/contacts/contacts.html")
-        @@include("../blocks/modules/for-customers/for-customers.html")
+        </div>
+        @@include("../blocks/modules/employee/employee.html")
+        @@include("../blocks/modules/employee/employee-projects.html")
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>

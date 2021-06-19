@@ -63,7 +63,7 @@ section {
     }
 }
 
-.premium-collections, .interior-projects, .sales-leaders-slider-mobile {
+.premium-collections, .interior-projects, .sales-leaders-slider-mobile, .door-cards-slider {
     .owl-carousel {
         .owl-nav {
             .owl-prev, .owl-next {
@@ -118,6 +118,23 @@ section {
         }
         .owl-dots {
             bottom: 100px;
+        }
+    }
+}
+.btn-show-hide {
+    display: inline-block;
+    width: 36px;
+    height: 15px;
+    background-image: url("/img/show-hide.png");
+    transition: all 300ms ease;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.board {
+    &.active {
+        .btn-show-hide {
+            transform: rotate(180deg);
         }
     }
 }

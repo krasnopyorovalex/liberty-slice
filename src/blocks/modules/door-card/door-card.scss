@@ -1,0 +1,97 @@
+.door-card-header {
+    .section-sub-title {
+        font-size: 18px;
+        padding: 16px 65px 14px 12.5%;
+    }
+}
+.door-card-gallery {
+    line-height: 0;
+    .owl-nav {
+        button.owl-prev {
+            left: 14px;
+        }
+        button.owl-next {
+            right: 14px;
+        }
+        button.owl-prev, button.owl-next {
+            top: calc(50% - 26px);
+        }
+    }
+}
+.door-card-info {
+    margin: 50px 0 0 0;
+}
+.door-card-gallery-box {
+    margin: 0 4rem;
+    .door-card-price-box {
+        border-radius: 0 0 30px;
+        padding: 35px 43px 35px 32px;
+        background-color: #5a6e79;
+        color: #ffffff;
+        .name {
+            margin: 0 auto;
+        }
+        .price, .name {
+            font-size: 24px;
+        }
+        .btn-buy {
+            border-color: #ffffff;
+        }
+    }
+}
+.door-card-options {
+    margin: 1.7rem 2rem 0;
+    &-item {
+        margin: 0 0 16px 0;
+        padding: 0 1rem;
+        text-align: center;
+        &.active, &:hover {
+            cursor: pointer;
+            .name {
+                transition: all 300ms ease;
+                background-color: $mainBg;
+                color: #ffffff;
+            }
+        }
+        .name {
+            padding: 12px 20px;
+            color: #403f3d;
+        }
+        .img {
+            line-height: 0;
+        }
+    }
+}
+.tabs-flex-column {
+    align-items: flex-start;
+    height: 100%;
+    .tabs-custom {
+        margin: auto 0 0 0;
+    }
+}
+.door-card-tabs-custom {
+    margin: 2rem 4rem 3rem;
+    padding: 45px 98px 83px 114px;
+    background-color: #e5e1d8;
+    &:after {
+        opacity: 1;
+        bottom: 33px;
+    }
+    &-item {
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+}
+.related-products {
+    margin: 63px 0 79px 0;
+    &-title {
+        font-family: "Bukvarnaya Bold", sans-serif;
+        font-size: 48px;
+        color: $mainBg;
+    }
+    .doors-cards {
+        margin: 0;
+    }
+}

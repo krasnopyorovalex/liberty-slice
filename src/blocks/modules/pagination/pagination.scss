@@ -1,0 +1,50 @@
+.pagination {
+    padding: 8px 0;
+    background-color: $mainBg;
+    ul {
+        justify-content: center;
+        list-style: none;
+        margin: 0 auto;
+        li {
+            color: #ffffff;
+            display: inline-block;
+            & + li {
+                margin: 0 0 0 .8rem;
+            }
+            &.active {
+                background-color: #ffffff;
+                border-radius: 6px;
+                color: #646462;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    padding: 12px 15px 8px 15px;
+                    vertical-align: middle;
+                    line-height: normal;
+                }
+            }
+            a {
+                color: #ffffff;
+                font-size: 16px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    > a {
+        display: inline-block;
+    }
+    .prev-link, .next-link {
+        background-image: url("/img/pagination-arrow.png");
+        width: 9px;
+        height: 15px;
+    }
+    .prev-link {
+        margin: 0 0 0 22px;
+    }
+    .next-link {
+        margin: 0 22px 0 0;
+        transform: rotate(180deg);
+    }
+}

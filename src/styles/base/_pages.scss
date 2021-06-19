@@ -1,5 +1,10 @@
 .first-screen {
     position: relative;
+    &.not-opacity {
+        header {
+            background-color: $mainBg;
+        }
+    }
 }
 .sub-page {
     position: relative;

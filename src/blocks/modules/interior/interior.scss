@@ -17,10 +17,15 @@
 .interior-projects {
     max-width: 1458px;
     margin: 24px auto 0;
-    .slider-projects-item-desc {
-        &:after {
-            background-color: #6e8794;
-            width: 85%;
+    .slider-projects {
+        &:last-child {
+            margin: 93px 0 70px 0;
+        }
+        &-item-desc {
+            &:after {
+                background-color: #6e8794;
+                width: 85%;
+            }
         }
     }
     .owl-nav {

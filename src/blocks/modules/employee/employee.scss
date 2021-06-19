@@ -1,0 +1,52 @@
+.employee-info {
+    &-body {
+        background-color: #e2e2e2;
+        height: 100%;
+        &-name {
+            background-color: $mainBg;
+            color: #ffffff;
+            padding: 31px 125px 31px 0;
+            text-align: right;
+            font-family: "Bukvarnaya Bold", sans-serif;
+            font-size: 20px;
+            &:after {
+                opacity: 1;
+            }
+            &:hover {
+                cursor: default;
+            }
+        }
+        &-text {
+            padding: 58px 56px 30px 67px;
+        }
+        &-photo {
+            line-height: 0;
+        }
+    }
+}
+.employee-projects {
+    margin: 27px 0;
+    &-item {
+        margin: 0 0 27px 0;
+        &-img {
+            line-height: 0;
+        }
+        &-info {
+            font-size: 18px;
+            text-align: center;
+            background-color: $mainBg;
+            border-radius: 0 0 30px 0;
+            a {
+                color: #ffffff;
+                padding: 26px 0;
+            }
+            .with-price {
+                margin: 0 37px 0 30px;
+            }
+            .price {
+                color: #ffffff;
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+}

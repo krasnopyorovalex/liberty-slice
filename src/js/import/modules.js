@@ -7,4 +7,7 @@ import "%modules%/authors/authors";
 import "%modules%/popup/popup";
 import "%modules%/doors/doors";
 import "%modules%/rybrika/rybrika";
+import "%modules%/door-card/door-card";
+import "%modules%/tabs/tabs";
+import "%modules%/interior-card/interior-card";
 import 'owl.carousel';

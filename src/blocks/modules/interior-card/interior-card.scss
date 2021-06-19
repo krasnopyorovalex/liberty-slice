@@ -1,0 +1,85 @@
+.interior-card-slider {
+    position: relative;
+    .digits {
+        position: absolute;
+        font-size: 18px;
+        z-index: 10;
+        right: 0;
+        bottom: 19px;
+        left: 0;
+        color: #ffffff;
+        text-align: center;
+        .icon {
+            fill: #ffffff;
+            margin: 0 0 0 2px;
+        }
+    }
+    &-item {
+        &-desc {
+            position: absolute;
+            z-index: 20;
+            top: 79px;
+            bottom: 0;
+            left: calc(50% + 125px);
+            width: 323px;
+            padding: 0 27px 0;
+            background-color: rgba(90, 110, 121, 0.6);
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            .btn-show-hide {
+                margin: 28px 0 30px 0;
+            }
+            p {
+                text-align: left;
+                font-size: 18px;
+            }
+        }
+        .board {
+            &.active {
+                top: unset;
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.interior-card-slider-thumbs {
+    margin: 15px 0;
+    &-item, &.owl-carousel &-item {
+        position: relative;
+        overflow: hidden;
+        img {
+            height: 157px;
+        }
+    }
+    &-item {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(90, 110, 121, 0.5);
+        }
+    }
+    .owl-item {
+        &.current {
+            .interior-card-slider-thumbs-item:after {
+                background: none;
+            }
+        }
+    }
+}
+
+.interior-card-slider .owl-nav button.owl-prev, .interior-card-slider .owl-nav button.owl-next {
+    top: calc(50% - 26px);
+}
+.interior-card-slider .owl-nav button.owl-prev {
+    left: 18%;
+}
+.interior-card-slider .owl-nav button.owl-next {
+    right: 18%;
+}

@@ -29,3 +29,14 @@
         }
     }
 }
+.breadcrumbs-p-o {
+    .breadcrumbs {
+        ul {
+            li {
+                &:first-child {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
