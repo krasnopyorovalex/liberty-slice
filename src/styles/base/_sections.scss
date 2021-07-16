@@ -1,6 +1,7 @@
 .section-title {
     @include sm(font-size, 28px);
-    @include sm(line-height, normal);
+    @include sm(line-height, 35px);
+    @include sm(padding, 0 0 0 31px);
     color: $sectionTitleColor;
     font-family: "Bukvarnaya Bold", serif;
     font-size: 68px;
@@ -9,10 +10,10 @@
     padding: 0 0 0 22%;
 }
 .section-sub-title {
-    @include sm(margin, 0 16px);
+    @include sm(margin, 5px 30px 0 0);
     @include sm(font-size, 14px);
     @include sm(line-height, 20px);
-    @include sm(padding, 11px 20px);
+    @include sm(padding, 11px 16px 11px 32px);
     display: inline-block;
     position: relative;
     padding: 11px 130px 11px 22.3%;

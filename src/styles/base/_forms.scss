@@ -1,6 +1,11 @@
+form {
+    justify-content: center;
+}
 .form-group {
+    width: 100%;
     margin: 0 0 13px 0;
     input, .as-input, textarea {
+        @include sm(padding, 17px 22px);
         box-sizing: border-box;
         width: 100%;
         border: 1px solid #c6c3bc;
@@ -13,13 +18,25 @@
         }
     }
     &.two-elements {
-        flex-wrap: nowrap;
         > * {
+            @include sm(width, 100%);
             position: relative;
             width: 48%;
-            &:last-child {
+            &:last-child:not(textarea) {
+                @include sm(margin, 12px 0 0 0);
                 margin: 0 0 0 auto;
             }
+            .as-input {
+                @include sm(order, 1);
+            }
+        }
+        input + .as-input {
+            @include sm(margin, 11px 0 0 0);
+            margin: 0 0 0 auto;
+        }
+        textarea {
+            width: 100%;
+            margin: 13px 0 0 0;
         }
         .label-file {
             display: block;
@@ -30,9 +47,11 @@
         }
     }
     &.personal-data-agree {
+        @include sm(flex-wrap, wrap);
+        @include sm(margin, 17px 0 24px 28px);
         position: relative;
-        text-align: left;
         margin: 25px 0 0 0;
+        text-align: left;
         input[type="checkbox"] {
             display: none;
             & + label {
@@ -47,6 +66,7 @@
             }
         }
         label {
+            @include sm(font-size, 11px);
             color: #333537;
             font-size: 13px;
             &:before {
@@ -63,11 +83,14 @@
         }
     }
     &.with-captcha {
+        @include sm(margin, 17px 0 24px 16px);
         > * {
             &:first-child {
+                @include sm(width, 100%);
                 width: 46%;
             }
             &:last-child {
+                @include sm(width, 100%);
                 width: 50%;
                 margin: 0 0 0 auto;
             }

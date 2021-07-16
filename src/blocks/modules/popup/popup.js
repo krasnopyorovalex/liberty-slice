@@ -8,9 +8,6 @@ $(document).ready(function(){
         callPopup.on('click', function () {
             const target = $(this).attr('data-target');
             const popup = $(`#${target}`);
-
-            console.log(target)
-
             if (popup.length) {
                 popup.fadeIn() && $('body').append(popupBg);
                 popup.on('click', '.popup-close .icon-close', function () {

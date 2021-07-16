@@ -30,6 +30,7 @@
                     border-radius: 0 0 30px 0;
                     background-color: $mainBg;
                     a {
+                        @include sm(font-size, 15px);
                         color: #ffffff;
                         &:hover {
                             text-decoration: underline;

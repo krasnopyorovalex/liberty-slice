@@ -10,4 +10,5 @@ import "%modules%/rybrika/rybrika";
 import "%modules%/door-card/door-card";
 import "%modules%/tabs/tabs";
 import "%modules%/interior-card/interior-card";
+import "%modules%/how-we-work/how-we-work";
 import 'owl.carousel';

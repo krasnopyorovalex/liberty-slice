@@ -5,7 +5,7 @@ $(document).ready(function(){
     if (whyChooseUsSlider.length) {
         whyChooseUsSlider.owlCarousel({
             'items': 1,
-            'nav': false,
+            'nav': true,
             'dots': true
         });
     }

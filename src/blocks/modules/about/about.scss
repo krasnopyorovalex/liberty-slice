@@ -4,10 +4,12 @@
         text-transform: uppercase;
     }
     &-seo {
+        @include sm(margin, 25px 20px 20px 20px);
         max-width: 1233px;
         color: #444444;
         margin: 76px 0 61px 13.4%;
         p {
+            @include sm(font-size, 16px);
             font-size: 20px;
             line-height: 25px;
             text-align: left;
@@ -35,6 +37,7 @@
 }
 .page-about {
     .authors-slider {
+        @include sm(margin, 52px 0 80px);
         margin: 52px 0;
         .owl-nav {
             button.owl-prev, button.owl-next {
@@ -50,6 +53,9 @@
                 right: -40px;
                 transform: rotate(180deg);
             }
+        }
+        .owl-dots {
+            @include sm(bottom, -40px);
         }
     }
 }

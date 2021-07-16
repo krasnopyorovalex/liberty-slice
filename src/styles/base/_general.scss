@@ -126,14 +126,12 @@ figure {
     @include size-lg(4);
     @include size-md(4);
     @include size-sm(12);
-    @include size-sm(12);
 }
 .col-3 {
     @include col();
     @include size(3);
     @include size-lg(3);
     @include size-md(3);
-    @include size-sm(12);
     @include size-sm(12);
 }
 .col-2 {
@@ -178,6 +176,9 @@ input::placeholder, textarea::placeholder {
 .flex-start {
     align-items: flex-start;
 }
+.flex-end {
+    align-items: flex-end;
+}
 .flex-stretch {
     align-items: stretch;
 }
@@ -212,5 +213,11 @@ button:focus, button:active {
         &:after {
             opacity: 1;
         }
+    }
+}
+.not-overflow {
+    overflow: hidden;
+    .main-slider {
+        visibility: hidden;
     }
 }

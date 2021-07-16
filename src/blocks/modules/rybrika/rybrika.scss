@@ -1,10 +1,16 @@
 .download {
+    @include sm(text-align, left);
+    @include sm(font-size, 15px);
     position: relative;
     z-index: 0;
     padding: 28px 0 24px;
     font-size: 20px;
     text-align: center;
+    &.uppercase {
+        @include sm(text-transform, none);
+    }
     a {
+        @include sm(padding, 0 0 0 31px);
         color: #ffffff;
         text-decoration: none;
         &:hover {
@@ -22,6 +28,7 @@
         background-image: $decorationLineBg;
     }
     &:before {
+        @include sm(border-radius, 0);
         content: "";
         position: absolute;
         z-index: -1;
@@ -35,9 +42,29 @@
     }
 }
 .category-list {
+    .container-full {
+        @include sm(padding, 0);
+    }
+    .row {
+        @include sm(margin, 0);
+        .col-4, .col-8 {
+            @include sm(margin, 0);
+        }
+    }
     &-items {
+        @include sm(flex-wrap, wrap);
         flex-wrap: nowrap;
+        .col-4:first-child {
+            .title {
+                @include sm(margin, 0);
+            }
+        }
         .title {
+            @include sm(text-align, left);
+            @include sm(margin, 16px 0 0 0);
+            @include sm(padding, 26px 0 24px 36px);
+            @include sm(font-size, 15px);
+            @include sm(width, 263px);
             position: relative;
             width: 100%;
             padding: 26px 0 24px;
@@ -58,6 +85,7 @@
             line-height: 0;
         }
         .info {
+            @include sm(font-size, 15px);
             background-color: $mainBg;
             color: #ffffff;
             padding: 25px 29px 24px 27px;
@@ -70,10 +98,27 @@
     }
 }
 .types-list {
+    @include sm(display, flex);
+    @include sm(width, 100%);
     list-style: none;
     &-item {
+        @include sm(text-align, center);
+        @include sm(display, inline-block);
+        @include sm(width, 100%);
         text-align: right;
+        & + & {
+            @include sm(margin, 0 0 0 4px);
+        }
+        &.active {
+            a {
+                @include sm(background-color, $mainBg);
+                @include sm(color, #fff);
+            }
+        }
         a {
+            @include sm(padding, 9px 18px);
+            @include sm(background-color, #e5e1d8);
+            @include sm(font-size, 12px);
             font-size: 20px;
             color: #7d7d7d;
             &:hover {
@@ -83,10 +128,15 @@
     }
 }
 .collection-full-item {
+    @include sm(margin, 0 0 37px 0);
     position: relative;
     line-height: 0;
     margin: 0 0 129px 0;
+    img {
+        @include sm(min-height, 565px);
+    }
     .info {
+        @include sm(top, 116px);
         color: #ffffff;
         position: absolute;
         top: 163px;
@@ -94,6 +144,7 @@
         bottom: 100px;
         left: 0;
         .title, .text, .btn-box {
+            @include sm(padding, 0 0 0 26px);
             padding: 0 0 0 24%;
             line-height: normal;
         }
@@ -101,10 +152,15 @@
             max-width: 740px;
         }
         .title {
+            @include sm(margin, 0 0 37px 0);
+            @include sm(font-size, 28px);
             font-size: 60px;
             font-family: "Bukvarnaya Bold", sans-serif;
         }
         .text {
+            @include sm(font-size, 14px);
+            @include sm(padding, 34px 10px 35px 29px);
+            @include sm(margin, 0 15px 0 0);
             background-color: rgba(90, 110, 121, 0.6);
             padding: 25px 132px 39px 24%;
             font-size: 20px;
@@ -116,6 +172,9 @@
             .btn {
                 margin: 0 110px 0 0;
             }
+        }
+        .download {
+            @include sm(padding, 28px 0);
         }
     }
 }

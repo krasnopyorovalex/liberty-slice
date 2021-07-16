@@ -1,6 +1,9 @@
 header {
-    @include sm(padding, 30px 35px 20px);
+    @include sm(padding, 18px 30px 18px 32px);
+    @include sm(background-color, rgba(90, 110, 121, .8));
+    @include sm(border, none);
     box-sizing: border-box;
+    z-index: 100;
     width: 100%;
     padding: 30px 112px 20px;
     background-color: $bgMainWithAlpha;
@@ -14,44 +17,55 @@ header {
         text-decoration: none;
     }
     .col-logo {
-        @include sm(justify-content, flex-start);
+        @include sm(margin, 0);
         @include sm(max-width, 100%);
+        @include sm(width, 100%);
+        @include sm(flex-wrap, nowrap);
         justify-content: center;
         max-width: 260px;
         margin: 0 20px 0 0;
         img {
+            @include sm(margin, 0);
+            @include sm(max-width, 100%);
+            @include sm(width, 78px);
+            @include sm(height, 25px);
             max-width: 148px;
+            height: 49px;
             margin: 19px 0 0 0;
         }
         span {
+            @include sm(margin, 0 0 0 auto);
             @include sm(font-size, 12px);
+            @include sm(order, 1);
             font-size: 16px;
         }
     }
     .col-socials-menu {
+        @include sm(display, flex);
+        @include sm(flex-wrap, wrap);
         flex-grow: 1;
         .socials-line {
-            > div {
-                &:nth-child(2) {
-                    @include sm(margin, 0);
-                    margin: 0 0 0 auto;
-                }
-                &:first-child {
-                    @include sm(display, none);
-                }
-            }
+            @include sm(flex-wrap, nowrap);
             .icon-insta {
                 margin: 0 41px 0 18px;
             }
             .icon-fb {
                 margin: 0 44px 0 0;
             }
+            .icon-telegram {
+                @include sm(width, 18px);
+                @include sm(height, 16px);
+            }
             .icon-viber {
-                @include sm(margin, 0 11px 0 0);
+                @include sm(margin, 0 9px 0 0);
+                @include sm(width, 20px);
+                @include sm(height, 21px);
                 margin: 0 40px 0 0;
             }
             .icon-whatsapp {
-                @include sm(margin, 0 11px 0 0);
+                @include sm(margin, 0 9px 0 0);
+                @include sm(width, 20px);
+                @include sm(height, 19px);
                 margin: 0 34px 0 0;
             }
             .favorite-box {
@@ -61,8 +75,17 @@ header {
                     margin: 0 21px 0 0;
                 }
             }
+            .favorite-box-mobile {
+                @include sm(display, block);
+                display: none;
+                margin: 0 0 0 auto;
+                a {
+                    margin: 0 0 0 18px;
+                }
+            }
             .phone {
-                @include sm(margin, 0 0 0 14px);
+                @include sm(font-size, 14px);
+                @include sm(margin, 0 auto 0 11px);
                 margin: 0 66px 0 39px;
             }
             .recall-me {
@@ -73,19 +96,75 @@ header {
                     cursor: pointer;
                 }
             }
+            .icon-map {
+                width: 17px;
+                height: 23px;
+            }
             .icon {
                 &:hover {
                     fill: #a9b2b6;
                 }
             }
+            > div {
+                &:nth-child(2) {
+                    @include sm(margin, 0);
+                    margin: 0 0 0 auto;
+                }
+                &:first-child {
+                    @include sm(display, none);
+                }
+                &:nth-child(3) {
+                    @include sm(flex-grow, 1);
+                }
+            }
         }
         .menu-line {
-            @include sm(display, none);
+            @include sm(margin, 15px 0);
+            order: -1;
+            width: 100%;
             margin: 20px 0 0 0;
+            .btn-cost-calculation {
+                margin: 0 0 0 62px;
+                border: 3px solid #ffffff;
+                font-family: "Pragmatica", sans-serif;
+                &:hover {
+                    border: 3px solid #bdac9a;
+                    background: none;
+                    color: #ffffff;
+                }
+            }
+            .burger-mob {
+                @include sm(display, block);
+            }
+            .search-box {
+                @include sm(margin, 0 0 0 auto);
+                margin: 0 0 0 36px;
+            }
+            > *:not(a) {
+                @include sm(display, none);
+            }
             ul {
                 flex-grow: 1;
                 justify-content: space-between;
                 margin: 0;
+                padding: 1rem 0 0 0;
+                &.active {
+                    display: block;
+                    position: fixed;
+                    top: 142px;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: $mainBg;
+                    border-bottom-right-radius: 30px;
+                    li {
+                        display: block;
+                        z-index: 9999;
+                        margin: 0 34px;
+                        padding: 26px 0 20px;
+                        border-top: 1px solid rgba(255, 255, 255, .2);
+                    }
+                }
                 li {
                     display: inline-block;
                     a {
@@ -99,28 +178,71 @@ header {
                     }
                 }
             }
-            .btn-cost-calculation {
-                margin: 0 0 0 62px;
-                border: 3px solid #ffffff;
-                font-family: "Pragmatica", sans-serif;
-                &:hover {
-                    background: none;
-                    border: 3px solid #bdac9a;
-                    color: #ffffff;
-                }
-            }
-            .search-box {
-                margin: 0 0 0 44px;
-            }
         }
     }
 }
 .with-absolute-header {
     header {
+        @include sm(position, relative);
+        @include sm(top, unset);
+        @include sm(right, unset);
+        @include sm(left, unset);
         position: absolute;
-        z-index: 10;
+        z-index: 100;
         top: 0;
         right: 0;
         left: 0;
+        border-radius: 0;
+    }
+}
+header, .with-absolute-header header {
+    &.active {
+        background-color: $mainBg;
+        position: fixed;
+        top: 0;
+        border-radius: 0;
+    }
+}
+.burger-mob {
+    display: none;
+    position: relative;
+    width: 29px;
+    height: 25px;
+    span {
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+    }
+    &:after {
+        right: 0;
+        bottom: 0;
+    }
+    &.active {
+        span {
+            opacity: 0;
+            transition: 0.5s;
+        }
+        &:before {
+            top: 11px;
+            transform: rotate(45deg);
+            transition: 0.4s;
+        }
+        &:after {
+            bottom: 11px;
+            transform: rotate(-45deg);
+            transition: 0.4s;
+        }
     }
 }

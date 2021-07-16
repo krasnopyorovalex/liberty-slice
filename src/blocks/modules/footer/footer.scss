@@ -1,19 +1,28 @@
 footer {
+    @include sm(padding, 0 0 60px 0);
     background-color: #2f3130;
     padding: 34px 0 20px;
     color: #ffffff;
     .row {
         align-items: flex-start;
         .col-2, .col-8 {
+            @include sm(width, 100%);
+            @include sm(margin, 0);
             height: 100%;
         }
     }
     .our-salons {
         &-title {
+            @include sm(background, rgba(90, 110, 121, .3));
+            @include sm(font-size, 16px);
+            @include sm(padding, 32px 10px);
+            @include sm(margin, 0);
+            @include sm(text-align, center);
             font-size: 16px;
             margin: 31px 0 16px 0;
         }
         ul {
+            @include sm(display, none);
             list-style: none;
             li {
                 font-size: 14px;
@@ -29,16 +38,39 @@ footer {
         height: 100%;
     }
     .footer-first-col {
+        @include sm(display, flex);
+        > div {
+            @include sm(width, 50%);
+            &:first-child {
+                @include sm(text-align, center);
+            }
+            img {
+                @include sm(margin, 25px 0 0 0);
+                @include sm(max-width, 121px);
+                width: auto;
+            }
+        }
         .copyright {
+            @include sm(display, none);
             font-size: 13px;
             line-height: 21px;
             margin: auto 0 0 0;
         }
     }
     .footer-middle-col {
+        @include sm(margin, 70px 0 0 0);
+        > div:nth-child(3) {
+            @include sm(display, none);
+        }
         .developer {
+            @include sm(font-size, 14px);
             font-size: 13px;
             margin: 50px 0 0 0;
+            .copyright-mob {
+                @include sm(display, block);
+                @include sm(margin, 0 0 18px 0);
+                display: none;
+            }
             a {
                 text-decoration: none;
                 &:hover {
@@ -55,6 +87,8 @@ footer {
         }
     }
     .btn {
+        @include sm(font-size, 18px);
+        @include sm(border-radius, 25px);
         margin: 26px 0 37px;
         border: 3px solid #cac1b2;
         text-decoration: none;
@@ -67,6 +101,7 @@ footer {
         color: #ffffff;
     }
     .info {
+        @include sm(margin, 10px 0 47px);
         font-size: 14px;
         line-height: 21px;
         margin: 26px 0 47px;
@@ -82,6 +117,7 @@ footer {
         }
     }
     .footer-menu {
+        @include sm(display, none);
         list-style: none;
         li {
             a {
