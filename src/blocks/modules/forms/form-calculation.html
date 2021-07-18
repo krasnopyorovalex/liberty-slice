@@ -1,0 +1,33 @@
+<form action="#" method="post" class="form-cost-calculation" enctype="multipart/form-data">
+    <div class="form-group two-elements flex">
+        <input type="text" placeholder="Ваше имя" />
+        <input type="email" placeholder="E-mail" />
+    </div>
+    <div class="form-group two-elements flex">
+        <input type="text" placeholder="Телефон" />
+
+        <div class="as-input">
+            <input type="file" class="hidden" accept="application/pdf" />
+            <div class="label-file">
+                <svg class="icon icon-paper-clip">
+                    <use xlink:href="../img/sprites/sprite.svg#paper-clip"></use>
+                </svg>
+                Прикрепить файл
+            </div>
+        </div>
+
+        <textarea name="comment" placeholder="Комментарий"></textarea>
+    </div>
+    <div class="form-group two-elements flex personal-data-agree with-captcha">
+        <div>
+            <img src="../img/captcha-img-example.jpg" alt="sca" />
+        </div>
+        <div class="flex">
+            <input type="checkbox" id="popup-personal-data-agree-2" checked />
+            <label for="popup-personal-data-agree-2">Соглашаюсь на обработку персональных данных и с <a href="#">Политикой конфиденциальности</a></label>
+        </div>
+    </div>
+    <div class="popup-btn-box">
+        <button type="submit" class="btn btn-submit">Отправить</button>
+    </div>
+</form>

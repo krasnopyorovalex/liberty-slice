@@ -89,6 +89,7 @@ footer {
     .btn {
         @include sm(font-size, 18px);
         @include sm(border-radius, 25px);
+        display: inline-block;
         margin: 26px 0 37px;
         border: 3px solid #cac1b2;
         text-decoration: none;

@@ -26,8 +26,9 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <section class="first-screen not-opacity">
+        <section class="first-screen not-opacity with-absolute-header">
             @@include("../blocks/modules/header/header.html")
+            @@include("../blocks/modules/door-card/door-card-slider.html")
         </section>
 
         <div class="container-full">
@@ -40,24 +41,9 @@
             </div>
         </div>
 
-        <section class="collection-pagination hovered">
-            <div class="container-full">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-5">
-                        <div class="title">Коллекция НОТА</div>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
-                        <div class="next-prev-arrows flex">
-                            <a href="#"><span class="next-arrow"></span></a>
-                            <div>Следующая модель</div>
-                            <a href="#"><span class="prev-arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="section-header door-card-header">
+            <div class="section-sub-title">Артикул: ФТО   Отделка: эмаль LB 203   Материалы: МДФ, массив сосны   Полотно 2100х750 мм</div>
+        </div>
 
         <section class="door-card-info">
             <div class="container-full">
@@ -69,21 +55,7 @@
                                 @@include("../blocks/modules/door-card/door-card-gallery.html")
                             </div>
                             <div class="col-6">
-                                <div class="flex-column">
-                                    <div class="btn-buy-box">
-                                        <div class="btn">Купить</div>
-                                    </div>
-                                    @@include("../blocks/modules/door-card/door-card-furniture.html")
-                                    @@include("../blocks/modules/door-card/finishing-options.html")
-                                    <div class="tabs-custom">
-                                        <ul>
-                                            <li class="active" data-page="0">Описание</li>
-                                            <li data-page="1">Гарантия</li>
-                                            <li data-page="2">Сроки</li>
-                                            <li data-page="3">Скачать 3D</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                @@include("../blocks/modules/door-card/door-card-tabs-options.html")
                             </div>
                         </div>
                         <div class="row">
@@ -139,64 +111,39 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="another-projects-in-collection">
-                            <div class="title hovered">Другие предметы коллекции нота</div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="related-products">
+                            <div class="related-products-title uppercase">похожие товары</div>
                             <div class="doors-cards">
                                 <div class="doors-cards-item">
                                     <div class="doors-cards-item-img">
-                                        <img src="../img/another-col-01.jpg" alt="alt">
+                                        <img src="../img/door-01.png" alt="alt">
                                         <div class="decoration-line"></div>
                                     </div>
                                     <div class="doors-cards-item-info flex">
-                                        <div class="doors-cards-item-info-title">Комод  арт: НК12</div>
-                                        <div class="doors-cards-item-info-cost">
-                                            <div class="cost-value">48 000 Р</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="doors-cards-item">
-                                    <div class="doors-cards-item-img">
-                                        <img src="../img/another-col-02.jpg" alt="alt">
-                                        <div class="decoration-line"></div>
-                                    </div>
-                                    <div class="doors-cards-item-info flex">
-                                        <div class="doors-cards-item-info-title">Комод  арт: НК12</div>
-                                        <div class="doors-cards-item-info-cost">
-                                            <div class="cost-value">60 000 Р</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="doors-cards-item">
-                                    <div class="doors-cards-item-img">
-                                        <img src="../img/another-col-03.jpg" alt="alt">
-                                        <div class="decoration-line"></div>
-                                    </div>
-                                    <div class="doors-cards-item-info flex">
-                                        <div class="doors-cards-item-info-title">Комод  арт: НК12</div>
+                                        <div class="doors-cards-item-info-title">Коллекция ФОКСТРОТ</div>
                                         <div class="doors-cards-item-info-cost">
                                             <div class="cost-value">56 000 Р</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doors-cards-item">
+                                    <div class="doors-cards-item-img">
+                                        <img src="../img/door-02.png" alt="alt">
+                                        <div class="decoration-line"></div>
+                                    </div>
+                                    <div class="doors-cards-item-info flex">
+                                        <div class="doors-cards-item-info-title">Коллекция ФЛАМЕНКО</div>
+                                        <div class="doors-cards-item-info-cost">
+                                            <div class="cost-value">60 000 Р</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="collection-full-item">
-                <img src="../img/author-furniture.jpg" alt="alt" />
-                <div class="info">
-                    <div class="title uppercase">авторская мебель</div>
-                    <div class="text">Элитные входные и межкомнатные двери премиум-класса создаются под индивидуальные требования заказчика. Мы изготовим деревянные элитные двери по вашему эскизу или по авторскому проекту наших дизайнеров. </div>
-                    <div class="btn-box">
-                        <a href="#" class="btn uppercase">смотреть коллекцию</a>
-                    </div>
-                </div>
-                <div class="download uppercase">
-                    <a href="#">Скачать каталог коллекции</a>
+                    <div class="col-1"></div>
                 </div>
             </div>
         </section>

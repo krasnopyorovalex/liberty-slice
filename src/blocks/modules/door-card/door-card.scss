@@ -19,13 +19,13 @@
     }
 }
 .door-card-info {
-    margin: 50px 0 0 0;
+    margin: 44px 0 0 0;
 }
 .door-card-gallery-box {
-    margin: 0 4rem;
+    margin: 0 0 0 4rem;
     .door-card-price-box {
         border-radius: 0 0 30px;
-        padding: 35px 43px 35px 32px;
+        padding: 20px 43px 20px 32px;
         background-color: #5a6e79;
         color: #ffffff;
         .name {
@@ -35,6 +35,7 @@
             font-size: 24px;
         }
         .btn-buy {
+            padding: 8px 23px 5px;
             border-color: #ffffff;
         }
     }
@@ -70,7 +71,7 @@
     }
 }
 .door-card-tabs-custom {
-    margin: 2rem 4rem 3rem;
+    margin: 2rem 0 3rem 4rem;
     padding: 45px 98px 83px 114px;
     background-color: #e5e1d8;
     &:after {
@@ -82,6 +83,9 @@
         &:first-child {
             display: block;
         }
+    }
+    &:hover {
+        cursor: default;
     }
 }
 .related-products {
@@ -116,6 +120,118 @@
                 margin: 0 0 9px 0;
                 font-size: 16px;
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+.collection-pagination {
+    margin: 0 11rem 0 0;
+    padding: 25px 0;
+    background-color: $mainBg;
+    color: #ffffff;
+    font-size: 24px;
+    &.hovered {
+        &:after {
+            opacity: 1;
+        }
+    }
+    .title {
+        margin: 0 0 0 4rem;
+        text-align: center;
+    }
+}
+.next-prev-arrows {
+    font-size: 18px;
+    justify-content: space-between;
+    &:hover {
+        cursor: default;
+    }
+    .next-arrow, .prev-arrow {
+        display: inline-block;
+        width: 17px;
+        height: 40px;
+        background-image: url("../img/next-prev-arrow.png");
+    }
+    .prev-arrow {
+        margin: 0 2rem 0 0;
+        transform: rotate(180deg);
+    }
+}
+.options {
+    margin: 38px 0 0 0;
+    padding: 39px 119px 39px 96px;
+    color: #3c3c3c;
+    background-color: rgba(227, 227, 219, 0.5);
+    font-size: 17px;
+    &-item {
+        margin: 10px 0 0 0;
+        &-value {
+            margin: 0 0 0 auto;
+        }
+        &:nth-child(4n) {
+            margin: 30px 0 0 0;
+        }
+    }
+}
+.btn-buy-box {
+    text-align: right;
+    .btn {
+        display: inline-block;
+        width: 239px;
+        text-align: center;
+        border: 3px solid #5b6e7c;
+        color: #5b6e7c;
+    }
+}
+.finishing-options {
+    margin: 30px 0 0 0;
+    .title {
+        text-align: right;
+        display: block;
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+    &-item {
+        width: 103px;
+        height: 97px;
+        margin: 0 0 29px 0;
+        & + & {
+            margin: 0 0 29px 29px;
+        }
+        &:nth-child(7n) {
+            margin: 0 0 29px 0;
+        }
+    }
+}
+.flex-column {
+    .tabs-custom {
+        margin: auto 0 0 0;
+    }
+}
+.another-projects-in-collection {
+    max-width: 1170px;
+    margin: 44px auto 69px;
+    .title {
+        background-color: $mainBg;
+        padding: 26px 99px 26px;
+        color: #ffffff;
+        font-size: 20px;
+        &:after {
+            opacity: 1;
+        }
+        &:hover {
+            cursor: default;
+        }
+    }
+    .doors-cards {
+        justify-content: space-between;
+        margin: 30px 0 0 0;
+        &-item {
+            width: 32%;
+            margin: 0;
+            &-info {
+                padding: 24px 15px;
             }
         }
     }

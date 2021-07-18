@@ -22,10 +22,19 @@
 }
 .about-company {
     .step-item {
+        position: relative;
         margin: 127px 0 0 0;
-        padding: 2rem 0 0 0;
         background-color: #6a8692;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -45px;
+            width: 100%;
+            height: 45px;
+            background-color: $mainBg;
+        }
         &-info {
+            background-repeat: no-repeat;
             &-title {
                 align-items: flex-start;
             }

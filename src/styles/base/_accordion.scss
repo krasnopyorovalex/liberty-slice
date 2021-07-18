@@ -1,0 +1,79 @@
+.accordion {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 0 70px 0;
+    color: #444444;
+    &-title {
+        @include sm(margin, 35px 31px 0 0);
+        @include sm(padding, 17px 20px 20px 25px);
+        @include sm(text-transform, none);
+        position: relative;
+        margin: 35px 250px 0 0;
+        padding: 17px 326px 20px 13.3%;
+        background-color: $mainBg;
+        color: #ffffff;
+        line-height: 22px;
+        span {
+            @include sm(background-image, url("../img/accordion-arrow-mob.png"));
+            @include sm(width, 14px);
+            @include sm(height, 6px);
+            @include sm(right, 12px);
+            @include sm(top, calc(50% - 5px));
+            display: inline-block;
+            position: absolute;
+            top: calc(50% - 5px);
+            right: 24px;
+            width: 26px;
+            height: 11px;
+            margin: 0 0 0 auto;
+            transition: .3s;
+            background-image: url("../img/accordion-arrow.png");
+        }
+        &:first-child {
+            margin-top: 15px;
+        }
+        &:after {
+            opacity: 1;
+        }
+        &.active {
+            span {
+                transform: rotate(180deg);
+            }
+            & + .accordion-info {
+                @include sm(flex-wrap, wrap);
+                display: flex;
+                flex-wrap: nowrap;
+                position: relative;
+                top: unset;
+                opacity: 1;
+            }
+        }
+    }
+    &-info {
+        @include sm(padding, 21px 32px 0 25px);
+        position: absolute;
+        z-index: -1;
+        top: -100%;
+        padding: 49px 326px 59px 13.3%;
+        transition: .3s;
+        opacity: 0;
+        > div {
+            & + div {
+                @include sm(width, 100%);
+                @include sm(margin, 0);
+                margin: 0 0 0 124px;
+            }
+        }
+        .title {
+            @include sm(font-size, 17px);
+            margin: 0 0 20px 0;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        p {
+            @include sm(font-size, 14px);
+            text-align: left;
+            font-size: 16px;
+        }
+    }
+}
