@@ -1,12 +1,24 @@
 .interior-h1 {
+    @include sm(margin, 150px 0 0 0);
     margin: 108px 0 0 0;
+    h1 {
+        @include sm(font-size, 30px);
+    }
 }
 .interior {
+    @include sm(height, 100vh);
     .text {
+        @include sm(margin, 0);
+        @include sm(background, none);
+        @include sm(padding, 101px 0 60px 0);
         background-color: rgba(90, 110, 121, 0.6);
         padding: 57px 34px 60px 44px;
         font-size: 18px;
+        p {
+            @include sm(display, none);
+        }
         .btn {
+            @include sm(margin, 0);
             margin: 37px 0 0 0;
         }
     }

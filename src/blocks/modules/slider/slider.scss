@@ -125,12 +125,16 @@
                 text-align: right;
             }
             .door-card-slider-text {
+                @include sm(padding, 70px 0 38px 31px);
                 background-color: $bgMainWithAlpha;
                 padding: 70px 0 38px 50%;
                 p {
+                    @include sm(font-size, 16px);
                     font-size: 20px;
                 }
                 h1 {
+                    @include sm(margin, 0 0 1rem 0);
+                    @include sm(font-size, 36px);
                     color: #d0c8bb;
                     font-family: "Bukvarnaya Bold", sans-serif;
                     font-size: 59px;
@@ -173,7 +177,15 @@
         }
         .owl-nav {
             button.owl-prev, button.owl-next {
+                @include sm(bottom, 34px);
+                @include sm(top, unset);
                 top: calc(50% + 35px);
+            }
+            button.owl-prev {
+                @include sm(left, 27px);
+            }
+            button.owl-next {
+                @include sm(right, 27px);
             }
         }
     }
@@ -195,5 +207,11 @@
             right: 15%;
             transform: rotate(180deg);
         }
+    }
+}
+.index-page {
+    .main-slider {
+        @include sm(margin, -142px 0 0 0);
+        margin: -146px 0 0 0;
     }
 }

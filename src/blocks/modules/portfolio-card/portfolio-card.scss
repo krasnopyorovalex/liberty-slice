@@ -1,0 +1,169 @@
+.portfolio-card-slider {
+    img {
+        @include sm(min-height, 530px);
+    }
+    .owl-carousel {
+        .owl-nav {
+            button.owl-next, button.owl-prev {
+                @include sm(background-image, url("../img/slider-nav-mob.png"));
+                @include sm(width, 10px);
+                @include sm(height, 23px);
+                @include sm(top, calc(50% - 11px));
+                top: calc(50% - 26px);
+            }
+            button.owl-next {
+                @include sm(right, 10px);
+            }
+            button.owl-prev {
+                @include sm(left, 10px);
+            }
+        }
+    }
+}
+.h1-before-slider {
+    @include sm(font-size, 28px);
+    color: #5a6e79;
+    font-size: 40px;
+    font-family: "Bukvarnaya Bold", sans-serif;
+    margin: 0 0 5px 9%;
+}
+.portfolio-card-breadcrumbs-box {
+    .breadcrumbs {
+        margin: 15px 0 15px 9%;
+        ul {
+            li {
+                &:first-child {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.included {
+    @include sm(padding, 25px 0 25px 20px);
+    @include sm(top, 17px);
+    @include sm(left, 0);
+    @include sm(width, 273px);
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 21%;
+    width: 358px;
+    padding: 33px 0 36px 54px;
+    background-color: $bgMainWithAlpha;
+    table {
+        width: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        tr {
+            td {
+                padding: 8px 0;
+                color: #ffffff;
+                &:nth-child(even) {
+                    text-align: left;
+                    font-family: "Bukvarnaya Bold", sans-serif;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.info-text {
+    @include sm(position, relative);
+    @include sm(right, unset);
+    @include sm(bottom, unset);
+    @include sm(background-color, rgba(229, 229, 219, 0.5));
+    @include sm(margin, 27px 0 0 0);
+    @include sm(padding, 30px 38px 35px 30px);
+    position: absolute;
+    z-index: 10;
+    right: 23%;
+    bottom: 28px;
+    max-width: 798px;
+    padding: 30px 49px 32px 39px;
+    background-color: rgba(255, 255, 255, .9);
+    font-size: 16px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-left: 10px solid rgba(255, 255, 255, .9);
+        border-bottom: 8px solid transparent;
+    }
+    .author {
+        @include sm(margin, 2rem 0 0 0);
+        margin: 1rem 0 0 0;
+        font-weight: 700;
+    }
+    a {
+        @include sm(display, block);
+        @include sm(margin, 1rem 0 0 0);
+        color: #000000;
+    }
+    .info-icon {
+        position: absolute;
+        right: -60px;
+        bottom: 2px;
+        width: 44px;
+        height: 44px;
+    }
+}
+.portfolio-card-slider-thumb.owl-carousel {
+    @include sm(display, none);
+    .interior-card-slider-thumbs-item {
+        img {
+            height: 210px;
+        }
+    }
+}
+.portfolio-card-slider-thumb-box {
+    box-sizing: border-box;
+    margin: 0 5rem;
+}
+.our-projects-title {
+    @include sm(margin, 30px 0 27px 0);
+    @include sm(font-size, 28px);
+    color: #5a6e79;
+    margin: 76px 0 51px 0;
+    font-family: "Bukvarnaya Bold", sans-serif;
+    font-size: 48px;
+}
+.our-projects {
+    @include sm(margin, 0 0 42px 0);
+    margin: 0 0 80px 0;
+    &-item {
+        @include sm(width, 100%);
+        width: 32%;
+        & + & {
+            @include sm(margin, 46px 0 0 0);
+            margin: 0 0 0 1%;
+        }
+        img {
+            line-height: 0;
+            display: block;
+        }
+        &-desc {
+            padding: 31px 21px 17px 31px;
+            color: #ffffff;
+            border-radius: 0 0 30px;
+            background-color: $mainBg;
+            .name {
+                font-size: 18px;
+                > div + div {
+                    margin: 10px 0 0 0;
+                }
+            }
+            &-footer {
+                margin: 39px 0 0 0;
+                .btn {
+                    margin: 0 0 0 auto;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}

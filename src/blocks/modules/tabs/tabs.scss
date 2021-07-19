@@ -8,6 +8,8 @@
         margin: 0;
         list-style: none;
         li {
+            @include sm(font-size, 12px);
+            @include sm(padding, 13px 8px 10px);
             flex-grow: 1;
             padding: 21px 37px 19px;
             cursor: pointer;
@@ -16,6 +18,7 @@
             background-color: #e5e1d8;
             text-align: center;
             & + li {
+                @include sm(margin, 0 0 0 4px);
                 margin: 0 0 0 10px;
             }
             &.active, &:hover {

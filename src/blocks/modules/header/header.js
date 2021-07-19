@@ -11,4 +11,6 @@ $(document).ready(function(){
             return $(this).toggleClass('active') && header.toggleClass('active') && menu.toggleClass('active') && body.toggleClass('not-overflow');
         });
     }
+
+    $("#sticky").sticky({zIndex: 1000});
 });

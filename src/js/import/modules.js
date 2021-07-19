@@ -12,4 +12,6 @@ import "%modules%/tabs/tabs";
 import "%modules%/interior-card/interior-card";
 import "%modules%/how-we-work/how-we-work";
 import "%modules%/for-clients/for-clients";
+import "%modules%/portfolio-card/portfolio-card";
 import 'owl.carousel';
+import './_sticky';

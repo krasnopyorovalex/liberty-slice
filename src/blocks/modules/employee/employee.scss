@@ -1,8 +1,15 @@
 .employee-info {
+    .col-8 {
+        @include sm(display, flex);
+    }
     &-body {
-        background-color: #e2e2e2;
+        @include sm(background, none);
+        background-color: rgba(226, 226, 226, 0.6);
         height: 100%;
         &-name {
+            @include sm(padding, 18px 0 12px 32px);
+            @include sm(margin, 0 35px 0 0);
+            @include sm(text-align, left);
             background-color: $mainBg;
             color: #ffffff;
             padding: 31px 125px 31px 0;
@@ -17,11 +24,23 @@
             }
         }
         &-text {
+            @include sm(order, 1);
+            @include sm(padding, 20px 29px 23px 23px);
+            @include sm(background-color, rgba(229, 229, 219, 0.5));
             padding: 58px 56px 30px 67px;
+            p {
+                @include sm(font-size, 14px);
+            }
         }
         &-photo {
+            @include sm(margin, 18px 0);
             line-height: 0;
         }
+    }
+    .row, [class*=col-], .container {
+        @include sm(margin, 0);
+        @include sm(padding, 0);
+        @include sm(width, 100%);
     }
 }
 .employee-projects {

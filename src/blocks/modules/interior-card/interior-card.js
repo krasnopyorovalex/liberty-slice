@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(document).ready(function(){
-    const interiorCardSlider = $('.interior-card-slider');
+    const interiorCardSlider = $('.slider-thumb');
     if (interiorCardSlider.length) {
         const owlCardSlider = interiorCardSlider.find('.owl-carousel');
 

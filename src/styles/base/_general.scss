@@ -118,7 +118,7 @@ figure {
     @include size-lg(5);
     @include size-md(5);
     @include size-sm(5);
-    @include size-sm(5);
+    @include size-sm(12);
 }
 .col-4 {
     @include col();
@@ -228,4 +228,11 @@ button:focus, button:active {
     .main-slider {
         visibility: hidden;
     }
+}
+.hidden-sm {
+    @include sm(display, none);
+}
+.visible-sm {
+    @include sm(display, block);
+    display: none;
 }
