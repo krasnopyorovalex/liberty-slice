@@ -34,10 +34,14 @@
             margin: 93px 0 70px 0;
         }
         &-item-desc {
+            overflow: hidden;
             &:after {
                 background-color: #6e8794;
                 width: 85%;
             }
+        }
+        .decoration-line {
+            width: 85%;
         }
     }
     .owl-nav {

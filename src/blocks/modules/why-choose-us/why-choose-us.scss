@@ -15,6 +15,11 @@
     }
     &-slider.owl-carousel {
         position: relative;
+        .btn-box {
+            .btn {
+                display: inline-block;
+            }
+        }
         .owl-dots {
             @include sm(bottom, 53px);
             @include sm(left, 0);

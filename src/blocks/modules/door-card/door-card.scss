@@ -104,21 +104,26 @@
 .door-card-tabs-custom {
     @include sm(margin, 22px 0 25px 0);
     @include sm(padding, 47px 32px 73px);
+    position: relative;
+    overflow: hidden;
     margin: 2rem 0 3rem 4rem;
     padding: 45px 98px 83px 114px;
     background-color: #e5e1d8;
-    &:after {
-        opacity: 1;
+    &:hover {
+        cursor: default;
+    }
+    .decoration-line {
+        position: absolute;
+        z-index: 100;
+        right: 0;
         bottom: 33px;
+        left: 0;
     }
     &-item {
         display: none;
         &:first-child {
             display: block;
         }
-    }
-    &:hover {
-        cursor: default;
     }
     p {
         @include sm(font-size, 14px);
@@ -179,11 +184,18 @@
     @include sm(margin, 0);
     @include sm(background, none);
     @include sm(padding, 0);
+    position: relative;
     margin: 0 11rem 0 0;
     padding: 25px 0;
     background-color: $mainBg;
     color: #ffffff;
     font-size: 24px;
+    .decoration-line {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
     &.hovered {
         &:after {
             @include sm(display, none);
@@ -310,16 +322,18 @@
         @include sm(font-size, 18px);
         @include sm(padding, 16px 0 16px 31px);
         @include sm(margin, 0 35px 0 0);
-        background-color: $mainBg;
+        position: relative;
+        overflow: hidden;
         padding: 26px 99px 26px;
+        background-color: $mainBg;
         color: #ffffff;
         font-size: 20px;
-        &:after {
-            opacity: 1;
-        }
-        &:hover {
-            cursor: default;
-        }
+    }
+    .decoration-line {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
     .doors-cards {
         @include sm(margin, 19px 20px 0 20px);

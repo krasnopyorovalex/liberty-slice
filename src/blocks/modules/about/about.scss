@@ -1,3 +1,16 @@
+.about-text-first-screen {
+    @include sm(display, none);
+    position: absolute;
+    top: 357px;
+    right: 20%;
+    .btn-box {
+        text-align: right;
+        .btn {
+            border-radius: 25px;
+            color: #ffffff;
+        }
+    }
+}
 .about-text {
     .section-sub-title {
         padding: 11px 33px 11px 42%;

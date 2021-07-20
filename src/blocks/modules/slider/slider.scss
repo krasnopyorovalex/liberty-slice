@@ -30,8 +30,8 @@
             }
         }
         img {
-            @include sm(height, 100vh);
             @include sm(object-fit, fill);
+            height: 100vh;
         }
     }
     &-nav {

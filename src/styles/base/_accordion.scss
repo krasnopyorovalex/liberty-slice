@@ -3,6 +3,12 @@
     overflow: hidden;
     margin: 0 0 70px 0;
     color: #444444;
+    .decoration-line {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
     &-title {
         @include sm(margin, 35px 31px 0 0);
         @include sm(padding, 17px 20px 20px 25px);

@@ -6,7 +6,9 @@ $(document).ready(function(){
         whyChooseUsSlider.owlCarousel({
             'items': 1,
             'nav': true,
-            'dots': true
+            'dots': true,
+            'autoplay': true,
+            'autoplayTimeout': 4000
         });
     }
 });

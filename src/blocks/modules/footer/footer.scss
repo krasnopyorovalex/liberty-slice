@@ -65,7 +65,7 @@ footer {
         .developer {
             @include sm(font-size, 14px);
             font-size: 13px;
-            margin: 50px 0 0 0;
+            margin: 35px 0 0 0;
             .copyright-mob {
                 @include sm(display, block);
                 @include sm(margin, 0 0 18px 0);

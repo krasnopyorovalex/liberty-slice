@@ -181,6 +181,11 @@ header {
         }
     }
 }
+.is-sticky {
+    header {
+        background-color: $mainBg;
+    }
+}
 .with-absolute-header {
     header {
         @include sm(position, relative);

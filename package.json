@@ -72,7 +72,8 @@
     },
     "dependencies": {
         "owl.carousel": "^2.3.4",
-        "smart-grid": "^2.1.2"
+        "smart-grid": "^2.1.2",
+        "wow.js": "^1.2.2"
     },
     "lint-staged": {
         "!(_*).scss": [
