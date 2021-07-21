@@ -2,7 +2,6 @@
     @include sm(top, 10px);
     @include sm(left, 31px);
     @include sm(right, 31px);
-    @include sm(height, 100%);
     @include sm(padding, 30px 14px);
     box-sizing: border-box;
     display: none;
@@ -17,6 +16,7 @@
     border-radius: 20px;
     overflow-y: auto;
     &.as-cost-calculation {
+        @include sm(height, 100%);
         @include sm(width, auto);
         @include sm(left, 31px);
         @include sm(padding, 30px 16px 26px);

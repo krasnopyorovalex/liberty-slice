@@ -148,9 +148,15 @@ form {
         background-color: rgba(90, 110, 121, 0.6);
         input, textarea {
             border: 1px solid #c6c3bc;
+            color: #ffffff;
             background: none;
             &::placeholder {
                 color: #ffffff;
+            }
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
             }
         }
         .form-group {

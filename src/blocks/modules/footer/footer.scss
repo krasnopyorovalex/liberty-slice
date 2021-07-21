@@ -22,6 +22,7 @@ footer {
             margin: 31px 0 16px 0;
         }
         ul {
+            @include sm(margin, 20px 0 0 0);
             @include sm(display, none);
             list-style: none;
             li {
