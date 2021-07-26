@@ -1,9 +1,14 @@
 .contacts {
     @include sm(min-height, 670px);
+    &.sub-page {
+        background-position: center top;
+        padding: 0 0 250px 0;
+    }
     .first-screen-text {
         .text {
             @include sm(margin, 50% 0 0 0);
             align-items: center;
+            margin: 150px 0 0 auto;
             .info {
                 @include sm(display, none);
                 max-width: calc(1020px - 22%);

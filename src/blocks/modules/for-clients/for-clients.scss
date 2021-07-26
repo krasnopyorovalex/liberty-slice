@@ -1,6 +1,19 @@
 .for-clients {
-    .btn-box {
-        @include sm(padding, 0 0 0 35px);
-        padding: 0 0 0 22.3%;
+    .first-screen-text {
+        .text {
+            @include sm(margin, 0);
+            margin: 242px 0 50px auto;
+            h1 {
+                padding: 0 0 0 20%;
+            }
+            .btn-box {
+                @include sm(padding, 0 0 0 35px);
+                margin: 20px 0 0 0;
+                padding: 0 0 0 20%;
+            }
+        }
+    }
+    &.sub-page {
+        background-position: center top;
     }
 }

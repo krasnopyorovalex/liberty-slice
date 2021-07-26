@@ -7,6 +7,7 @@
     }
 }
 .sub-page {
+    @include sm(background-size, cover);
     position: relative;
     z-index: 100;
     padding: 0 0 119px 0;
@@ -54,7 +55,7 @@
             background-color: $mainBg;
         }
     }
-    &.portfolio-card {
+    &.portfolio-card, &.interior-card {
         padding: 0;
     }
 }

@@ -17,6 +17,11 @@
             max-width: #{$main-slider-width};
             line-height: 30px;
             //margin: 0 auto;
+            &-mob {
+                font-size: 12px;
+                color: #fefefe;
+                margin: 48px 0 0 0;
+            }
             > p {
                 @include sm(display, none);
                 background-color: $bgMainWithAlpha;
@@ -25,7 +30,7 @@
                 padding: 38px 32px 38px 28%;
             }
             .btn-main-slider-box {
-                @include sm(margin, 65px 0 0 0);
+                @include sm(margin, 50px 0 0 0);
                 margin: 65px 0 0 28%;
             }
         }
@@ -172,20 +177,63 @@
     }
     &.door-card-slider {
         .main-slider-item-desc {
-            top: calc(30% + 80px);
+            top: 144px;
             max-width: 750px;
+            p {
+                margin: 0;
+            }
         }
         .owl-nav {
             button.owl-prev, button.owl-next {
                 @include sm(bottom, 34px);
                 @include sm(top, unset);
-                top: calc(50% + 35px);
+                top: calc(50% - 25px);
             }
             button.owl-prev {
                 @include sm(left, 27px);
+                left: 170px;
             }
             button.owl-next {
                 @include sm(right, 27px);
+                right: 170px;
+            }
+        }
+    }
+    &.rybrika-slider {
+        &.with-arrows {
+            .main-slider-item-desc {
+                right: 43px;
+            }
+        }
+        .title {
+            top: 20%;
+            left: 22%;
+            width: 100%;
+        }
+        .main-slider-item-desc {
+            top: 33%;
+            right: 43px;
+        }
+        .btn-box {
+            .btn {
+                border-radius: 25px;
+            }
+        }
+        .owl-nav {
+            button.owl-prev, button.owl-next {
+                top: calc(40% + 10px);
+            }
+            button.owl-prev {
+                @include sm(left, 27px);
+                @include sm(top, unset);
+                @include sm(bottom, 27px);
+                left: 237px;
+            }
+            button.owl-next {
+                @include sm(top, unset);
+                @include sm(bottom, 27px);
+                @include sm(right, 27px);
+                right: 237px;
             }
         }
     }

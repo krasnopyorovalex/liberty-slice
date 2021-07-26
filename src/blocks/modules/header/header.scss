@@ -1,5 +1,5 @@
 header {
-    @include sm(padding, 18px 30px 18px 32px);
+    @include sm(padding, 18px 45px 18px 32px);
     @include sm(background-color, rgba(90, 110, 121, .8));
     @include sm(border, none);
     box-sizing: border-box;
@@ -46,6 +46,7 @@ header {
         flex-grow: 1;
         .socials-line {
             @include sm(flex-wrap, nowrap);
+            @include sm(width, 100%);
             .icon-insta {
                 margin: 0 41px 0 18px;
             }
@@ -76,11 +77,15 @@ header {
                 }
             }
             .favorite-box-mobile {
-                @include sm(display, block);
+                @include sm(display, flex);
+                @include sm(align-items, center);
                 display: none;
                 margin: 0 0 0 auto;
                 a {
                     margin: 0 0 0 18px;
+                    &.icon-map-link {
+                        margin: 0 0 0 7px;
+                    }
                 }
             }
             .phone {
@@ -97,8 +102,8 @@ header {
                 }
             }
             .icon-map {
-                width: 17px;
-                height: 23px;
+                width: 21px;
+                height: 30px;
             }
             .icon {
                 &:hover {

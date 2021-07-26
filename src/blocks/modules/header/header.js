@@ -5,6 +5,7 @@ $(document).ready(function(){
     const burgerMob = header.find('.burger-mob');
     const menu = header.find('.menu-line > ul');
     const body = $('body');
+    const iconFavorite = $('svg.icon-favorite');
 
     if (burgerMob.length) {
         burgerMob.on('click', function () {
@@ -13,4 +14,13 @@ $(document).ready(function(){
     }
 
     $("#sticky").sticky({zIndex: 1000});
+
+    iconFavorite.on({
+        mouseenter: function () {
+            return $(this).html(`<use xlink:href="../img/sprites/sprite.svg#favorite-active"></use>`);
+        },
+        mouseleave: function () {
+            return $(this).html(`<use xlink:href="../img/sprites/sprite.svg#favorite"></use>`);
+        }
+    });
 });

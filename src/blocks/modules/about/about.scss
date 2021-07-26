@@ -2,9 +2,10 @@
     @include sm(display, none);
     position: absolute;
     top: 357px;
-    right: 20%;
+    right: 25%;
     .btn-box {
         text-align: right;
+        margin: 24px 0 0 0;
         .btn {
             border-radius: 25px;
             color: #ffffff;

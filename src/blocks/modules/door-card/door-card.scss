@@ -15,6 +15,18 @@
         position: absolute;
         right: 2rem;
         bottom: 2rem;
+        fill: $mainBg;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .icon-favorite {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 24px;
+        height: 22px;
+        fill: $mainBg;
         &:hover {
             cursor: pointer;
         }
@@ -384,5 +396,12 @@
     }
     .slider-projects-item-desc:after {
         border-radius: 0;
+    }
+}
+.door-card-slider {
+    .owl-carousel {
+        img {
+            height: auto;
+        }
     }
 }

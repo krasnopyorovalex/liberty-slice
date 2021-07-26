@@ -8,7 +8,9 @@ $(document).ready(function(){
             'nav': true,
             'dots': true,
             'autoplay': true,
-            'autoplayTimeout': 4000
+            'autoplayTimeout': 4000,
+            'smartSpeed': 1200,
+            'loop': true
         });
     }
 });

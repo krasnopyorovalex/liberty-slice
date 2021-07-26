@@ -11,11 +11,17 @@
         @include sm(margin, 0);
         @include sm(background, none);
         @include sm(padding, 101px 0 60px 0);
+        box-sizing: border-box;
+        width: 407px;
+        margin: 98px 0 0 0;
+        padding: 57px 30px 58px 44px;
         background-color: rgba(90, 110, 121, 0.6);
-        padding: 57px 34px 60px 44px;
         font-size: 18px;
         p {
             @include sm(display, none);
+            text-align: left;
+            line-height: 26px;
+            margin: 0;
         }
         .btn {
             @include sm(margin, 0);
@@ -25,19 +31,74 @@
 }
 .sub-page.interior {
     padding: 0;
+    background-position: center top;
 }
 .interior-projects {
     max-width: 1458px;
     margin: 24px auto 0;
-    .slider-projects {
-        &:last-child {
-            margin: 93px 0 70px 0;
+    &-title {
+        position: relative;
+        padding: 28px 0 10px;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 85%;
+            background-color: #6e8794;
+            border-radius: 0 0 50px 0;
         }
+    }
+    &-item {
+        & + & {
+            margin: 47px 0 0 0;
+        }
+        .slider-projects-item-desc {
+            box-sizing: border-box;
+            position: absolute;
+            p {
+                text-align: left;
+            }
+        }
+        &:nth-child(odd) {
+            .slider-projects-item-desc {
+                top: 33px;
+                width: 577px;
+                padding: 39px 40px 49px 82px;
+                font-size: 18px;
+            }
+        }
+        &:nth-child(even) {
+            .slider-projects-item-desc {
+                top: 58px;
+                left: 254px;
+                width: 298px;
+                padding: 48px 36px 48px 32px;
+            }
+        }
+        .slider-projects-item {
+            .btn-box {
+                bottom: 69px;
+            }
+        }
+        .owl-carousel {
+            .owl-dots {
+                bottom: 26px;
+            }
+        }
+    }
+    .slider-projects {
         &-item-desc {
             overflow: hidden;
+            background-color: $bgMainWithAlpha;
             &:after {
-                background-color: #6e8794;
-                width: 85%;
+                display: none;
             }
         }
         .decoration-line {
@@ -46,5 +107,22 @@
     }
     .owl-nav {
         display: none;
+    }
+}
+.interior-categories {
+    margin: 42px 0 18px;
+    &-box {
+        @include sm(margin, 0);
+        margin: 0 8rem;
+        &-item {
+            margin: 0 0 24px 0;
+            a {
+                width: 100%;
+                font-size: 20px;
+                text-align: center;
+                background-color: $mainBg;
+                padding: 24px 0 25px;
+            }
+        }
     }
 }

@@ -18,7 +18,7 @@
             line-height: 24px;
             &:nth-child(3n+1) {
                 @include sm(margin, 0);
-                margin-top: 80px;
+                margin-top: 62px;
             }
             &-title {
                 margin: 0 0 13px 0;
@@ -43,6 +43,7 @@
                 @include sm(font-size, 14px);
                 @include sm(margin, 0 0 0 3px);
                 font-size: 16px;
+                text-align: left;
             }
         }
     }
@@ -62,9 +63,12 @@
     }
     .section-body {
         @include sm(margin, 0 auto 50px);
-        max-width: 1078px;
+        max-width: 1100px;
         margin: 0 auto 124px;
         padding: 0 0 22px 0;
+        .col-4:nth-child(n + 4) .how-we-work-item .how-we-work-item-desc {
+            padding: 65px 0 0 0;
+        }
     }
     .section-header {
         margin: 0;
