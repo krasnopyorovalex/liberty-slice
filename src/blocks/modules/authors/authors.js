@@ -1,12 +1,13 @@
 import $ from "jquery";
 
 $(document).ready(function(){
-    const premiumCollectionsSlider = $('.authors-slider');
+    const authors = $('.authors-slider');
     const screenWidth = $(window).width();
-    if (premiumCollectionsSlider.length) {
-        premiumCollectionsSlider.owlCarousel({
+
+    if (authors.length) {
+        authors.owlCarousel({
             'items': screenWidth <= 576 ? 1 : 4,
-            'nav': screenWidth > 576,
+            'nav': true,
             'dots': screenWidth <= 576,
             'navText': ['',''],
             'margin': 25

@@ -1,5 +1,4 @@
 .main-slider {
-    @include sm(height, 100vh);
     color: #ffffff;
     overflow: hidden;
     &-item {
@@ -200,10 +199,22 @@
         }
     }
     &.rybrika-slider {
+        @include sm(margin-top, -146px);
         &.with-arrows {
             .main-slider-item-desc {
+                @include sm(top, 346px);
                 right: 43px;
+                > p {
+                    @include sm(padding, 23px 18px 26px 30px);
+                }
             }
+            .title {
+                @include sm(top, 220px);
+            }
+        }
+        img {
+            @include sm(height, 100vh);
+            height: auto;
         }
         .title {
             top: 20%;

@@ -33,7 +33,7 @@
             }
         }
         &-photo {
-            @include sm(margin, 18px 0);
+            @include sm(margin, 18px);
             line-height: 0;
         }
     }

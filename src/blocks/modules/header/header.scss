@@ -193,6 +193,7 @@ header {
 }
 .with-absolute-header {
     header {
+        @include sm(border-radius, 0 0 30px 30px);
         @include sm(position, relative);
         @include sm(top, unset);
         @include sm(right, unset);
@@ -210,8 +211,15 @@ header, .with-absolute-header header {
         background-color: $mainBg;
         position: fixed;
         top: 0;
+    }
+}
+.not-overflow {
+    .with-absolute-header header {
         border-radius: 0;
     }
+}
+.first-screen-about {
+    @include sm(margin-top, -146px);
 }
 .burger-mob {
     display: none;

@@ -1,9 +1,12 @@
 .for-clients {
+    padding: 0 0 207px 0;
     .first-screen-text {
         .text {
             @include sm(margin, 0);
             margin: 242px 0 50px auto;
             h1 {
+                @include sm(padding, 0 0 0 31px);
+                @include sm(margin, 197px 0 0 0);
                 padding: 0 0 0 20%;
             }
             .btn-box {

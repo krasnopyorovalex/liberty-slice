@@ -9,6 +9,7 @@
     @include sm(height, 100vh);
     .text {
         @include sm(margin, 0);
+        @include sm(width, auto);
         @include sm(background, none);
         @include sm(padding, 101px 0 60px 0);
         box-sizing: border-box;
@@ -38,11 +39,16 @@
     margin: 24px auto 0;
     &-title {
         position: relative;
-        padding: 28px 0 10px;
+        padding: 28px 0;
         font-size: 18px;
         color: #ffffff;
         text-align: center;
+        &.uppercase {
+            @include sm(text-transform, none);
+        }
         &:after {
+            @include sm(width, 100%);
+            @include sm(border-radius, 0);
             content: "";
             position: absolute;
             z-index: -1;
@@ -56,40 +62,65 @@
         }
     }
     &-item {
+        position: relative;
+        overflow: hidden;
         & + & {
             margin: 47px 0 0 0;
         }
-        .slider-projects-item-desc {
+        .btn-box {
+            @include sm(bottom, 160px);
+            position: absolute;
+            z-index: 100;
+            right: 0;
+            bottom: 145px;
+            left: 0;
+            text-align: center;
+        }
+        .slider-projects-desc {
             box-sizing: border-box;
             position: absolute;
-            p {
+            z-index: 100;
+            background-color: $bgMainWithAlpha;
+            color: #ffffff;
+            > p {
+                margin: 0;
                 text-align: left;
             }
         }
         &:nth-child(odd) {
-            .slider-projects-item-desc {
+            .slider-projects-desc {
                 top: 33px;
                 width: 577px;
-                padding: 39px 40px 49px 82px;
+                padding: 39px 25px 40px 82px;
                 font-size: 18px;
             }
         }
         &:nth-child(even) {
-            .slider-projects-item-desc {
+            .slider-projects-desc {
                 top: 58px;
+                bottom: 74px;
                 left: 254px;
                 width: 298px;
-                padding: 48px 36px 48px 32px;
-            }
-        }
-        .slider-projects-item {
-            .btn-box {
-                bottom: 69px;
+                padding: 48px 36px 40px 32px;
             }
         }
         .owl-carousel {
             .owl-dots {
                 bottom: 26px;
+            }
+            .owl-nav {
+                .owl-prev, .owl-next {
+                    @include sm(background-image, url("../img/slider-nav-mob.png"));
+                    @include sm(width, 10px);
+                    @include sm(height, 23px);
+                    @include sm(top, 50%);
+                }
+                .owl-prev {
+                    @include sm(left, 25px);
+                }
+                .owl-next {
+                    @include sm(right, 25px);
+                }
             }
         }
     }
@@ -104,9 +135,14 @@
         .decoration-line {
             width: 85%;
         }
-    }
-    .owl-nav {
-        display: none;
+        .owl-nav {
+            @include sm(display, block);
+            display: none;
+            z-index: 100;
+        }
+        .owl-dots {
+            @include sm(bottom, 23px);
+        }
     }
 }
 .interior-categories {
@@ -124,5 +160,9 @@
                 padding: 24px 0 25px;
             }
         }
+    }
+    .row, .col-12, .container {
+        @include sm(margin, 0);
+        @include sm(padding, 0);
     }
 }

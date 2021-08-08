@@ -97,6 +97,7 @@
     }
 }
 .door-card-options {
+    @include sm(margin, 1.7rem .5rem 0);
     margin: 1.7rem 2rem 0;
     &-item {
         margin: 0 0 16px 0;
@@ -117,6 +118,9 @@
         .img {
             line-height: 0;
         }
+    }
+    .row > .col-3 {
+        @include size-sm(6);
     }
 }
 .tabs-flex-column {
@@ -232,6 +236,8 @@
         @include sm(padding, 22px 0 12px 31px);
         @include sm(text-align, left);
         @include sm(margin, 0 33px 0 0);
+        @include sm(position, relative);
+        @include sm(font-size, 18px);
         margin: 0 0 0 4rem;
         text-align: center;
         &:after {
@@ -399,9 +405,21 @@
     }
 }
 .door-card-slider {
+    @include sm(margin-top, -146px);
+    &.with-arrows {
+        .main-slider-item-desc {
+            @include sm(top, 316px);
+            @include sm(right, 44px);
+        }
+    }
     .owl-carousel {
         img {
             height: auto;
         }
+    }
+}
+.door-card.first-screen.not-opacity {
+    header {
+        @include sm(background-color, $mainBg);
     }
 }

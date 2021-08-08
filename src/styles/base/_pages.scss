@@ -2,14 +2,25 @@
     position: relative;
     &.not-opacity {
         header {
+            @include sm(background-color, $bgMainWithAlpha);
             background-color: $mainBg;
         }
+        .is-sticky {
+            header {
+                background-color: $mainBg;
+            }
+        }
+    }
+}
+.not-overflow {
+    header {
+        border-radius: 0;
     }
 }
 .sub-page {
     @include sm(background-size, cover);
     position: relative;
-    z-index: 100;
+    z-index: 110;
     padding: 0 0 119px 0;
     background-repeat: no-repeat;
     background-position: center bottom;

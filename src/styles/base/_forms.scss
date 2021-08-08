@@ -137,52 +137,72 @@ form {
     @include sm(padding, 24px 30px 36px);
     @include sm(margin, 0 0 37px 0);
     margin: 0 0 80px 0;
-    padding: 60px 0 91px;
+    padding: 105px 0 76px 60px;
     text-align: center;
     background-image: url("../img/form-calc-bg.jpg");
-    background-position: center center;
-    form {
+    background-position: center top 45px;
+    background-color: $mainBg;
+    background-repeat: no-repeat;
+    .form-box {
         @include sm(padding, 30px 16px 23px 16px);
         box-sizing: border-box;
         max-width: 835px;
         margin: 0 auto;
         padding: 39px 120px 51px;
         background-color: rgba(90, 110, 121, 0.6);
-        input, textarea {
-            border: 1px solid #c6c3bc;
-            color: #ffffff;
-            background: none;
-            &::placeholder {
-                color: #ffffff;
-            }
-            &:focus {
-                &::placeholder {
-                    color: transparent;
-                }
-            }
+        .title {
+            @include sm(font-size, 30px);
+            color: #e9dfd1;
+            font-family: "Bukvarnaya Bold", sans-serif;
+            font-size: 48px;
+            margin: 0 0 10px 0;
         }
-        .form-group {
-            .as-input {
-                @include sm(background-color, rgba(249, 248, 246, .6));
-                background-color: rgba(236, 231, 227, .2);
-                .label-file {
+        form {
+            input, textarea {
+                border: 1px solid #c6c3bc;
+                color: #ffffff;
+                background: none;
+                &::placeholder {
                     color: #ffffff;
-                    border-radius: 8px;
-                    .icon {
-                        fill: #fff;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
                     }
                 }
             }
-            &.personal-data-agree label {
-                color: #ffffff;
+            .form-group {
+                .as-input {
+                    @include sm(background-color, rgba(249, 248, 246, .6));
+                    background-color: rgba(236, 231, 227, .2);
+                    .label-file {
+                        color: #ffffff;
+                        border-radius: 8px;
+                        .icon {
+                            fill: #fff;
+                        }
+                    }
+                }
+                &.personal-data-agree label {
+                    @include sm(text-align, left);
+                    @include sm(margin, 0 0 0 25px);
+                    color: #ffffff;
+                    &:before {
+                        @include sm(left, 0);
+                    }
+                }
+                &.with-captcha {
+                    @include sm(margin, 17px 0 24px);
+                    @include sm(text-align, center);
+                }
             }
-        }
-        .btn-submit {
-            background: none;
-            color: #ffffff;
-            border-radius: 25px;
-            &:active {
-                color: #b5a99d;
+            .btn-submit {
+                background: none;
+                color: #ffffff;
+                border-radius: 25px;
+                &:active {
+                    color: #b5a99d;
+                }
             }
         }
     }

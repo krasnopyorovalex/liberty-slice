@@ -49,7 +49,7 @@
         }
     }
     &-cards {
-        @include sm(margin, 40px 0 0);
+        @include sm(margin, 10px 0 0);
         display: flex;
         flex-wrap: wrap;
         margin: 40px 8rem 0;

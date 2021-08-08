@@ -29,6 +29,9 @@
             display: none;
         }
     }
+    &.uppercase {
+        @include sm(text-transform, none);
+    }
 }
 .section-header {
     @include sm(margin, 0);
