@@ -2,10 +2,13 @@
     .section-sub-title {
         @include sm(padding, 16px 65px 14px 32px);
         font-size: 18px;
-        padding: 16px 65px 14px 12.5%;
+        padding: 16px 65px 14px 14%;
         span {
             @include sm(font-size, 14px);
             @include sm(display, block);
+            & + span {
+                margin: 0 0 0 .8rem;
+            }
         }
     }
 }
@@ -54,7 +57,7 @@
 }
 .door-card-info {
     @include sm(margin, 20px 0 0 0);
-    margin: 44px 0 0 0;
+    margin: 44px 3rem 0 0;
     .tabs {
         @include sm(margin, 18px 0 0 0);
     }
@@ -65,7 +68,8 @@
 }
 .door-card-gallery-box {
     @include sm(margin, 0);
-    margin: 0 0 0 4rem;
+    max-width: 639px;
+    margin: 0 0 0 6rem;
     .door-card-price-box {
         @include sm(flex-wrap, nowrap);
         @include sm(padding, 20px 27px 20px 27px);
@@ -135,7 +139,7 @@
     @include sm(padding, 47px 32px 73px);
     position: relative;
     overflow: hidden;
-    margin: 2rem 0 3rem 4rem;
+    margin: 2rem 0 3rem 6rem;
     padding: 45px 98px 83px 114px;
     background-color: #e5e1d8;
     &:hover {
@@ -321,14 +325,14 @@
         @include sm(height, 101px);
         width: 103px;
         height: 97px;
-        margin: 0 0 29px 0;
+        margin: 0 0 25px 0;
         & + & {
             @include sm(margin, 0 0 12px 12px);
-            margin: 0 0 29px 29px;
+            margin: 0 0 25px 25px;
         }
         &:nth-child(7n) {
             @include sm(margin, 0 0 12px 12px);
-            margin: 0 0 29px 0;
+            margin: 0 0 25px 0;
         }
         &:nth-child(3n) + & {
             @include sm(margin, 0 0 12px 0);
@@ -401,7 +405,7 @@
         }
     }
     .slider-projects-item-desc:after {
-        border-radius: 0;
+        @include sm(border-radius, 0);
     }
 }
 .door-card-slider {

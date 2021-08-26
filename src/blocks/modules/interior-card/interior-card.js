@@ -9,6 +9,7 @@ $(document).ready(function(){
             'items': 1,
             'nav': true,
             'dots': false,
+            'smartSpeed': 1200,
             'navText': ['','']
         });
 

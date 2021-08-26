@@ -26,181 +26,183 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<section class="first-screen sub-page interior" style="background-image: url('../img/interior-main-bg.jpg')">
-    @@include("../blocks/modules/header/header.html")
-    @@include("../blocks/modules/interior/interior-first-screen.html")
-</section>
-<section class="interior-categories">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-header visible-sm">
-                    <div class="section-title wow slideInLeft">реализованные объекты</div>
-                    <div class="section-sub-title wow slideInLeft">
-                        Авторские интерьеры
-                        по индивидуальным проектам
-                        <div class="decoration-line"></div>
+    <main>
+        @@include("../blocks/modules/header/header.html")
+        <section class="first-screen sub-page interior" style="background-image: url('../img/interior-main-bg.jpg')">
+            @@include("../blocks/modules/interior/interior-first-screen.html")
+        </section>
+        <section class="interior-categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-header visible-sm">
+                            <div class="section-title wow slideInLeft">реализованные объекты</div>
+                            <div class="section-sub-title wow slideInLeft">
+                                Авторские интерьеры
+                                по индивидуальным проектам
+                                <div class="decoration-line"></div>
+                            </div>
+                        </div>
+
+                        <div class="interior-categories-box hidden-sm">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item hovered">
+                                        <a href="#">Интерьеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Гостиные</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Кухни</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Спальни</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Гардеробные</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Лестницы</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Рестораны</a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="interior-categories-box-item">
+                                        <a href="#">Выставки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="interior-categories-box hidden-sm">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="interior-categories-box-item hovered">
-                                <a href="#">Интерьеры</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Гостиные</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Кухни</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Спальни</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Гардеробные</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Лестницы</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Рестораны</a>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="interior-categories-box-item">
-                                <a href="#">Выставки</a>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <section class="interior-projects">
+            <div class="interior-projects-item">
+                <div class="slider-projects owl-theme owl-carousel">
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
+                            <img src="../img/interior-portfolio-project-01.jpg">
+                        </picture>
+                    </div>
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
+                            <img src="../img/interior-portfolio-project-02.jpg">
+                        </picture>
                     </div>
                 </div>
+                <div class="decoration-line wow slideInLeft visible-sm"></div>
+                <div class="slider-projects-desc hidden-sm">
+                    <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
+                </div>
+                <div class="btn-box">
+                    <a href="/interior-card.html" class="btn">смотреть проект</a>
+                </div>
+                <div class="interior-projects-title uppercase">
+                    Библиотека. дом в подмосковье/2
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="interior-projects">
-    <div class="interior-projects-item">
-        <div class="slider-projects owl-theme owl-carousel">
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
-                    <img src="../img/interior-portfolio-project-01.jpg">
-                </picture>
-            </div>
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
-                    <img src="../img/interior-portfolio-project-02.jpg">
-                </picture>
-            </div>
-        </div>
-        <div class="decoration-line wow slideInLeft visible-sm"></div>
-        <div class="slider-projects-desc hidden-sm">
-            <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
-        </div>
-        <div class="btn-box">
-            <a href="/interior-card.html" class="btn">смотреть проект</a>
-        </div>
-        <div class="interior-projects-title uppercase">
-            Библиотека. дом в подмосковье/2
-        </div>
-    </div>
 
-    <div class="interior-projects-item">
-        <div class="slider-projects owl-theme owl-carousel">
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
-                    <img src="../img/interior-portfolio-project-02.jpg">
-                </picture>
+            <div class="interior-projects-item">
+                <div class="slider-projects owl-theme owl-carousel">
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
+                            <img src="../img/interior-portfolio-project-02.jpg">
+                        </picture>
+                    </div>
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
+                            <img src="../img/interior-portfolio-project-01.jpg">
+                        </picture>
+                    </div>
+                </div>
+                <div class="decoration-line wow slideInLeft visible-sm"></div>
+                <div class="slider-projects-desc hidden-sm">
+                    <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
+                </div>
+                <div class="btn-box">
+                    <a href="/interior-card.html" class="btn">смотреть проект</a>
+                </div>
+                <div class="interior-projects-title uppercase">
+                    Библиотека. дом в подмосковье/2
+                </div>
             </div>
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
-                    <img src="../img/interior-portfolio-project-01.jpg">
-                </picture>
+            <div class="interior-projects-item">
+                <div class="slider-projects owl-theme owl-carousel">
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
+                            <img src="../img/interior-portfolio-project-02.jpg">
+                        </picture>
+                    </div>
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
+                            <img src="../img/interior-portfolio-project-01.jpg">
+                        </picture>
+                    </div>
+                </div>
+                <div class="decoration-line wow slideInLeft visible-sm"></div>
+                <div class="slider-projects-desc hidden-sm">
+                    <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
+                </div>
+                <div class="btn-box">
+                    <a href="/interior-card.html" class="btn">смотреть проект</a>
+                </div>
+                <div class="interior-projects-title uppercase">
+                    Библиотека. дом в подмосковье/2
+                </div>
             </div>
-        </div>
-        <div class="decoration-line wow slideInLeft visible-sm"></div>
-        <div class="slider-projects-desc hidden-sm">
-            <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
-        </div>
-        <div class="btn-box">
-            <a href="/interior-card.html" class="btn">смотреть проект</a>
-        </div>
-        <div class="interior-projects-title uppercase">
-            Библиотека. дом в подмосковье/2
-        </div>
-    </div>
-    <div class="interior-projects-item">
-        <div class="slider-projects owl-theme owl-carousel">
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
-                    <img src="../img/interior-portfolio-project-02.jpg">
-                </picture>
-            </div>
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
-                    <img src="../img/interior-portfolio-project-01.jpg">
-                </picture>
-            </div>
-        </div>
-        <div class="decoration-line wow slideInLeft visible-sm"></div>
-        <div class="slider-projects-desc hidden-sm">
-            <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
-        </div>
-        <div class="btn-box">
-            <a href="/interior-card.html" class="btn">смотреть проект</a>
-        </div>
-        <div class="interior-projects-title uppercase">
-            Библиотека. дом в подмосковье/2
-        </div>
-    </div>
 
-    <div class="interior-projects-item">
-        <div class="slider-projects owl-theme owl-carousel">
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
-                    <img src="../img/interior-portfolio-project-02.jpg">
-                </picture>
+            <div class="interior-projects-item">
+                <div class="slider-projects owl-theme owl-carousel">
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-02-mob.jpg">
+                            <img src="../img/interior-portfolio-project-02.jpg">
+                        </picture>
+                    </div>
+                    <div class="slider-projects-item">
+                        <picture>
+                            <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
+                            <img src="../img/interior-portfolio-project-01.jpg">
+                        </picture>
+                    </div>
+                </div>
+                <div class="decoration-line wow slideInLeft visible-sm"></div>
+                <div class="slider-projects-desc hidden-sm">
+                    <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
+                </div>
+                <div class="btn-box">
+                    <a href="/interior-card.html" class="btn">смотреть проект</a>
+                </div>
+                <div class="interior-projects-title uppercase">
+                    Библиотека. дом в подмосковье/2
+                </div>
             </div>
-            <div class="slider-projects-item">
-                <picture>
-                    <source media="(max-width: 670px)" srcset="../img/interior-portfolio-project-01-mob.jpg">
-                    <img src="../img/interior-portfolio-project-01.jpg">
-                </picture>
-            </div>
-        </div>
-        <div class="decoration-line wow slideInLeft visible-sm"></div>
-        <div class="slider-projects-desc hidden-sm">
-            <p>Сегодня современные стили дизайна квартиры – минимализм, футуризм, хай-тек и экостиль – удачно дополняются элементами более традиционных, но пользующихся огромной популярностью у владельцев квартир в мегаполисе.</p>
-        </div>
-        <div class="btn-box">
-            <a href="/interior-card.html" class="btn">смотреть проект</a>
-        </div>
-        <div class="interior-projects-title uppercase">
-            Библиотека. дом в подмосковье/2
-        </div>
-    </div>
-</section>
-@@include("../blocks/modules/why-choose-us/why-choose-us.html")
-@@include("../blocks/modules/footer/footer.html")
+        </section>
+        @@include("../blocks/modules/why-choose-us/why-choose-us.html")
+        @@include("../blocks/modules/footer/footer.html")
+    </main>
 <script src="js/main.js"></script>
 <script src="js/vendor.js"></script>
 </body>

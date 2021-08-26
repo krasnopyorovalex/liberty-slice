@@ -7,7 +7,8 @@ $(document).ready(function () {
             'items': 1,
             'nav': true,
             'dots': false,
-            'navText': ['', '']
+            'navText': ['', ''],
+            'smartSpeed': 1200
         });
     }
 

@@ -26,17 +26,19 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <section class="first-screen with-absolute-header index-page">
+        <main>
             @@include("../blocks/modules/header/header.html")
-            @@include("../blocks/modules/slider/slider.html")
-        </section>
-        @@include("../blocks/modules/sales-leaders/sales-leaders.html")
-        @@include("../blocks/modules/why-choose-us/why-choose-us.html")
-        @@include("../blocks/modules/how-we-work/how-we-work.html")
-        @@include("../blocks/modules/premium-collections/premium-collections.html")
-        @@include("../blocks/modules/authors/authors.html")
-        @@include("../blocks/modules/for-customers/for-customers.html")
-        @@include("../blocks/modules/footer/footer.html")
+            <section class="first-screen index-page">
+                @@include("../blocks/modules/slider/slider.html")
+            </section>
+            @@include("../blocks/modules/sales-leaders/sales-leaders.html")
+            @@include("../blocks/modules/why-choose-us/why-choose-us.html")
+            @@include("../blocks/modules/how-we-work/how-we-work.html")
+            @@include("../blocks/modules/premium-collections/premium-collections.html")
+            @@include("../blocks/modules/authors/authors.html")
+            @@include("../blocks/modules/for-customers/for-customers.html")
+            @@include("../blocks/modules/footer/footer.html")
+        </main>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>

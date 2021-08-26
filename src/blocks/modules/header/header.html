@@ -1,9 +1,11 @@
-<header class="flex" id="sticky">
+<header class="flex">
     <div class="col-logo flex">
         <span>Фабрика дверей и мебели</span>
         <a href="/">
-            <img src="../img/logo-mob.svg" alt="logo liberty" class="visible-sm" />
-            <img src="../img/logo.svg" alt="logo liberty" class="hidden-sm" />
+            <picture>
+                <source media="(max-width: 670px)" srcset="../img/logo-mob.svg">
+                <img src="../img/logo.svg">
+            </picture>
         </a>
     </div>
     <div class="col-socials-menu">
@@ -72,8 +74,29 @@
                 <li><a href="/">Главная</a></li>
                 <li><a href="/about.html">О нас</a></li>
                 <li><a href="/doors.html">Двери</a></li>
-                <li><a href="/rybrika.html">Мебель</a></li>
-                <li><a href="/interior.html">интерьер</a></li>
+                <li>
+                    <a href="/rybrika.html">Мебель</a>
+                    <div class="submenu">
+                        <div class="submenu-box flex">
+                            <ul>
+                                <li><a href="#">Библиотеки</a></li>
+                                <li><a href="#">Гардеробы</a></li>
+                                <li><a href="#">Декор</a></li>
+                                <li><a href="#">Зеркала</a></li>
+                                <li><a href="#">Камины</a></li>
+                                <li><a href="#">Комоды</a></li>
+                                <li><a href="#">Консоли</a></li>
+                                <li><a href="#">Лавки</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Авторская</a></li>
+                                <li><a href="#">Аккорд</a></li>
+                                <li><a href="#">Нота</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/interior.html">Портфолио</a></li>
                 <li><a href="/for-clients.html">Клиентам</a></li>
                 <li><a href="/contacts.html">Контакты</a></li>
             </ul>

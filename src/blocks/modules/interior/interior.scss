@@ -90,7 +90,7 @@
         &:nth-child(odd) {
             .slider-projects-desc {
                 top: 33px;
-                width: 577px;
+                width: 490px;
                 padding: 39px 25px 40px 82px;
                 font-size: 18px;
             }
@@ -98,8 +98,8 @@
         &:nth-child(even) {
             .slider-projects-desc {
                 top: 58px;
+                right: 15%;
                 bottom: 74px;
-                left: 254px;
                 width: 298px;
                 padding: 48px 36px 40px 32px;
             }

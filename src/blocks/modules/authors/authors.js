@@ -10,7 +10,8 @@ $(document).ready(function(){
             'nav': true,
             'dots': screenWidth <= 576,
             'navText': ['',''],
-            'margin': 25
+            'margin': 25,
+            'smartSpeed': 1200
         });
     }
 });

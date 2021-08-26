@@ -13,7 +13,15 @@ $(document).ready(function(){
         });
     }
 
-    $("#sticky").sticky({zIndex: 1000});
+    //$("#sticky").sticky({zIndex: 1000});
+
+    const headerHeight = header.innerHeight();
+
+    $(window).scroll(function(){
+        return $(this).scrollTop() > headerHeight
+            ? header.addClass('is-sticky')
+            : header.removeClass('is-sticky');
+    });
 
     iconFavorite.on({
         mouseenter: function () {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Двери карточка</title>
+        <title>Карточка двери</title>
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -26,140 +26,142 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <section class="first-screen not-opacity with-absolute-header">
+        <main>
             @@include("../blocks/modules/header/header.html")
-            @@include("../blocks/modules/door-card/door-card-slider.html")
-        </section>
+            <section class="first-screen">
+                @@include("../blocks/modules/door-card/door-card-slider.html")
+            </section>
 
-        <div class="container-full">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumbs-p-o">
-                        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-header door-card-header">
-            <div class="section-sub-title">
-                <span>Артикул: ФТО</span>
-                <span>Отделка: эмаль LB 203</span>
-                <span>Материалы: МДФ, массив сосны</span>
-                <span>Полотно 2100х750 мм</span>
-                <div class="decoration-line wow slideInLeft"></div>
-            </div>
-        </div>
-
-        <section class="door-card-info">
             <div class="container-full">
                 <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <div class="row flex-stretch">
-                            <div class="col-6">
-                                @@include("../blocks/modules/door-card/door-card-gallery.html")
-                            </div>
-                            <div class="col-6">
-                                @@include("../blocks/modules/door-card/door-card-tabs-options.html")
-                            </div>
+                    <div class="col-12">
+                        <div class="breadcrumbs-door-card">
+                            @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="door-card-tabs-custom">
-                                    <div class="door-card-tabs-custom-item">
-                                        <p>
-                                            Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
-                                        </p>
-                                        <div class="decoration-line wow slideInLeft"></div>
-                                    </div>
-                                    <div class="door-card-tabs-custom-item">
-                                        <p>
-                                            2/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
-                                        </p>
-                                        <div class="decoration-line wow slideInLeft"></div>
-                                    </div>
-                                    <div class="door-card-tabs-custom-item">
-                                        <p>
-                                            3/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
-                                        </p>
-                                        <div class="decoration-line wow slideInLeft"></div>
-                                    </div>
-                                    <div class="door-card-tabs-custom-item">
-                                        <p>
-                                            4/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
-                                        </p>
-                                        <div class="decoration-line wow slideInLeft"></div>
-                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header door-card-header">
+                <div class="section-sub-title">
+                    <span>Артикул: ФТО</span>
+                    <span>Отделка: эмаль LB 203</span>
+                    <span>Материалы: МДФ, массив сосны</span>
+                    <span>Полотно 2100х750 мм</span>
+                    <div class="decoration-line wow slideInLeft"></div>
+                </div>
+            </div>
+
+            <section class="door-card-info">
+                <div class="container-full">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <div class="row flex-stretch">
+                                <div class="col-6">
+                                    @@include("../blocks/modules/door-card/door-card-gallery.html")
+                                </div>
+                                <div class="col-6">
+                                    @@include("../blocks/modules/door-card/door-card-tabs-options.html")
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="door-cards-slider">
-            <div class="slider-projects with-arrows owl-theme owl-carousel">
-                <div class="slider-projects-item">
-                    <img src="../img/door-card-slider-1.jpg" alt="alt">
-                    <div class="slider-projects-item-desc">
-                        <div class="decoration-line wow slideInLeft"></div>
-                        <div class="title">фокстрот в интерьере</div>
-                    </div>
-                </div>
-                <div class="slider-projects-item">
-                    <img src="../img/door-card-slider-1.jpg" alt="alt">
-                    <div class="slider-projects-item-desc">
-                        <div class="title">фокстрот в интерьере/2</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <div class="related-products">
-                            <div class="related-products-title uppercase">похожие товары</div>
-                            <div class="doors-cards">
-                                <div class="doors-cards-item">
-                                    <div class="doors-cards-item-img">
-                                        <img src="../img/door-01.png" alt="alt">
-                                        <div class="decoration-line"></div>
-                                    </div>
-                                    <div class="doors-cards-item-info flex">
-                                        <div class="doors-cards-item-info-title">Коллекция ФОКСТРОТ</div>
-                                        <div class="doors-cards-item-info-cost">
-                                            <div class="cost-value">56 000 Р</div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="door-card-tabs-custom">
+                                        <div class="door-card-tabs-custom-item">
+                                            <p>
+                                                Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
+                                            </p>
+                                            <div class="decoration-line wow slideInLeft"></div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="doors-cards-item">
-                                    <div class="doors-cards-item-img">
-                                        <img src="../img/door-02.png" alt="alt">
-                                        <div class="decoration-line"></div>
-                                    </div>
-                                    <div class="doors-cards-item-info flex">
-                                        <div class="doors-cards-item-info-title">Коллекция ФЛАМЕНКО</div>
-                                        <div class="doors-cards-item-info-cost">
-                                            <div class="cost-value">60 000 Р</div>
+                                        <div class="door-card-tabs-custom-item">
+                                            <p>
+                                                2/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
+                                            </p>
+                                            <div class="decoration-line wow slideInLeft"></div>
+                                        </div>
+                                        <div class="door-card-tabs-custom-item">
+                                            <p>
+                                                3/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
+                                            </p>
+                                            <div class="decoration-line wow slideInLeft"></div>
+                                        </div>
+                                        <div class="door-card-tabs-custom-item">
+                                            <p>
+                                                4/Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, Конструкции дверных полотен весьма разнообразны. Дверное полотно из массива дерева может состоять как из единого куска, так и набранного из разной древесины, в соответствии с конструктивными и эксплуатационными характеристиками пород древесины. Набранные из разных пород дверные полотна обычно облицовываются шпоном ценных пород дерева и отделываются нитролаками и эмалями., из спиральной стружки, с заполнением бумажными сотами и полиуретаном.
+                                            </p>
+                                            <div class="decoration-line wow slideInLeft"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-1"></div>
                     </div>
-                    <div class="col-1"></div>
                 </div>
-            </div>
-        </section>
-        @@include("../blocks/modules/why-choose-us/why-choose-us.html")
-        @@include("../blocks/modules/for-customers/for-customers.html")
-        @@include("../blocks/modules/footer/footer.html")
+            </section>
+
+            <section class="door-cards-slider">
+                <div class="slider-projects with-arrows owl-theme owl-carousel">
+                    <div class="slider-projects-item">
+                        <img src="../img/door-card-slider-1.jpg" alt="alt">
+                        <div class="slider-projects-item-desc">
+                            <div class="decoration-line wow slideInLeft"></div>
+                            <div class="title">фокстрот в интерьере</div>
+                        </div>
+                    </div>
+                    <div class="slider-projects-item">
+                        <img src="../img/door-card-slider-1.jpg" alt="alt">
+                        <div class="slider-projects-item-desc">
+                            <div class="title">фокстрот в интерьере/2</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <div class="related-products">
+                                <div class="related-products-title uppercase">похожие товары</div>
+                                <div class="doors-cards">
+                                    <div class="doors-cards-item">
+                                        <div class="doors-cards-item-img">
+                                            <img src="../img/door-01.png" alt="alt">
+                                            <div class="decoration-line"></div>
+                                        </div>
+                                        <div class="doors-cards-item-info flex">
+                                            <div class="doors-cards-item-info-title">Коллекция ФОКСТРОТ</div>
+                                            <div class="doors-cards-item-info-cost">
+                                                <div class="cost-value">56 000 Р</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="doors-cards-item">
+                                        <div class="doors-cards-item-img">
+                                            <img src="../img/door-02.png" alt="alt">
+                                            <div class="decoration-line"></div>
+                                        </div>
+                                        <div class="doors-cards-item-info flex">
+                                            <div class="doors-cards-item-info-title">Коллекция ФЛАМЕНКО</div>
+                                            <div class="doors-cards-item-info-cost">
+                                                <div class="cost-value">60 000 Р</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </section>
+            @@include("../blocks/modules/why-choose-us/why-choose-us.html")
+            @@include("../blocks/modules/for-customers/for-customers.html")
+            @@include("../blocks/modules/footer/footer.html")
+        </main>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>

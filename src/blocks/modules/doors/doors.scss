@@ -1,13 +1,15 @@
 .sub-page.doors {
     @include sm(background-size, cover);
-    padding: 0 0 108px 0;
+    padding: 0 0 165px 0;
     .first-screen-text {
         .text {
+            margin: 70px 0 0 auto;
             h1 {
                 @include sm(font-size, 30px);
             }
             .info {
                 @include sm(display, none);
+                max-width: calc(1312px - 26%);
             }
         }
     }

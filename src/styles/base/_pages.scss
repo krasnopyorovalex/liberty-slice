@@ -2,7 +2,7 @@
     position: relative;
     &.not-opacity {
         header {
-            @include sm(background-color, $bgMainWithAlpha);
+            //@include sm(background-color, $bgMainWithAlpha);
             background-color: $mainBg;
         }
         .is-sticky {
@@ -35,13 +35,11 @@
         line-height: 26px;
     }
     .btn {
+        @include sm(font-size, 16px);
         display: inline-block;
         border: 3px solid #bdac9a;
         font-family: "Bukvarnaya Bold", serif;
         font-size: 19px;
-    }
-    header {
-        background-color: #5a6e79;
     }
     .row {
         align-items: flex-start;
@@ -62,9 +60,6 @@
     //}
     &.about {
         padding: 0;
-        header {
-            background-color: $mainBg;
-        }
     }
     &.portfolio-card, &.interior-card {
         padding: 0;
@@ -137,6 +132,9 @@
             min-height: 210px;
             color: #e9dfd1;
             line-height: 22px;
+            p {
+                margin: 0;
+            }
         }
     }
 }

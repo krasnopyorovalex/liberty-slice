@@ -62,11 +62,11 @@
                 font-size: 72px;
                 font-weight: 400;
                 display: block;
+                text-transform: uppercase;
                 &:first-child {
                     @include sm(display, none);
                     font-size: 18px;
                     font-weight: 400;
-                    text-transform: uppercase;
                 }
             }
             &:first-child {
@@ -77,16 +77,7 @@
                 }
             }
             &.active {
-                &:after {
-                    @include sm(display, none);
-                    content: "";
-                    position: absolute;
-                    right: 0;
-                    bottom: 8px;
-                    left: 0;
-                    height: 5px;
-                    background-color: #ffffff;
-                }
+                color: #a9b2b6;
             }
             &:hover {
                 cursor: pointer;
@@ -199,17 +190,17 @@
         }
     }
     &.rybrika-slider {
-        @include sm(margin-top, -146px);
+        @include sm(margin-top, -100px);
         &.with-arrows {
             .main-slider-item-desc {
-                @include sm(top, 346px);
+                @include sm(top, 320px);
                 right: 43px;
                 > p {
                     @include sm(padding, 23px 18px 26px 30px);
                 }
             }
             .title {
-                @include sm(top, 220px);
+                @include sm(top, 200px);
             }
         }
         img {
@@ -229,6 +220,9 @@
             .btn {
                 border-radius: 25px;
             }
+        }
+        .owl-dots {
+            @include sm(bottom, 30px);
         }
         .owl-nav {
             button.owl-prev, button.owl-next {

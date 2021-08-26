@@ -3,19 +3,18 @@ header {
     @include sm(background-color, rgba(90, 110, 121, .8));
     @include sm(border, none);
     box-sizing: border-box;
-    z-index: 100;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
     width: 100%;
     padding: 30px 112px 20px;
+    transition: top 0.3s, padding 0.3s;
     background-color: $bgMainWithAlpha;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     text-transform: uppercase;
-    a {
-        color: #ffffff;
-        text-decoration: none;
-    }
     .col-logo {
         @include sm(margin, 0);
         @include sm(max-width, 100%);
@@ -32,6 +31,7 @@ header {
             max-width: 148px;
             height: 49px;
             margin: 19px 0 0 0;
+            transition: margin 0.3s;
         }
         span {
             @include sm(margin, 0 0 0 auto);
@@ -47,6 +47,8 @@ header {
         .socials-line {
             @include sm(flex-wrap, nowrap);
             @include sm(width, 100%);
+            max-height: 100px;
+            transition: max-height 0.3s linear;
             .icon-insta {
                 margin: 0 41px 0 18px;
             }
@@ -148,21 +150,24 @@ header {
             > *:not(a) {
                 @include sm(display, none);
             }
-            ul {
+            >ul {
                 flex-grow: 1;
                 justify-content: space-between;
                 margin: 0;
                 padding: 1rem 0 0 0;
+                transition: padding 0.3s;
                 &.active {
                     display: block;
                     position: fixed;
-                    top: 142px;
+                    top: 96px;
                     right: 0;
+                    bottom: 0;
                     left: 0;
                     width: 100%;
                     background-color: $mainBg;
                     border-bottom-right-radius: 30px;
-                    li {
+                    overflow-y: auto;
+                    >li {
                         display: block;
                         z-index: 9999;
                         margin: 0 34px;
@@ -170,56 +175,109 @@ header {
                         border-top: 1px solid rgba(255, 255, 255, .2);
                     }
                 }
-                li {
+                >li {
                     display: inline-block;
+                    position: relative;
+                    &:hover {
+                        .submenu {
+                            display: block;
+                        }
+                    }
                     a {
                         font-family: "Bukvarnaya Bold", serif;
                         color: #fefefe;
                         font-size: 20px;
                         font-weight: 400;
                         &:hover {
-                            text-decoration: underline;
+                            color: #a9b2b6;
+                        }
+                    }
+                    .submenu {
+                        @include sm(display, block);
+                        @include sm(position, relative);
+                        @include sm(top, unset);
+                        @include sm(left, unset);
+                        @include sm(padding-top, 0);
+                        display: none;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        padding-top: 30px;
+                        &-box {
+                            @include sm(padding, 1rem 0 0 0);
+                            @include sm(flex-wrap, wrap);
+                            @include sm(border-top, none);
+                            flex-wrap: nowrap;
+                            align-items: flex-start;
+                            padding: 1rem 2rem 0;
+                            border-top: 1px solid rgba(255, 255, 255, 0.3);
+                            background-color: $bgMainWithAlpha;
+                            ul {
+                                @include sm(margin-bottom, 0);
+                                & + ul {
+                                    @include sm(margin, 0 0 0 auto);
+                                    margin: 0 0 0 5rem;
+                                }
+                                li {
+                                    @include sm(margin, 0);
+                                    display: block;
+                                    padding: 0 0 .5rem 0;
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                                    & + li {
+                                        margin: .5rem 0 0 0;
+                                    }
+                                    a {
+                                        font-size: 16px;
+                                    }
+                                    &:last-child {
+                                        padding: 0;
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-.is-sticky {
-    header {
-        background-color: $mainBg;
+    a {
+        color: #ffffff;
+        text-decoration: none;
     }
-}
-.with-absolute-header {
-    header {
-        @include sm(border-radius, 0 0 30px 30px);
-        @include sm(position, relative);
-        @include sm(top, unset);
-        @include sm(right, unset);
-        @include sm(left, unset);
-        position: absolute;
-        z-index: 100;
-        top: 0;
-        right: 0;
-        left: 0;
-        border-radius: 0;
-    }
-}
-header, .with-absolute-header header {
     &.active {
         background-color: $mainBg;
-        position: fixed;
-        top: 0;
     }
 }
-.not-overflow {
-    .with-absolute-header header {
-        border-radius: 0;
+header.is-sticky {
+    @include sm(top, 0);
+    @include sm(padding, 18px 45px 0 32px);
+    background-color: $bgHeaderSticky;
+    top: -55px;
+    .col-socials-menu .menu-line > ul > li .submenu {
+        @include sm(padding-top, 0);
+        padding-top: 34px;
+    }
+    .socials-line {
+        @include sm(max-height, 0);
+        overflow: hidden;
+    }
+    .col-socials-menu {
+        .menu-line {
+            ul {
+                padding: 7px 0 0 0;
+            }
+        }
+    }
+    .col-logo {
+        img {
+            @include sm(margin, 0);
+            margin: 28px 0 0 0;
+        }
     }
 }
 .first-screen-about {
-    @include sm(margin-top, -146px);
+    margin-top: -115px;
 }
 .burger-mob {
     display: none;

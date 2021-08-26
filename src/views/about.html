@@ -26,45 +26,47 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <section class="with-absolute-header sub-page about">
+        <main>
             @@include("../blocks/modules/header/header.html")
-            @@include("../blocks/modules/about/about-first-screen.html")
-        </section>
-        @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
-        @@include("../blocks/modules/about/about.html")
-        @@include("../blocks/modules/about/video-block.html")
-        @@include("../blocks/modules/about/about-company.html")
-        <div class="section-header">
-            <div class="section-sub-title uppercase">
-                Сотрудники компании
-                <div class="decoration-line wow slideInLeft"></div>
+            <section class="sub-page about">
+                @@include("../blocks/modules/about/about-first-screen.html")
+            </section>
+            @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+            @@include("../blocks/modules/about/about.html")
+            @@include("../blocks/modules/about/video-block.html")
+            @@include("../blocks/modules/about/about-company.html")
+            <div class="section-header">
+                <div class="section-sub-title uppercase">
+                    Сотрудники компании
+                    <div class="decoration-line wow slideInLeft"></div>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="page-about">
-                        @@include("../blocks/modules/authors/authors-slider-with-position.html")
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-about">
+                            @@include("../blocks/modules/authors/authors-slider-with-position.html")
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-header">
-            <div class="section-sub-title uppercase">
-                Авторы
-                <div class="decoration-line wow slideInLeft"></div>
+            <div class="section-header">
+                <div class="section-sub-title uppercase">
+                    Авторы
+                    <div class="decoration-line wow slideInLeft"></div>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="page-about">
-                        @@include("../blocks/modules/authors/authors-slider.html")
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-about">
+                            @@include("../blocks/modules/authors/authors-slider.html")
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        @@include("../blocks/modules/footer/footer.html")
+            @@include("../blocks/modules/footer/footer.html")
+        </main>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>

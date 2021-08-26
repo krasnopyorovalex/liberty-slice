@@ -26,8 +26,9 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
+    <main>
+        @@include("../blocks/modules/header/header.html")
         <section class="first-screen sub-page for-clients" style="background-image: url('../img/for-clients.jpg')">
-            @@include("../blocks/modules/header/header.html")
             <div class="first-screen-text">
                 <div class="text">
                     <h1>клиентам</h1>
@@ -110,6 +111,7 @@
         @@include("../blocks/modules/why-choose-us/why-choose-us.html")
         @@include("../blocks/modules/for-customers/for-customers.html")
         @@include("../blocks/modules/footer/footer.html")
+    </main>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>

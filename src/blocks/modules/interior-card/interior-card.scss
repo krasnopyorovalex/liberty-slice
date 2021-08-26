@@ -44,6 +44,16 @@
             }
         }
     }
+    .owl-carousel {
+        .owl-nav {
+            button.owl-prev, button.owl-next {
+                @include sm(background-image, url("../img/slider-nav-mob.png"));
+                @include sm(height, 23px);
+                @include sm(width, 10px);
+                @include sm(top, calc(50% - 11px));
+            }
+        }
+    }
 }
 .interior-card-slider-thumbs {
     margin: 15px 0;

@@ -17,11 +17,13 @@
 }
 .about-text {
     .section-sub-title {
+        @include sm(padding, 11px 0 11px 25px);
+        @include sm(width, calc(100% - 32px));
         padding: 11px 33px 11px 42%;
         text-transform: uppercase;
     }
     &-seo {
-        @include sm(margin, 25px 20px 20px 20px);
+        @include sm(margin, 50px 20px 58px 20px);
         max-width: 1233px;
         color: #444444;
         margin: 76px 0 61px 13.4%;
@@ -34,7 +36,7 @@
     }
 }
 .video {
-    padding: 2rem 0 0 0;
+    padding: 40px 0 0 0;
     background-color: #6a8692;
 }
 .about-company {
@@ -51,9 +53,16 @@
             background-color: $mainBg;
         }
         &-info {
+            @include sm(padding, 100px 31px 65px);
             background-repeat: no-repeat;
             &-title {
                 align-items: flex-start;
+            }
+            &-desc {
+                p {
+                    @include sm(font-size, 13px);
+                    @include sm(text-align, left);
+                }
             }
         }
         &:last-child {
@@ -66,26 +75,22 @@
     .authors-slider {
         @include sm(margin, 31px 0 80px);
         margin: 52px 0;
-        &-item {
-            @include sm(margin, 3.5rem);
-        }
         .owl-nav {
             button.owl-prev, button.owl-next {
                 @include sm(background-image, url("../img/slider-nav-authors-2-mob.png"));
                 @include sm(width, 12px);
                 @include sm(height, 27px);
-                @include sm(top, calc(50% - 50px));
                 top: calc(50% - 80px);
                 width: 23px;
                 height: 53px;
                 background-image: url("../img/slider-nav-authors-2.png");
             }
             button.owl-prev {
-                @include sm(left, 20px);
+                @include sm(left, 10px);
                 left: -40px;
             }
             button.owl-next {
-                @include sm(right, 20px);
+                @include sm(right, 10px);
                 right: -40px;
                 transform: rotate(180deg);
             }

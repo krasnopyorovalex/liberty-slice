@@ -15,4 +15,4 @@ import "%modules%/for-clients/for-clients";
 import "%modules%/portfolio-card/portfolio-card";
 import "%modules%/footer/footer";
 import 'owl.carousel';
-import './_sticky';
+// import './_sticky';

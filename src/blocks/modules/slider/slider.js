@@ -10,6 +10,7 @@ $(document).ready(function(){
             'items': 1,
             'nav': !sliderNav.length,
             'dots': !sliderNav.length,
+            'smartSpeed': 1200,
             'navText': ['','']
         });
 

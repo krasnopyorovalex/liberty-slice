@@ -6,6 +6,7 @@ $(document).ready(function(){
         salesLeadersSlider.owlCarousel({
             'items': 1,
             'nav': false,
+            'smartSpeed': 1200,
             'dots': true
         });
     }
@@ -15,6 +16,7 @@ $(document).ready(function(){
         salesLeadersSliderMobile.owlCarousel({
             'items': 1,
             'nav': true,
+            'smartSpeed': 1200,
             'dots': true
         });
     }

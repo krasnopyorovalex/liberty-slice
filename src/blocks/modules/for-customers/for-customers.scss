@@ -4,7 +4,7 @@
     background-color: $mainBg;
     .section-header {
         @include sm(margin, 0);
-        margin: 0 0 76px 400px;
+        margin: 0 0 76px 370px;
         .section-title {
             @include sm(margin, 0 0 40px 28px);
             color: #ffffff;
@@ -18,6 +18,14 @@
         @include sm(padding, 0 18px);
         max-width: 450px;
         color: #ffffff;
+        &.first-col {
+            @include sm(margin, 0);
+            margin: 0 0 0 65px;
+        }
+        &.last-col {
+            @include sm(margin, 0);
+            margin: 0 100px 0 auto;
+        }
         p {
             @include sm(font-size, 14px);
             text-align: left;

@@ -39,7 +39,9 @@ footer {
         height: 100%;
     }
     .footer-first-col {
+        @include sm(margin, 0);
         @include sm(display, flex);
+        margin: 0 0 0 2.2rem;
         > div {
             @include sm(width, 50%);
             &:first-child {
@@ -119,8 +121,10 @@ footer {
         }
     }
     .footer-menu {
+        @include sm(margin, 0);
         @include sm(display, none);
         list-style: none;
+        margin: 0 0 0 8rem;
         li {
             a {
                 font-size: 16px;
