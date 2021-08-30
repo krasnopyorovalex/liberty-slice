@@ -6,9 +6,11 @@
     }
     .first-screen-text {
         .text {
-            @include sm(margin, 50% 0 0 0);
+            @include sm(margin, -150px 0 0 0);
+            @include sm(padding-top, 50vh);
             align-items: center;
-            margin: 150px 0 0 auto;
+            margin: -145px 0 0 auto;
+            padding-top: 20%;
             .info {
                 @include sm(display, none);
                 max-width: calc(1020px - 22%);

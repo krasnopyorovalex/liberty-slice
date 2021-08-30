@@ -9,7 +9,7 @@
         list-style: none;
         li {
             @include sm(font-size, 12px);
-            @include sm(padding, 13px 8px 10px);
+            @include sm(padding, 13px 5px 10px);
             flex-grow: 1;
             padding: 21px 34px 19px;
             cursor: pointer;

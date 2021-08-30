@@ -15,12 +15,14 @@ $(document).ready(function(){
 
     //$("#sticky").sticky({zIndex: 1000});
 
-    const headerHeight = header.innerHeight();
-
-    $(window).scroll(function(){
-        return $(this).scrollTop() > headerHeight
-            ? header.addClass('is-sticky')
-            : header.removeClass('is-sticky');
+    $(window).scroll(function () {
+        const scrollTop = $(this).scrollTop();
+        if (scrollTop > 250) {
+            return header.addClass('is-sticky');
+        }
+        if (scrollTop < 180) {
+            return header.removeClass('is-sticky');
+        }
     });
 
     iconFavorite.on({

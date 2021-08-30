@@ -1,9 +1,12 @@
 .sub-page.doors {
     @include sm(background-size, cover);
     padding: 0 0 165px 0;
+    background-position: center top;
     .first-screen-text {
         .text {
-            margin: 70px 0 0 auto;
+            @include sm(padding-top, 60%);
+            margin: -145px 0 0 auto;
+            padding-top: 15%;
             h1 {
                 @include sm(font-size, 30px);
             }

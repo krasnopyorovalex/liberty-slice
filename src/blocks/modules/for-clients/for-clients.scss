@@ -3,7 +3,8 @@
     .first-screen-text {
         .text {
             @include sm(margin, 0);
-            margin: 242px 0 50px auto;
+            margin: -145px 0 50px auto;
+            padding-top: 20%;
             h1 {
                 @include sm(font-size, 30px);
                 @include sm(padding, 0 0 0 31px);
@@ -18,6 +19,7 @@
         }
     }
     &.sub-page {
+        @include sm(margin, -145px 0 0 0);
         background-position: center top;
     }
 }

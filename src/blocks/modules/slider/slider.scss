@@ -208,12 +208,12 @@
             height: auto;
         }
         .title {
-            top: 20%;
+            top: 37%;
             left: 22%;
             width: 100%;
         }
         .main-slider-item-desc {
-            top: 33%;
+            top: 47%;
             right: 43px;
         }
         .btn-box {
@@ -226,7 +226,7 @@
         }
         .owl-nav {
             button.owl-prev, button.owl-next {
-                top: calc(40% + 10px);
+                top: calc(50% + 10px);
             }
             button.owl-prev {
                 @include sm(left, 27px);

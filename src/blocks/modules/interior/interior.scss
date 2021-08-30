@@ -6,7 +6,7 @@
     }
 }
 .interior {
-    @include sm(height, 100vh);
+    //@include sm(height, 100vh);
     .text {
         @include sm(margin, 0);
         @include sm(width, auto);
@@ -31,6 +31,8 @@
     }
 }
 .sub-page.interior {
+    @include sm(margin, -150px 0 0 0);
+    @include sm(padding-top, 32%);
     padding: 0;
     background-position: center top;
 }

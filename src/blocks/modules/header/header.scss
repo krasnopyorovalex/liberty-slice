@@ -1,5 +1,5 @@
 header {
-    @include sm(padding, 18px 45px 18px 32px);
+    @include sm(padding, 18px 32px 18px 32px);
     @include sm(background-color, rgba(90, 110, 121, .8));
     @include sm(border, none);
     box-sizing: border-box;
@@ -251,7 +251,7 @@ header {
 }
 header.is-sticky {
     @include sm(top, 0);
-    @include sm(padding, 18px 45px 0 32px);
+    @include sm(padding, 18px 32px 0 32px);
     background-color: $bgHeaderSticky;
     top: -55px;
     .col-socials-menu .menu-line > ul > li .submenu {
@@ -259,7 +259,7 @@ header.is-sticky {
         padding-top: 34px;
     }
     .socials-line {
-        @include sm(max-height, 0);
+        @include sm(display, none);
         overflow: hidden;
     }
     .col-socials-menu {
@@ -277,7 +277,8 @@ header.is-sticky {
     }
 }
 .first-screen-about {
-    margin-top: -115px;
+    @include sm(margin-top, -150px);
+    margin-top: -145px;
 }
 .burger-mob {
     display: none;
