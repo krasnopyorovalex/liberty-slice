@@ -25,9 +25,9 @@
     @include sm(background-size, cover);
     position: relative;
     z-index: 110;
-    padding: 0 0 119px 0;
+    //padding: 0 0 119px 0;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    //background-position: center bottom;
     &.p-0 {
         padding: 0;
     }
