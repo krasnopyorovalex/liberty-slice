@@ -250,10 +250,13 @@ header {
     }
 }
 header.is-sticky {
-    @include sm(top, 0);
+    @include sm(top, -45px);
     @include sm(padding, 18px 32px 0 32px);
     background-color: $bgHeaderSticky;
     top: -55px;
+    .col-logo {
+
+    }
     .col-socials-menu .menu-line > ul > li .submenu {
         @include sm(padding-top, 0);
         padding-top: 34px;

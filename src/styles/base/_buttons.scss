@@ -49,3 +49,10 @@
     background-color: #ffffff;
     border: 3px solid #b5a99d;
 }
+.btn-guestbook {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

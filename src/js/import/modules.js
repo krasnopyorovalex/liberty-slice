@@ -15,4 +15,5 @@ import "%modules%/for-clients/for-clients";
 import "%modules%/portfolio-card/portfolio-card";
 import "%modules%/footer/footer";
 import 'owl.carousel';
+import './_jquery.autocompleter.min';
 // import './_sticky';

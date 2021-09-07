@@ -268,7 +268,8 @@ form {
     margin: 0 0 1rem 0;
     border: 1px solid #c6c3bc;
     border-radius: 6px;
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 4rem;
+    line-height: 20px;
     .icon-mood-happy, .icon-mood-sad {
         --primary: #fff;
         position: absolute;
@@ -280,6 +281,13 @@ form {
         bottom: 0;
         left: 0;
         fill: #2f3130;
+    }
+    ol {
+        margin: 0;
+        padding: 0;
+        li {
+            font-size: 13px;
+        }
     }
 }
 
@@ -308,6 +316,26 @@ form {
 
 button[type=submit].is-sent:hover {
     color: transparent;
+}
+
+.form-search {
+    margin: 0;
+    .form-group {
+        flex-wrap: nowrap;
+        input {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+        button {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border-top: 1px solid #bdac9a;
+            border-right: 1px solid #bdac9a;
+            border-bottom: 1px solid #bdac9a;
+            border-left: 0;
+            padding: 20px 30px 16px;
+        }
+    }
 }
 
 @-webkit-keyframes load8 {

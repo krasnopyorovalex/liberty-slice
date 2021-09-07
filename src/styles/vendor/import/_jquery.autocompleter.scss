@@ -1,0 +1,27 @@
+.autocompleter-result {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    max-height: 300px;
+    border-bottom: 1px solid #c6c3bc;
+    border-left: 1px solid #c6c3bc;
+    border-right: 1px solid #c6c3bc;
+    background: #fff;
+    overflow-y: auto;
+    border-top-left-radius: 6px;
+}
+
+.autocompleter-item {
+    z-index: 99999;
+    padding: .5rem 1rem;
+    color: #000;
+    cursor: pointer;
+    & + .autocompleter-item {
+        border-top: 1px solid #c6c3bc;
+    }
+}
+
+.autocompleter-item.selected {
+    opacity: 1;
+    background: #e9dfd1;
+}

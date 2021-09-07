@@ -173,3 +173,12 @@
         line-height: normal;
     }
 }
+.search-content-box {
+    min-height: 50vh;
+    &.height-reset {
+        min-height: auto;
+    }
+    .doors-cards {
+        margin: 0 8rem;
+    }
+}
