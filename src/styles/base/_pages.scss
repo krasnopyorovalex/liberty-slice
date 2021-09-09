@@ -182,3 +182,13 @@
         margin: 0 8rem;
     }
 }
+.favorite-list {
+    margin: 0 0 2rem 0;
+    .doors-cards-item {
+        width: 100%;
+        margin: 0;
+        &:nth-child(2n) {
+            margin: 0;
+        }
+    }
+}

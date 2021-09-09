@@ -24,17 +24,6 @@
             cursor: pointer;
         }
     }
-    .icon-favorite {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        width: 24px;
-        height: 22px;
-        fill: $mainBg;
-        &:hover {
-            cursor: pointer;
-        }
-    }
     &-item {
         >a {
             display: block;
@@ -56,6 +45,20 @@
         }
     }
 }
+.favorite-action {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    .icon-favorite, .icon-favorite-active {
+        width: 24px;
+        height: 22px;
+        fill: $mainBg;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
 .door-card-info {
     @include sm(margin, 20px 0 0 0);
     margin: 44px 3rem 0 0;
@@ -71,6 +74,7 @@
     @include sm(margin, 0);
     max-width: 639px;
     margin: 0 0 0 6rem;
+    position: relative;
     .door-card-price-box {
         @include sm(flex-wrap, nowrap);
         @include sm(padding, 20px 27px 20px 27px);
@@ -287,7 +291,7 @@
     @include sm(padding, 29px 30px);
     @include sm(font-size, 15px);
     margin: 38px 0 0 0;
-    padding: 39px 119px 39px 96px;
+    padding: 35px 119px 35px 96px;
     color: #3c3c3c;
     background-color: rgba(227, 227, 219, 0.5);
     font-size: 17px;

@@ -169,3 +169,11 @@
         @include sm(padding, 0);
     }
 }
+.interior-card-slider {
+    .favorite-action {
+        position: relative;
+        top: unset;
+        right: unset;
+        display: inline-block;
+    }
+}

@@ -75,6 +75,7 @@ header {
                 @include sm(display, none);
                 margin: 0 51px 0 0;
                 > a {
+                    display: inline-block;
                     margin: 0 21px 0 0;
                 }
             }

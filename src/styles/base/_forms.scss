@@ -359,3 +359,17 @@ button[type=submit].is-sent:hover {
         transform: rotate(360deg);
     }
 }
+
+.info-msg {
+    position: fixed;
+    z-index: 9000;
+    top: 17%;
+    right: 0;
+    background-color: $bgMainWithAlpha;
+    color: #ffffff;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    .icon-mood-happy, .icon-mood-sad {
+        fill: #5a6e79;
+    }
+}
