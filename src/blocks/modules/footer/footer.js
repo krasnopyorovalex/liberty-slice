@@ -2,7 +2,9 @@ import $ from "jquery";
 
 $(document).ready(function () {
     const ourSalons = $('.our-salons');
-    if (ourSalons.length) {
+    const screenWidth = $(window).width();
+
+    if (ourSalons.length && screenWidth <= 576) {
         ourSalons.on('click', '.our-salons-title', function () {
             return $(this).next('ul').toggle();
         });

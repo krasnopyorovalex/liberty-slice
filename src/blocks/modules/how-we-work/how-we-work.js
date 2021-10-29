@@ -10,7 +10,8 @@ $(document).ready(function(){
             'margin': 0,
             'nav': false,
             'smartSpeed': 1200,
-            'dots': true
+            'dots': true,
+            'loop': true
         });
     }
 });

@@ -7,7 +7,8 @@ $(document).ready(function(){
             'items': 1,
             'nav': false,
             'smartSpeed': 1200,
-            'dots': true
+            'dots': true,
+            'loop': true
         });
     }
 
@@ -17,7 +18,8 @@ $(document).ready(function(){
             'items': 1,
             'nav': true,
             'smartSpeed': 1200,
-            'dots': true
+            'dots': true,
+            'loop': true
         });
     }
 });

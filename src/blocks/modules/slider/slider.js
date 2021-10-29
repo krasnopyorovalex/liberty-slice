@@ -11,7 +11,14 @@ $(document).ready(function(){
             'nav': !sliderNav.length,
             'dots': !sliderNav.length,
             'smartSpeed': 1200,
-            'navText': ['','']
+            'navText': ['',''],
+            'loop': true,
+            onDragged: function (event) {
+                if (sliderNav) {
+                    let idx = event.item.index === 5 ? 0 : event.item.index - 2;
+                    sliderNav.find('.main-slider-nav-control:eq('+ idx +')').addClass('active').siblings('div').removeClass('active');
+                }
+            }
         });
 
         if (sliderNav.length) {

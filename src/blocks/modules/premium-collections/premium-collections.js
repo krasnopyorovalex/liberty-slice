@@ -8,7 +8,8 @@ $(document).ready(function(){
             'nav': true,
             'dots': true,
             'smartSpeed': 1200,
-            'navText': ['','']
+            'navText': ['',''],
+            'loop': true
         });
     }
 });

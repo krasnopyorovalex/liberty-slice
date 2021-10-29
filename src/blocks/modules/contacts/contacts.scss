@@ -1,6 +1,5 @@
 .contacts {
     &.sub-page {
-        @include sm(background-position, left -385px top -40px);
         background-position: center top;
         padding: 0 0 250px 0;
     }
@@ -8,8 +7,8 @@
         .text {
             @include sm(margin, -150px 0 0 0);
             @include sm(padding-top, 50vh);
-            align-items: center;
-            margin: -145px 0 0 auto;
+            //align-items: center;
+            margin: -150px 0 0 auto;
             padding-top: 20%;
             .info {
                 @include sm(display, none);

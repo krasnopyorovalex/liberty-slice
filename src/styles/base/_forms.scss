@@ -268,8 +268,10 @@ form {
     margin: 0 0 1rem 0;
     border: 1px solid #c6c3bc;
     border-radius: 6px;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 2rem;
     line-height: 20px;
+    width: 100%;
+    box-sizing: border-box;
     .icon-mood-happy, .icon-mood-sad {
         --primary: #fff;
         position: absolute;
@@ -334,6 +336,32 @@ button[type=submit].is-sent:hover {
             border-bottom: 1px solid #bdac9a;
             border-left: 0;
             padding: 20px 30px 16px;
+        }
+    }
+    &-params {
+        border: 1px solid #c6c3bc;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 5px;
+        &-title {
+            font-weight: 700;
+            text-decoration: underline;
+            font-size: 18px;
+            margin: 0 0 2rem 0;
+        }
+        &-name {
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+        label + &-name {
+            border-top: 1px dashed #c6c3bc;
+            margin: 1rem 0 .5rem 0;
+            padding: 1rem 0 0 0;
+        }
+        label {
+            & + label {
+                margin: 0 0 0 .5rem;
+            }
         }
     }
 }

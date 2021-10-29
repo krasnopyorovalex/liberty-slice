@@ -42,12 +42,12 @@
     .container-full {
         @include sm(padding, 0);
     }
-    .row {
-        @include sm(margin, 0);
-        .col-4, .col-8 {
-            @include sm(margin, 0);
-        }
-    }
+    //.row {
+    //    @include sm(margin, 0);
+    //    .col-4, .col-8 {
+    //        @include sm(margin, 0);
+    //    }
+    //}
     &-items {
         @include sm(flex-wrap, wrap);
         flex-wrap: nowrap;
@@ -99,16 +99,19 @@
 }
 .types-list {
     @include sm(display, flex);
+    @include sm(justify-content, space-between);
+    @include sm(flex-wrap, wrap);
     @include sm(width, 100%);
     list-style: none;
     &-item {
         @include sm(text-align, center);
         @include sm(display, inline-block);
-        @include sm(width, 100%);
+        @include sm(margin, 2px);
+        //@include sm(width, 100%);
         text-align: right;
-        & + & {
-            @include sm(margin, 0 0 0 4px);
-        }
+        //& + & {
+        //    @include sm(margin, 0 2px);
+        //}
         &.active {
             a {
                 @include sm(background-color, $mainBg);

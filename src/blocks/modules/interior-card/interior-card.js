@@ -10,7 +10,8 @@ $(document).ready(function(){
             'nav': true,
             'dots': false,
             'smartSpeed': 1200,
-            'navText': ['','']
+            'navText': ['',''],
+            'loop': true
         });
 
         owlCardSlider.on('changed.owl.carousel', function(event) {

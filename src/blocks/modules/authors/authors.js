@@ -11,7 +11,8 @@ $(document).ready(function(){
             'dots': screenWidth <= 576,
             'navText': ['',''],
             'margin': 25,
-            'smartSpeed': 1200
+            'smartSpeed': 1200,
+            'loop': true
         });
     }
 });

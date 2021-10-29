@@ -5,7 +5,9 @@ import WOW from "wow.js/dist/wow.min";
 new WOW().init();
 
 lightbox.option({
-    'albumLabel': 'Изображение %1 из %2'
+    'albumLabel': 'Изображение %1 из %2',
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true
 });
 
 $.ajaxSetup({

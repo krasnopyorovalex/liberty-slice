@@ -14,8 +14,6 @@ $(document).ready(function(){
         });
     }
 
-    //$("#sticky").sticky({zIndex: 1000});
-
     $(window).scroll(function () {
         const scrollTop = $(this).scrollTop();
         if (scrollTop > 250) {
