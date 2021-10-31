@@ -81,6 +81,9 @@
 }
 .step-item {
     @include sm(background-position, center);
+    @include sm(background-size, auto);
+    background-repeat: no-repeat;
+    //background-size: 100% 715px;
     position: relative;
     &-info {
         @include sm(width, 100%);
@@ -96,7 +99,7 @@
             padding: 20px 20px 20px 40px;
             color: #e9dfd1;
             font-family: "Bukvarnaya Bold", serif;
-            font-size: 40px;
+            font-size: 32px;
             text-transform: uppercase;
             span {
                 &:first-child {
@@ -132,7 +135,7 @@
             @include sm(display, none);
         }
         &-desc {
-            max-width: 455px;
+            max-width: 620px;
             min-height: 210px;
             color: #e9dfd1;
             line-height: 22px;

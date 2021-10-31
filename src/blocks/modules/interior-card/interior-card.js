@@ -11,7 +11,7 @@ $(document).ready(function(){
             'dots': false,
             'smartSpeed': 1200,
             'navText': ['',''],
-            'loop': true
+            'rewind': true
         });
 
         owlCardSlider.on('changed.owl.carousel', function(event) {
@@ -19,6 +19,8 @@ $(document).ready(function(){
             let items;
             items = thumbs.find(".owl-item");
             items.removeClass("current");
+
+            thumbs.trigger('to.owl.carousel', idx);
 
             return owlCardSlider.closest('.interior-card-slider').find('.digits span').text(idx + 1) && items.eq(idx).addClass("current");
         });
@@ -29,10 +31,11 @@ $(document).ready(function(){
 
         const thumbs = $('.interior-card-slider-thumbs');
         thumbs.owlCarousel({
-            items: 7,
-            margin: 12,
-            nav:false,
-            dots:false,
+            'items': 7,
+            'margin': 12,
+            'nav': false,
+            'dots': false,
+            'rewind': true,
             responsive : {
                 0 : {
                     items: 3
@@ -45,12 +48,14 @@ $(document).ready(function(){
                 }
             }
         });
+
         thumbs.on('click', '.owl-item', function() {
             const _this = $(this),
                 index = _this.find('img').attr('data-index');
 
             return _this.closest('.owl-item').addClass('current').siblings().removeClass('current') && owlCardSlider.trigger('to.owl.carousel', index);
         });
+
         thumbs.find(".owl-item").eq(0).addClass("current");
     }
 });

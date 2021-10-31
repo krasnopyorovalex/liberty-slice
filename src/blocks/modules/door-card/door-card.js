@@ -9,7 +9,8 @@ $(document).ready(function () {
             'dots': false,
             'navText': ['', ''],
             'smartSpeed': 1200,
-            'loop': true
+            'rewind': true,
+            'loop': false
         });
     }
 

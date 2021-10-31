@@ -2,6 +2,7 @@
     @include sm(background-size, cover);
     padding: 0 0 165px 0;
     background-position: center top;
+    background-size: cover;
     .first-screen-text {
         .text {
             @include sm(padding-top, 60%);
