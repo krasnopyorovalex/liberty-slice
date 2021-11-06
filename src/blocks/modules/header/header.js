@@ -59,7 +59,9 @@ $(document).ready(function(){
 
                 _this.closest('.favorite-action').attr('data-action', action);
 
-                return setTimeout(() => $('.success-message').remove(), 5000);
+                return window.location.pathname === '/favorite'
+                    ? setTimeout(() => window.location.reload(), 3500)
+                    : setTimeout(() => $('.success-message').remove(), 5000);
             }
         });
     });

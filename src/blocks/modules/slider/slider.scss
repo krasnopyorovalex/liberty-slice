@@ -77,7 +77,11 @@
                 }
             }
             &.active {
-                color: #a9b2b6;
+                span {
+                    &:last-child {
+                        text-decoration: underline;
+                    }
+                }
             }
             &:hover {
                 cursor: pointer;

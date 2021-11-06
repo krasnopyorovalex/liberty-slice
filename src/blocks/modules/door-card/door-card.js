@@ -25,6 +25,11 @@ $(document).ready(function () {
         tabsCustom.on('click', 'li', function (){
             const _this = $(this);
             const tabIdx = _this.attr('data-page');
+
+            if (! tabIdx) {
+                return true;
+            }
+
             _this.addClass('active').siblings('li').removeClass('active');
 
             return doorCardTabsCustom.find(`.door-card-tabs-custom-item:eq(${tabIdx})`).fadeIn().siblings().hide();

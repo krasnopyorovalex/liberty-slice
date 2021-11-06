@@ -70,14 +70,12 @@ figure {
     @include size-lg(11);
     @include size-md(11);
     @include size-sm(12);
-    @include size-sm(12);
 }
 .col-10 {
     @include col();
     @include size(10);
     @include size-lg(10);
     @include size-md(10);
-    @include size-sm(12);
     @include size-sm(12);
 }
 .col-9 {

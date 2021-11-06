@@ -56,7 +56,9 @@
             @include sm(padding, 100px 31px 65px);
             background-repeat: no-repeat;
             &-title {
+                @include sm(min-height, 64px);
                 align-items: flex-start;
+                min-height: 95px;
             }
             &-desc {
                 p {
@@ -97,6 +99,26 @@
         }
         .owl-dots {
             @include sm(bottom, -40px);
+        }
+    }
+}
+.about-company-slider {
+    &.with-arrows {
+        .owl-nav {
+            button.owl-next {
+                @include sm(right, 3%);
+                right: 5%;
+            }
+            button.owl-prev {
+                @include sm(left, 3%);
+                left: 5%;
+            }
+            button.owl-next, button.owl-prev {
+                @include sm(background-image, url("../img/slider-nav-authors-2-mob.png"));
+                @include sm(width, 12px);
+                @include sm(height, 27px);
+                top: calc(50% - 6px);
+            }
         }
     }
 }

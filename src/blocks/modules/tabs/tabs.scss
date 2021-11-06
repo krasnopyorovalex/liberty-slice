@@ -24,6 +24,24 @@
             &.active, &:hover {
                 color: #ffffff;
                 background-color: $mainBg;
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+.tabs-custom {
+    > ul {
+        > li {
+            &:hover {
+                a {
+                    color: #ffffff;
+                }
+            }
+            a {
+                transition: none;
+                color: #6e6c66;
             }
         }
     }

@@ -61,7 +61,7 @@ footer {
             img {
                 @include sm(margin, 25px 0 0 0);
                 @include sm(max-width, 121px);
-                width: auto;
+                width: 100%;
             }
         }
 
