@@ -1,5 +1,5 @@
 .how-we-work {
-    @include sm(padding, 46px 0 0 0);
+    @include md(padding, 46px 0 0 0);
     padding: 94px 0 0 0;
     .row.owl-carousel {
         margin: 0;
@@ -8,16 +8,16 @@
         }
     }
     &-item {
-        @include sm(margin, 81px 0 0 32px);
+        @include md(margin, 81px 0 0 32px);
         &-desc {
-            @include sm(margin, 0 0 0 3px);
-            @include sm(padding, 82px 0 40px 0);
+            @include md(margin, 0 0 0 3px);
+            @include md(padding, 82px 0 40px 0);
             position: relative;
             padding: 95px 0 0 0;
             color: #24262a;
             line-height: 24px;
             &:nth-child(3n+1) {
-                @include sm(margin, 0);
+                @include md(margin, 0);
                 margin-top: 62px;
             }
             &-title {
@@ -28,7 +28,7 @@
                 text-transform: uppercase;
             }
             &-number {
-                @include sm(left, 15%);
+                @include md(left, 15%);
                 position: absolute;
                 z-index: -1;
                 top: 33%;
@@ -40,15 +40,15 @@
                 line-height: 220px;
             }
             p {
-                @include sm(font-size, 14px);
-                @include sm(margin, 0 0 0 3px);
+                @include md(font-size, 14px);
+                @include md(margin, 0 0 0 3px);
                 font-size: 16px;
                 text-align: left;
             }
         }
     }
     .owl-dots {
-        @include sm(bottom, -20px);
+        @include md(bottom, -20px);
         position: absolute;
         right: 0;
         bottom: 0;
@@ -62,7 +62,7 @@
         }
     }
     .section-body {
-        @include sm(margin, 0 auto 50px);
+        @include md(margin, 0 auto 50px);
         max-width: 1100px;
         margin: 0 auto 124px;
         padding: 0 0 22px 0;
@@ -73,8 +73,8 @@
     .section-header {
         margin: 0;
         .section-title {
-            @include sm(margin, 0 0 32px 0);
-            @include sm(max-width, 200px);
+            @include md(margin, 0 0 32px 0);
+            @include md(max-width, 200px);
             max-width: 100%;
         }
     }

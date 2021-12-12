@@ -1,33 +1,43 @@
 footer {
-    @include sm(padding, 0 0 60px 0);
+    @include md(padding, 0 0 60px 0);
     background-color: #2f3130;
     padding: 34px 0 20px;
     color: #ffffff;
-
     .row {
         align-items: flex-start;
 
-        .col-2, .col-8 {
-            @include sm(width, 100%);
-            @include sm(margin, 0);
+        .col-2, .col-8, .col-3, .col-6 {
+            @include md(width, 100%);
+            @include md(margin, 0);
             height: 100%;
         }
     }
-
     .our-salons {
+        position: relative;
+        overflow: hidden;
+        &:after {
+            @include md(background, rgba(90, 110, 121, .3));
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            height: 80px;
+        }
         &-title {
-            @include sm(background, rgba(90, 110, 121, .3));
-            @include sm(font-size, 16px);
-            @include sm(padding, 32px 10px);
-            @include sm(margin, 0);
-            @include sm(text-align, center);
+            @include md(background, none);
+            @include md(font-size, 16px);
+            @include md(padding, 32px 0 32px 15px);
+            @include md(margin, 0);
+            @include md(text-align, center);
             font-size: 16px;
             margin: 31px 0 16px 0;
         }
 
         ul {
-            @include sm(margin, 20px 0 0 0);
-            @include sm(display, none);
+            @include md(margin, 20px 0 0 0);
+            @include md(display, none);
             list-style: none;
 
             li {
@@ -47,26 +57,27 @@ footer {
     }
 
     .footer-first-col {
-        @include sm(margin, 0);
-        @include sm(display, flex);
+        @include md(margin, 0);
+        @include md(display, flex);
         margin: 0 0 0 2.2rem;
 
         > div {
-            @include sm(width, 50%);
+            @include md(width, 50%);
 
             &:first-child {
-                @include sm(text-align, center);
+                @include md(text-align, center);
             }
 
             img {
-                @include sm(margin, 25px 0 0 0);
-                @include sm(max-width, 121px);
+                @include md(margin, 24px 0 0 0);
+                @include md(max-width, 110px);
                 width: 100%;
+                max-width: 135px;
             }
         }
 
         .copyright {
-            @include sm(display, none);
+            @include md(display, none);
             font-size: 13px;
             line-height: 21px;
             margin: auto 0 0 0;
@@ -74,20 +85,20 @@ footer {
     }
 
     .footer-middle-col {
-        @include sm(margin, 70px 0 0 0);
+        @include md(margin, 70px 0 0 0);
 
         > div:nth-child(3) {
-            @include sm(display, none);
+            @include md(display, none);
         }
 
         .developer {
-            @include sm(font-size, 14px);
+            @include md(font-size, 14px);
             font-size: 13px;
             margin: 35px 0 0 0;
 
             .copyright-mob {
-                @include sm(display, block);
-                @include sm(margin, 0 0 18px 0);
+                @include md(display, block);
+                @include md(margin, 0 0 18px 0);
                 display: none;
             }
 
@@ -111,8 +122,8 @@ footer {
     }
 
     .btn {
-        @include sm(font-size, 18px);
-        @include sm(border-radius, 25px);
+        @include md(font-size, 18px);
+        @include md(border-radius, 25px);
         display: inline-block;
         margin: 26px 0 37px;
         border: 3px solid #cac1b2;
@@ -129,7 +140,7 @@ footer {
     }
 
     .info {
-        @include sm(margin, 10px 0 47px);
+        @include md(margin, 10px 0 47px);
         font-size: 14px;
         line-height: 21px;
         margin: 26px 0 47px;
@@ -148,8 +159,8 @@ footer {
     }
 
     .footer-menu {
-        @include sm(margin, 0);
-        @include sm(display, none);
+        @include md(margin, 0);
+        @include md(display, none);
         list-style: none;
         margin: 0 0 0 8rem;
 

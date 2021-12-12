@@ -5,8 +5,8 @@ $(document).ready(function(){
     if (aboutSlider.length) {
         aboutSlider.owlCarousel({
             'items': 1,
-            'nav': true,
-            'dots': false,
+            'nav': false,
+            'dots': true,
             'smartSpeed': 1200,
             'navText': ['',''],
             'loop': true

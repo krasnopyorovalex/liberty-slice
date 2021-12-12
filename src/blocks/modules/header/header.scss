@@ -1,13 +1,13 @@
 header {
-    @include sm(padding, 18px 32px 18px 32px);
-    @include sm(background-color, rgba(90, 110, 121, .8));
-    @include sm(border, none);
+    @include md(padding, 18px 32px 18px 32px);
+    @include md(background-color, rgba(60, 85, 100, .8));
+    @include md(border, none);
     box-sizing: border-box;
     position: sticky;
     z-index: 1000;
     top: 0;
     width: 100%;
-    padding: 30px 112px 8px;
+    padding: 30px 112px 22px;
     transition: top 0.3s, padding 0.3s;
     background-color: $bgMainWithAlpha;
     border-bottom-left-radius: 30px;
@@ -16,62 +16,64 @@ header {
     color: #fff;
     text-transform: uppercase;
     .col-logo {
-        @include sm(margin, 0);
-        @include sm(max-width, 100%);
-        @include sm(width, 100%);
-        @include sm(flex-wrap, nowrap);
-        justify-content: center;
-        max-width: 260px;
-        margin: 0 20px 0 0;
+        @include md(margin, 0);
+        @include md(max-width, 100%);
+        @include md(width, 100%);
+        @include md(flex-wrap, nowrap);
+        justify-content: flex-end;
+        align-self: flex-start;
+        max-width: 252px;
+        margin: 0 28px 0 0;
         img {
-            @include sm(margin, 0);
-            @include sm(max-width, 100%);
-            @include sm(width, 78px);
-            max-width: 148px;
+            @include md(margin, 0);
+            @include md(max-width, 100%);
+            @include md(width, 78px);
+            max-width: 114px;
             //height: 49px;
-            margin: 10px 0 0 0;
+            margin: 0 0 9px 0;
             transition: margin 0.3s;
         }
         span {
-            @include sm(margin, 0 0 0 auto);
-            @include sm(font-size, 12px);
-            @include sm(order, 1);
-            font-size: 16px;
+            @include md(margin, 0 0 0 auto);
+            @include md(font-size, 12px);
+            @include md(order, 1);
+            font-size: 14px;
+            margin: 2px 0 0 0;
         }
     }
     .col-socials-menu {
-        @include sm(display, flex);
-        @include sm(flex-wrap, wrap);
+        @include md(display, flex);
+        @include md(flex-wrap, wrap);
         flex-grow: 1;
         .socials-line {
-            @include sm(flex-wrap, nowrap);
-            @include sm(width, 100%);
+            @include md(flex-wrap, nowrap);
+            @include md(width, 100%);
             max-height: 100px;
             transition: max-height 0.3s linear;
             .icon-insta {
-                margin: 0 41px 0 18px;
+                margin: 0 41px 0 58px;
             }
             .icon-fb {
                 margin: 0 44px 0 0;
             }
             .icon-telegram {
-                @include sm(width, 18px);
-                @include sm(height, 16px);
+                @include md(width, 18px);
+                @include md(height, 16px);
             }
             .icon-viber {
-                @include sm(margin, 0 9px 0 0);
-                @include sm(width, 20px);
-                @include sm(height, 21px);
+                @include md(margin, 0 9px 0 0);
+                @include md(width, 20px);
+                @include md(height, 21px);
                 margin: 0 40px 0 0;
             }
             .icon-whatsapp {
-                @include sm(margin, 0 9px 0 0);
-                @include sm(width, 20px);
-                @include sm(height, 19px);
+                @include md(margin, 0 9px 0 0);
+                @include md(width, 20px);
+                @include md(height, 19px);
                 margin: 0 34px 0 0;
             }
             .favorite-box {
-                @include sm(display, none);
+                @include md(display, none);
                 margin: 0 51px 0 0;
                 > a {
                     display: inline-block;
@@ -79,11 +81,15 @@ header {
                     &:hover {
                         text-decoration: underline;
                     }
+                    //span {
+                    //    display: inline-block;
+                    //    vertical-align: middle;
+                    //}
                 }
             }
             .favorite-box-mobile {
-                @include sm(display, flex);
-                @include sm(align-items, center);
+                @include md(display, flex);
+                @include md(align-items, center);
                 display: none;
                 margin: 0 0 0 auto;
                 a {
@@ -94,13 +100,13 @@ header {
                 }
             }
             .phone {
-                @include sm(font-size, 14px);
-                @include sm(margin, 0 auto 0 11px);
+                @include md(font-size, 14px);
+                @include md(margin, 0 auto 0 11px);
                 margin: 0 66px 0 39px;
             }
             .recall-me {
-                @include sm(display, none);
-                margin: 0 6.2rem 0 0;
+                @include md(display, none);
+                margin: 0 3.5rem 0 0;
                 &:hover {
                     text-decoration: underline;
                     cursor: pointer;
@@ -117,22 +123,22 @@ header {
             }
             > div {
                 &:nth-child(2) {
-                    @include sm(margin, 0);
+                    @include md(margin, 0);
                     margin: 0 0 0 auto;
                 }
                 &:first-child {
-                    @include sm(display, none);
+                    @include md(display, none);
                 }
                 &:nth-child(3) {
-                    @include sm(flex-grow, 1);
+                    @include md(flex-grow, 1);
                 }
             }
         }
         .menu-line {
-            @include sm(margin, 15px 0);
+            @include md(margin, 15px 0);
             order: -1;
             width: 100%;
-            margin: 20px 0 0 0;
+            margin: 20px 0 0 40px;
             .btn-cost-calculation {
                 margin: 0 0 0 62px;
                 border: 3px solid #ffffff;
@@ -144,14 +150,14 @@ header {
                 }
             }
             .burger-mob {
-                @include sm(display, block);
+                @include md(display, block);
             }
             .search-box {
-                @include sm(margin, 0 0 0 auto);
+                @include md(margin, 0 0 0 auto);
                 margin: 0 0 0 36px;
             }
             > *:not(a) {
-                @include sm(display, none);
+                @include md(display, none);
             }
             >ul {
                 flex-grow: 1;
@@ -162,12 +168,12 @@ header {
                 &.active {
                     display: block;
                     position: fixed;
-                    top: 96px;
+                    top: 142px;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     width: 100%;
-                    background-color: $mainBg;
+                    background-color: $bgMainWithAlpha;
                     border-bottom-right-radius: 30px;
                     overflow-y: auto;
                     >li {
@@ -209,38 +215,39 @@ header {
                             }
                         }
                         &.active {
-                            @include sm(font-size, 20px);
+                            @include md(font-size, 20px);
                             font-size: 22px;
                         }
                     }
                     .submenu {
-                        @include sm(display, block);
-                        @include sm(position, relative);
-                        @include sm(top, unset);
-                        @include sm(left, unset);
-                        @include sm(padding-top, 0);
+                        @include md(display, block);
+                        @include md(position, relative);
+                        @include md(top, unset);
+                        @include md(left, unset);
+                        @include md(padding-top, 0);
                         display: none;
                         position: absolute;
-                        top: 20px;
+                        top: 22px;
                         left: 0;
-                        padding-top: 30px;
+                        padding-top: 32px;
                         &-box {
-                            @include sm(padding, 1rem 0 0 0);
-                            @include sm(flex-wrap, wrap);
-                            @include sm(border-top, none);
+                            @include md(padding, 1rem 0 0 0);
+                            @include md(flex-wrap, wrap);
+                            @include md(border-top, none);
+                            @include md(background, none);
                             flex-wrap: nowrap;
                             align-items: flex-start;
                             padding: 1rem 2rem 0;
                             border-top: 1px solid rgba(255, 255, 255, 0.3);
                             background-color: $bgMainWithAlpha;
                             ul {
-                                @include sm(margin-bottom, 0);
+                                @include md(margin-bottom, 0);
                                 & + ul {
-                                    @include sm(margin, 0 0 0 auto);
+                                    @include md(margin, 0 0 0 auto);
                                     margin: 0 0 0 5rem;
                                 }
                                 li {
-                                    @include sm(margin, 0);
+                                    @include md(margin, 0);
                                     display: block;
                                     padding: 0 0 .5rem 0;
                                     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -273,24 +280,22 @@ header {
     }
 }
 header.is-sticky {
-    @include sm(top, -45px);
-    @include sm(padding, 18px 32px 0 32px);
-    background-color: $bgHeaderSticky;
+    @include md(top, -45px);
+    @include md(padding, 18px 32px 0 32px);
     top: -65px;
-    .col-logo {
-
-    }
     .col-socials-menu .menu-line > ul {
         > li .submenu {
-            @include sm(padding-top, 0);
-            padding-top: 34px;
+            @include md(padding-top, 0);
+            @include md(top, 0);
+            padding-top: 47px;
+            top: 21px;
         }
         &.active {
-            top: 50px;
+            top: 49px;
         }
     }
     .socials-line {
-        @include sm(display, none);
+        @include md(display, none);
         overflow: hidden;
     }
     .col-socials-menu {
@@ -302,8 +307,9 @@ header.is-sticky {
     }
     .col-logo {
         img {
-            @include sm(margin, 0);
-            margin: 28px 0 0 0;
+            @include md(margin, 0);
+            margin: 45px 0 0 0;
+            max-width: 100px;
         }
     }
 }
@@ -318,7 +324,7 @@ header.is-sticky {
     span {
         display: block;
         position: absolute;
-        top: calc(50% - 2px);
+        top: calc(50% - 1px);
         left: 0;
         width: 100%;
         height: 3px;

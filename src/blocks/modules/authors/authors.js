@@ -8,11 +8,12 @@ $(document).ready(function(){
         authors.owlCarousel({
             'items': screenWidth <= 576 ? 1 : 4,
             'nav': true,
-            'dots': screenWidth <= 576,
+            'dots': false,
             'navText': ['',''],
             'margin': 25,
             'smartSpeed': 1200,
-            'loop': true
+            'loop': true,
+            'lazyLoad': true
         });
     }
 });

@@ -7,7 +7,9 @@ new WOW().init();
 lightbox.option({
     'albumLabel': 'Изображение %1 из %2',
     'wrapAround': true,
-    'alwaysShowNavOnTouchDevices': true
+    'alwaysShowNavOnTouchDevices': true,
+    'disableScrolling': false,
+    'maxWidth': 1900
 });
 
 $.ajaxSetup({

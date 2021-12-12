@@ -4,7 +4,27 @@ $(document).ready(function(){
     const mainSlider = $('.main-slider');
     const screenWidth = $(window).width();
 
-    if (mainSlider.length && mainSlider.find('.main-slider-item').length > 1) {
+    if (mainSlider.length && mainSlider.hasClass('rybrika-slider')) {
+        const owl = mainSlider.find('.owl-carousel');
+        owl.owlCarousel({
+            'items': 1,
+            'nav': true,
+            'dots': false,
+            'smartSpeed': 1200,
+            'navText': ['', ''],
+            'loop': true
+        });
+    } else if(mainSlider.length && mainSlider.hasClass('door-card-slider')) {
+        const owl = mainSlider.find('.owl-carousel');
+        owl.owlCarousel({
+            'items': 1,
+            'nav': true,
+            'dots': true,
+            'smartSpeed': 1200,
+            'navText': ['', ''],
+            'loop': true
+        });
+    } else if (mainSlider.length && mainSlider.find('.main-slider-item').length > 1 && !mainSlider.hasClass('rybrika-slider')) {
         const owl = mainSlider.find('.owl-carousel');
         const sliderNav = mainSlider.find('.main-slider-nav');
 
@@ -13,12 +33,13 @@ $(document).ready(function(){
             'nav': !sliderNav.length,
             'dots': !sliderNav.length,
             'smartSpeed': 1200,
-            'navText': ['',''],
+            'navText': ['', ''],
             'loop': true,
+            'lazyLoad': true,
             onDragged: function (event) {
                 if (sliderNav && screenWidth > 576) {
                     let idx = event.item.index === 5 ? 0 : event.item.index - 2;
-                    sliderNav.find('.main-slider-nav-control:eq('+ idx +')').addClass('active').siblings('div').removeClass('active');
+                    sliderNav.find('.main-slider-nav-control:eq(' + idx + ')').addClass('active').siblings('div').removeClass('active');
                 }
             }
         });

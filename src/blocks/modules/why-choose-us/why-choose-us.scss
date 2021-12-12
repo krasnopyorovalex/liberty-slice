@@ -8,6 +8,9 @@
     .section-title {
         color: #ffffff;
         margin: 0;
+        span {
+            @include sm(display, block);
+        }
     }
     .section-sub-title {
         @include sm(margin, 0);

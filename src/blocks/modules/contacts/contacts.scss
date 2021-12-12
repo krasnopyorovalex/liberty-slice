@@ -54,7 +54,7 @@
         margin: 0 0 15px 0;
     }
     &-text {
-        @include sm(padding, 0 0 0 31px);
+        @include sm(padding, 0 31px);
         color: #1f1f1f;
         font-size: 18px;
         padding: 0 0 0 89px;

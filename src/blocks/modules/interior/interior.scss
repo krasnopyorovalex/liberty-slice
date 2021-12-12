@@ -155,6 +155,11 @@
         margin: 0 8rem;
         &-item {
             margin: 0 0 24px 0;
+            &.active {
+                &:after {
+                    opacity: 1;
+                }
+            }
             a {
                 width: 100%;
                 font-size: 20px;

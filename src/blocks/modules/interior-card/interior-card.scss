@@ -61,6 +61,7 @@
         position: relative;
         overflow: hidden;
         img {
+            @include sm(height, auto);
             height: 157px;
         }
     }
@@ -92,4 +93,13 @@
 }
 .interior-card-slider .owl-nav button.owl-next {
     right: 18%;
+}
+.lightbox {
+    .lb-dataContainer {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: -39px;
+    }
 }

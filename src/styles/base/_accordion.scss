@@ -46,9 +46,6 @@
                 transform: rotate(180deg);
             }
             & + .accordion-info {
-                @include sm(flex-wrap, wrap);
-                display: flex;
-                flex-wrap: nowrap;
                 position: relative;
                 top: unset;
                 opacity: 1;

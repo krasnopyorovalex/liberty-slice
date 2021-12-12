@@ -9,8 +9,14 @@ $(document).ready(function () {
             'dots': false,
             'navText': ['', ''],
             'smartSpeed': 1200,
-            'rewind': true,
-            'loop': false
+            // 'rewind': true,
+            'loop': true
+        });
+
+        const forLightbox = $('.for-lightbox');
+        doorCardGallery.on('click', '.for-lightbox-item', function () {
+            const original = $(this).attr('data-original');
+            return forLightbox.find(`a[href="${original}"]`).click();
         });
     }
 

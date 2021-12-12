@@ -66,20 +66,35 @@
                 &:first-child {
                     @include sm(display, none);
                     font-size: 18px;
-                    font-weight: 400;
+                    font-family: "Pragmatica", sans-serif;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 2px;
+                    height: 6px;
+                    background-color: #fff;
+                    opacity: 0;
+                    transition: all 200ms ease;
                 }
             }
             &:first-child {
                 span {
                     &:first-child {
                         margin: 0 0 0 20px;
+                        font-family: "Pragmatica", sans-serif;
                     }
                 }
             }
             &.active {
                 span {
                     &:last-child {
-                        text-decoration: underline;
+                        position: relative;
+                        &:after {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -167,12 +182,13 @@
                 @include sm(height, 23px);
                 @include sm(top, unset);
                 @include sm(bottom, 35px);
+                opacity: .9;
             }
         }
     }
     &.door-card-slider {
         .main-slider-item-desc {
-            top: 144px;
+            top: 214px;
             max-width: 750px;
             p {
                 margin: 0;
@@ -202,6 +218,7 @@
                 right: 43px;
                 > p {
                     @include sm(padding, 23px 18px 26px 30px);
+                    padding: 38px 56px 38px 32.5%;
                 }
             }
             .title {
@@ -257,6 +274,7 @@
             width: 23px;
             height: 53px;
             background-image: url("../img/main-slider-arrow.png");
+            opacity: .9;
         }
         button.owl-prev {
             left: 12%;

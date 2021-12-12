@@ -4,9 +4,10 @@ $(document).ready(function () {
     const ourSalons = $('.our-salons');
     const screenWidth = $(window).width();
 
-    if (ourSalons.length && screenWidth <= 576) {
-        ourSalons.on('click', '.our-salons-title', function () {
-            return $(this).next('ul').toggle();
+    if (ourSalons.length && screenWidth <= 768) {
+        ourSalons.on('click', function () {
+            console.log('ascasc')
+            return $(this).find('ul').toggle();
         });
     }
 });

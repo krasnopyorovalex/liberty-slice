@@ -44,13 +44,15 @@
             }
             .btn-box {
                 margin: 23px 0 0 0;
-                .btn {
+                a.btn {
+                    color: #000000;
                     display: inline-block;
                     border: 2px solid #c6c3bc;
                     font-size: 18px;
                     text-transform: none;
                     padding: 14px 30px;
                     font-family: "Pragmatica", sans-serif;
+                    text-decoration: none;
                     &:hover {
                         border-color: #bdac9a;
                         color: #000000;

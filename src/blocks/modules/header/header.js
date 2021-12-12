@@ -16,19 +16,27 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
         const scrollTop = $(this).scrollTop();
-        if (scrollTop > 250) {
+        if (scrollTop > 80) {
             return header.addClass('is-sticky');
         }
-        if (scrollTop < 180) {
+        if (scrollTop < 20) {
             return header.removeClass('is-sticky');
         }
     });
 
     iconFavorite.on({
         mouseenter: function () {
+            if ($(this).closest('.favorite-action').hasClass('is-favorite')) {
+                return false;
+            }
+
             return $(this).html(`<use xlink:href="../img/sprites/sprite.svg#favorite-active"></use>`);
         },
         mouseleave: function () {
+            if ($(this).closest('.favorite-action').hasClass('is-favorite')) {
+                return false;
+            }
+
             return $(this).html(`<use xlink:href="../img/sprites/sprite.svg#favorite"></use>`);
         }
     });
@@ -51,9 +59,11 @@ $(document).ready(function(){
 
                 if (action.indexOf('add') !== -1) {
                     action = action.replace('add', 'remove');
+                    _this.closest('.favorite-action').addClass('is-favorite');
                     _this.html(`<use xlink:href="../img/sprites/sprite.svg#favorite-active"></use>`);
                 } else {
                     action = action.replace('remove', 'add');
+                    _this.closest('.favorite-action').removeClass('is-favorite');
                     _this.html(`<use xlink:href="../img/sprites/sprite.svg#favorite"></use>`);
                 }
 

@@ -8,7 +8,8 @@ $(document).ready(function(){
             'nav': false,
             'smartSpeed': 1200,
             'dots': true,
-            'loop': true
+            'loop': true,
+            'lazyLoad': true
         });
     }
 
@@ -19,7 +20,8 @@ $(document).ready(function(){
             'nav': true,
             'smartSpeed': 1200,
             'dots': true,
-            'loop': true
+            'loop': true,
+            'lazyLoad': true
         });
     }
 });
