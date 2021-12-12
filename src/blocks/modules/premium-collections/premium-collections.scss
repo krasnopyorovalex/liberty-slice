@@ -12,9 +12,27 @@
             @include sm(margin, 0 96px 0 0);
             @include sm(padding, 0 16px 11px 32px);
             margin: 0 96px 51px 0;
+            padding: 0;
         }
         .section-title {
             color: #ffffff;
+            padding: 0;
+        }
+    }
+    .slider-projects {
+        .owl-nav {
+            position: absolute;
+            top: calc(50% - 88px);
+            margin: 0 auto;
+            max-width: 1280px;
+            left: 0;
+            right: 0;
+            .owl-prev {
+                left: 0;
+            }
+            .owl-next {
+                right: 0;
+            }
         }
     }
 }

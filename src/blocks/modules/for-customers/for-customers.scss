@@ -4,7 +4,7 @@
     background-color: $mainBg;
     .section-header {
         @include md(margin, 0);
-        margin: 0 0 76px 370px;
+        margin: 0 0 76px 0;
         .section-title {
             @include md(margin, 0 0 40px 28px);
             color: #ffffff;
@@ -16,15 +16,15 @@
     }
     .col-text {
         @include md(padding, 0 18px);
-        max-width: 450px;
+        //max-width: 450px;
         color: #ffffff;
         &.first-col {
             @include md(margin, 0);
-            margin: 0 0 0 65px;
+            //margin: 0 0 0 65px;
         }
         &.last-col {
             @include md(margin, 0);
-            margin: 0 100px 0 auto;
+            //margin: 0 100px 0 auto;
         }
         p {
             @include md(font-size, 14px);

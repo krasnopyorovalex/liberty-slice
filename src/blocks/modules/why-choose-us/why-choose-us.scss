@@ -8,6 +8,7 @@
     .section-title {
         color: #ffffff;
         margin: 0;
+        padding: 0;
         span {
             @include sm(display, block);
         }
@@ -15,6 +16,7 @@
     .section-sub-title {
         @include sm(margin, 0);
         margin: 11px 96px 51px 0;
+        padding: 11px 130px 11px 0;
     }
     &-slider.owl-carousel {
         position: relative;
@@ -28,9 +30,15 @@
             @include sm(left, 0);
             @include sm(right, 0);
             @include sm(text-align, center);
+            box-sizing: border-box;
             position: absolute;
             bottom: 127px;
-            left: 421px;
+            left: 0;
+            right: 0;
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 30px;
             button {
                 background-color: #e9dfd1;
                 &.active {

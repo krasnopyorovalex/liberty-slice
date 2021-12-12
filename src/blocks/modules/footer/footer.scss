@@ -57,9 +57,9 @@ footer {
     }
 
     .footer-first-col {
-        @include md(margin, 0);
+        //@include md(margin, 0);
         @include md(display, flex);
-        margin: 0 0 0 2.2rem;
+        //margin: 0 0 0 2.2rem;
 
         > div {
             @include md(width, 50%);

@@ -11,11 +11,11 @@
             @include sm(top, calc(#{$main-slider-nav} + 180px));
             position: absolute;
             top: calc(#{$main-slider-nav} + 235px);
-            right: 0;
-            left: 0;
-            max-width: #{$main-slider-width};
+            //right: 0;
+            //left: 0;
+            max-width: 1280px;
             line-height: 30px;
-            //margin: 0 auto;
+            margin: 0 auto;
             &-mob {
                 font-size: 12px;
                 color: #fefefe;
@@ -23,14 +23,24 @@
             }
             > p {
                 @include sm(display, none);
-                background-color: $bgMainWithAlpha;
                 font-family: Pragmatica, sans-serif;
                 margin: 0;
-                padding: 38px 32px 38px 28%;
+                padding: 38px 32px 38px 0;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-color: $bgMainWithAlpha;
+                    top: 0;
+                    bottom: 0;
+                    left: -40%;
+                    right: 0;
+                    z-index: -1;
+                }
             }
             .btn-main-slider-box {
                 @include sm(margin, 50px 0 0 0);
-                margin: 65px 0 0 28%;
+                margin: 65px 0 0 0;
             }
         }
         img {
@@ -39,6 +49,8 @@
         }
     }
     &-nav {
+        @include xxl(left, 30px);
+        @include xxl(right, 30px);
         @include sm(width, 100%);
         @include sm(left, 34px);
         @include sm(top, calc(#{$main-slider-nav} + 20px));
@@ -47,7 +59,8 @@
         top: #{$main-slider-nav};
         right: 0;
         left: 0;
-        width: #{$main-slider-width};
+        width: 100%;
+        max-width: 1280px;
         margin: 0 auto;
         &-control {
             @include sm(width, 100%);
@@ -58,6 +71,7 @@
             }
             span {
                 @include sm(font-size, 30px);
+                @include xxl(font-size, 50px);
                 font-family: "Bukvarnaya Bold", serif;
                 font-size: 72px;
                 font-weight: 400;

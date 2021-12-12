@@ -15,6 +15,10 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     text-transform: uppercase;
+    &.flex {
+        @include xxl(flex-wrap, nowrap);
+        @include xxl(padding, 26px 30px 22px);
+    }
     .col-logo {
         @include md(margin, 0);
         @include md(max-width, 100%);
@@ -28,6 +32,7 @@ header {
             @include md(margin, 0);
             @include md(max-width, 100%);
             @include md(width, 78px);
+            @include xxl(max-width, 110px);
             max-width: 114px;
             //height: 49px;
             margin: 0 0 9px 0;
@@ -51,9 +56,11 @@ header {
             max-height: 100px;
             transition: max-height 0.3s linear;
             .icon-insta {
+                @include xxl(margin, 0 12px 0 0);
                 margin: 0 41px 0 58px;
             }
             .icon-fb {
+                @include xxl(margin, 0 12px 0 0);
                 margin: 0 44px 0 0;
             }
             .icon-telegram {
@@ -64,18 +71,21 @@ header {
                 @include md(margin, 0 9px 0 0);
                 @include md(width, 20px);
                 @include md(height, 21px);
+                @include xxl(margin, 0 14px 0 0);
                 margin: 0 40px 0 0;
             }
             .icon-whatsapp {
                 @include md(margin, 0 9px 0 0);
                 @include md(width, 20px);
                 @include md(height, 19px);
+                @include xxl(margin, 0 12px 0 0);
                 margin: 0 34px 0 0;
             }
             .favorite-box {
                 @include md(display, none);
                 margin: 0 51px 0 0;
                 > a {
+                    @include xxl(margin, 0);
                     display: inline-block;
                     margin: 0 21px 0 0;
                     &:hover {
@@ -105,6 +115,7 @@ header {
                 margin: 0 66px 0 39px;
             }
             .recall-me {
+                @include xxl(margin, 0 5.2rem 0 0);
                 @include md(display, none);
                 margin: 0 3.5rem 0 0;
                 &:hover {
@@ -136,10 +147,12 @@ header {
         }
         .menu-line {
             @include md(margin, 15px 0);
+            @include xxl(margin, 20px 0 0 0);
             order: -1;
             width: 100%;
             margin: 20px 0 0 40px;
             .btn-cost-calculation {
+                @include xxl(margin, 0 0 0 25px);
                 margin: 0 0 0 62px;
                 border: 3px solid #ffffff;
                 font-family: "Pragmatica", sans-serif;
@@ -154,6 +167,7 @@ header {
             }
             .search-box {
                 @include md(margin, 0 0 0 auto);
+                @include xxl(margin, 0 0 0 25px);
                 margin: 0 0 0 36px;
             }
             > *:not(a) {
@@ -193,6 +207,7 @@ header {
                         }
                     }
                     a {
+                        @include xxl(font-size, 17px);
                         font-family: "Bukvarnaya Bold", serif;
                         color: #fefefe;
                         font-size: 20px;
@@ -216,6 +231,7 @@ header {
                         }
                         &.active {
                             @include md(font-size, 20px);
+                            @include xxl(font-size, 19px);
                             font-size: 22px;
                         }
                     }

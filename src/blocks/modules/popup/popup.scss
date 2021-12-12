@@ -3,6 +3,7 @@
     @include sm(left, 31px);
     @include sm(right, 31px);
     @include sm(padding, 30px 14px);
+    @include xxl(top, 10%);
     box-sizing: border-box;
     display: none;
     position: fixed;
