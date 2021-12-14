@@ -11,7 +11,7 @@
         @include md(margin, 81px 0 0 32px);
         &-desc {
             @include md(margin, 0 0 0 3px);
-            @include md(padding, 82px 0 40px 0);
+            @include md(padding, 0 0 40px 0);
             position: relative;
             padding: 95px 0 0 0;
             color: #24262a;
@@ -29,6 +29,7 @@
             }
             &-number {
                 @include md(left, 15%);
+                @include md(top, 0);
                 position: absolute;
                 z-index: -1;
                 top: 33%;

@@ -1,5 +1,6 @@
 footer {
     @include md(padding, 0 0 60px 0);
+    @include md(overflow, hidden);
     background-color: #2f3130;
     padding: 34px 0 20px;
     color: #ffffff;
@@ -14,16 +15,15 @@ footer {
     }
     .our-salons {
         position: relative;
-        overflow: hidden;
         &:after {
             @include md(background, rgba(90, 110, 121, .3));
             content: "";
             position: absolute;
             top: 0;
-            right: 0;
             left: 0;
-            z-index: -1;
+            right: -30px;
             height: 80px;
+            z-index: -1;
         }
         &-title {
             @include md(background, none);

@@ -336,7 +336,7 @@
             @include size-sm(4);
             &:nth-child(n+4) {
                 img {
-                    margin-top: 1.2rem;
+                    @include sm(margin-bottom, 1.2rem);
                 }
             }
         }
