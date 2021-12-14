@@ -1,5 +1,6 @@
 .how-we-work {
     @include md(padding, 46px 0 0 0);
+    @include md(overflow, hidden);
     padding: 94px 0 0 0;
     .row.owl-carousel {
         margin: 0;

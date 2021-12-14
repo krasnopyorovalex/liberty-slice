@@ -1,5 +1,6 @@
 .why-choose-us {
     @include sm(padding, 36px 0 0 0);
+    @include sm(overflow, hidden);
     background-color: $mainBg;
     padding: 123px 0 0 0;
     .section-header {
