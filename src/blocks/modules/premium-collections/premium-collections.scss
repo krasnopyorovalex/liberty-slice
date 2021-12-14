@@ -28,9 +28,13 @@
             left: 0;
             right: 0;
             .owl-prev {
+                @include md(top, 0);
+                @include md(left, 15px);
                 left: 0;
             }
             .owl-next {
+                @include md(top, 0);
+                @include md(right, 15px);
                 right: 0;
             }
         }

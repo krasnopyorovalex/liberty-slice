@@ -17,6 +17,7 @@ header {
     text-transform: uppercase;
     &.flex {
         @include xxl(flex-wrap, nowrap);
+        @include xl(flex-wrap, wrap);
         @include xxl(padding, 26px 30px 22px);
     }
     .col-logo {

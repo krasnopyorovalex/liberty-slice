@@ -301,7 +301,7 @@
 }
 .index-page {
     .main-slider {
-        @include sm(margin, -142px 0 0 0);
+        @include md(margin, -154px 0 0 0);
         margin: -146px 0 0 0;
     }
 }
