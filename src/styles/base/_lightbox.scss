@@ -2,12 +2,12 @@
     background: url("../img/loading.gif") no-repeat;
 }
 .lb-nav a.lb-prev {
-    @include sm(left, 0);
+    @include xl(left, 0);
     background: url("../img/prev.png") left 48% no-repeat;
     left: -60px;
 }
 .lb-nav a.lb-next {
-    @include sm(right, 0);
+    @include xl(right, 0);
     background: url("../img/next.png") right 48% no-repeat;
     right: -60px;
 }

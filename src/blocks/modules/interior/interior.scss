@@ -1,17 +1,17 @@
 .interior-h1 {
-    @include sm(margin, 150px 0 0 0);
+    @include xl(margin, 150px 0 0 0);
     margin: 108px 0 0 0;
     h1 {
-        @include sm(font-size, 30px);
+        @include xl(font-size, 30px);
     }
 }
 .interior {
-    //@include sm(height, 100vh);
+    //@include xl(height, 100vh);
     .text {
-        @include sm(margin, 0);
-        @include sm(width, auto);
-        @include sm(background, none);
-        @include sm(padding, 101px 0 60px 0);
+        @include xl(margin, 0);
+        @include xl(width, auto);
+        @include xl(background, none);
+        @include xl(padding, 101px 0 60px 0);
         box-sizing: border-box;
         width: 407px;
         margin: 98px 0 0 0;
@@ -19,20 +19,20 @@
         background-color: rgba(90, 110, 121, 0.6);
         font-size: 18px;
         p {
-            @include sm(display, none);
+            @include xl(display, none);
             text-align: left;
             line-height: 26px;
             margin: 0;
         }
         .btn {
-            @include sm(margin, 0);
+            @include xl(margin, 0);
             margin: 37px 0 0 0;
         }
     }
 }
 .sub-page.interior {
-    @include sm(margin, -150px 0 0 0);
-    @include sm(padding-top, 32%);
+    @include xl(margin, -150px 0 0 0);
+    @include xl(padding-top, 32%);
     padding: 145px 0 0 0;
     margin-top: -150px;
     background-position: center center;
@@ -47,11 +47,11 @@
         color: #ffffff;
         text-align: center;
         &.uppercase {
-            @include sm(text-transform, none);
+            @include xl(text-transform, none);
         }
         &:after {
-            @include sm(width, 100%);
-            @include sm(border-radius, 0);
+            @include xl(width, 100%);
+            @include xl(border-radius, 0);
             content: "";
             position: absolute;
             z-index: -1;
@@ -71,7 +71,7 @@
             margin: 47px 0 0 0;
         }
         .btn-box {
-            @include sm(bottom, 160px);
+            @include xl(bottom, 160px);
             position: absolute;
             z-index: 100;
             right: 0;
@@ -113,16 +113,16 @@
             }
             .owl-nav {
                 .owl-prev, .owl-next {
-                    @include sm(background-image, url("../img/slider-nav-mob.png"));
-                    @include sm(width, 10px);
-                    @include sm(height, 23px);
-                    @include sm(top, 50%);
+                    @include xl(background-image, url("../img/slider-nav-mob.png"));
+                    @include xl(width, 10px);
+                    @include xl(height, 23px);
+                    @include xl(top, 50%);
                 }
                 .owl-prev {
-                    @include sm(left, 25px);
+                    @include xl(left, 25px);
                 }
                 .owl-next {
-                    @include sm(right, 25px);
+                    @include xl(right, 25px);
                 }
             }
         }
@@ -139,19 +139,19 @@
             width: 85%;
         }
         .owl-nav {
-            @include sm(display, block);
+            @include xl(display, block);
             display: none;
             z-index: 100;
         }
         .owl-dots {
-            @include sm(bottom, 23px);
+            @include xl(bottom, 23px);
         }
     }
 }
 .interior-categories {
     margin: 42px 0 18px;
     &-box {
-        @include sm(margin, 0);
+        @include xl(margin, 0);
         margin: 0 8rem;
         &-item {
             margin: 0 0 24px 0;
@@ -170,8 +170,8 @@
         }
     }
     .row, .col-12, .container {
-        @include sm(margin, 0);
-        @include sm(padding, 0);
+        @include xl(margin, 0);
+        @include xl(padding, 0);
     }
 }
 .interior-card-slider {

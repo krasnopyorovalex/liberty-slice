@@ -2,7 +2,7 @@
     position: relative;
     &.not-opacity {
         header {
-            //@include sm(background-color, $bgMainWithAlpha);
+            //@include xl(background-color, $bgMainWithAlpha);
             background-color: $mainBg;
         }
         .is-sticky {
@@ -12,7 +12,7 @@
         }
     }
     &.door-first-screen {
-        @include sm(margin, 0);
+        @include xl(margin, 0);
         margin: -147px 0 0 0;
     }
     &.rybrika {
@@ -26,7 +26,7 @@
     }
 }
 .sub-page {
-    @include sm(background-size, cover);
+    @include xl(background-size, cover);
     position: relative;
     z-index: 110;
     //padding: 0 0 119px 0;
@@ -43,7 +43,7 @@
         line-height: 26px;
     }
     .btn {
-        @include sm(font-size, 16px);
+        @include xl(font-size, 16px);
         display: inline-block;
         border: 3px solid #bdac9a;
         font-family: "Bukvarnaya Bold", serif;
@@ -84,23 +84,23 @@
     color: #ffffff;
 }
 .step-item {
-    @include sm(background-position, center);
-    @include sm(background-size, cover);
-    @include sm(height, 600px);
+    @include xl(background-position, center);
+    @include xl(background-size, cover);
+    @include xl(height, 600px);
     background-repeat: no-repeat;
     //background-size: 100% 715px;
     position: relative;
     &-info {
-        @include sm(width, 100%);
-        @include sm(font-size, 13px);
-        @include sm(padding, 40px 27px 107px);
+        @include xl(width, 100%);
+        @include xl(font-size, 13px);
+        @include xl(padding, 40px 27px 107px);
         box-sizing: border-box;
         width: 1090px;
         margin: 0 auto;
         padding: 190px 0 168px 0;
         &-title {
-            @include sm(font-size, 21px);
-            @include sm(padding, 20px 20px 20px 12px);
+            @include xl(font-size, 21px);
+            @include xl(padding, 20px 20px 20px 12px);
             padding: 20px 20px 20px 40px;
             color: #e9dfd1;
             font-family: "Bukvarnaya Bold", serif;
@@ -110,12 +110,12 @@
                 &:first-child {
                     position: relative;
                     &:after {
-                        @include sm(border, 4px solid transparent);
-                        @include sm(border-top-color, #e9dfd1);
-                        @include sm(left, -16px);
-                        @include sm(top, -12px);
-                        @include sm(width, 32px);
-                        @include sm(height, 32px);
+                        @include xl(border, 4px solid transparent);
+                        @include xl(border-top-color, #e9dfd1);
+                        @include xl(left, -16px);
+                        @include xl(top, -12px);
+                        @include xl(width, 32px);
+                        @include xl(height, 32px);
                         content: "";
                         position: absolute;
                         top: -20px;
@@ -131,13 +131,13 @@
                     }
                 }
                 &:nth-child(2) {
-                    @include sm(margin, 0);
+                    @include xl(margin, 0);
                     margin: 0 0 0 64px;
                 }
             }
         }
         .btn-box {
-            @include sm(display, none);
+            @include xl(display, none);
         }
         &-desc {
             max-width: 620px;
@@ -155,7 +155,7 @@
     .text {
         max-width: 100%;
         > div:not(.btn):not(.info):not(.flex), h1 {
-            @include sm(padding, 0 0 0 31px);
+            @include xl(padding, 0 0 0 31px);
             padding: 0 0 0 22%;
         }
         .info {
@@ -176,7 +176,7 @@
         }
     }
     h1 {
-        @include sm(font-size, 55px);
+        @include xl(font-size, 55px);
         margin: 0;
         line-height: normal;
     }
@@ -187,7 +187,7 @@
         min-height: auto;
     }
     .doors-cards {
-        @include sm(margin, 0);
+        @include xl(margin, 0);
         margin: 0 8rem;
     }
 }

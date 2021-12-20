@@ -1,14 +1,14 @@
 .sales-leaders {
-    @include sm(margin, 34px 0);
+    @include xl(margin, 34px 0);
     margin: 85px 0;
     &-slider {
         max-width: 1523px;
         margin: 49px auto 0 auto;
         &.owl-carousel {
-            @include sm(display, none);
+            @include xl(display, none);
         }
         &-item {
-            @include sm(padding, 0 16px);
+            @include xl(padding, 0 16px);
             flex-wrap: nowrap;
             align-items: flex-start;
             justify-content: center;
@@ -30,7 +30,7 @@
                     border-radius: 0 0 30px 0;
                     background-color: $mainBg;
                     a {
-                        @include sm(font-size, 15px);
+                        @include xl(font-size, 15px);
                         color: #ffffff;
                         &:hover {
                             text-decoration: none;
@@ -68,6 +68,6 @@
         }
     }
     .btn {
-        @include sm(display, none);
+        @include xl(display, none);
     }
 }

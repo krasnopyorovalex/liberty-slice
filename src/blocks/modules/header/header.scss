@@ -1,7 +1,7 @@
 header {
-    @include md(padding, 18px 32px 18px 32px);
-    @include md(background-color, rgba(60, 85, 100, .8));
-    @include md(border, none);
+    @include xl(padding, 18px 32px 18px 32px);
+    @include xl(background-color, rgba(60, 85, 100, .8));
+    @include xl(border, none);
     box-sizing: border-box;
     position: sticky;
     z-index: 1000;
@@ -16,38 +16,38 @@ header {
     color: #fff;
     text-transform: uppercase;
     .col-logo {
-        @include md(margin, 0);
-        @include md(max-width, 100%);
-        @include md(width, 100%);
-        @include md(flex-wrap, nowrap);
+        @include xl(margin, 0);
+        @include xl(max-width, 100%);
+        @include xl(width, 100%);
+        @include xl(flex-wrap, nowrap);
         justify-content: flex-end;
         align-self: flex-start;
         max-width: 252px;
         margin: 0 28px 0 0;
         img {
-            @include md(margin, 0);
-            @include md(max-width, 100%);
-            @include md(width, 78px);
+            @include xl(margin, 0);
+            @include xl(max-width, 100%);
+            @include xl(width, 78px);
             max-width: 114px;
             //height: 49px;
             margin: 0 0 9px 0;
             transition: margin 0.3s;
         }
         span {
-            @include md(margin, 0 0 0 auto);
-            @include md(font-size, 12px);
-            @include md(order, 1);
+            @include xl(margin, 0 0 0 auto);
+            @include xl(font-size, 12px);
+            @include xl(order, 1);
             font-size: 14px;
             margin: 2px 0 0 0;
         }
     }
     .col-socials-menu {
-        @include md(display, flex);
-        @include md(flex-wrap, wrap);
+        @include xl(display, flex);
+        @include xl(flex-wrap, wrap);
         flex-grow: 1;
         .socials-line {
-            @include md(flex-wrap, nowrap);
-            @include md(width, 100%);
+            @include xl(flex-wrap, nowrap);
+            @include xl(width, 100%);
             max-height: 100px;
             transition: max-height 0.3s linear;
             .icon-insta {
@@ -57,23 +57,23 @@ header {
                 margin: 0 44px 0 0;
             }
             .icon-telegram {
-                @include md(width, 18px);
-                @include md(height, 16px);
+                @include xl(width, 18px);
+                @include xl(height, 16px);
             }
             .icon-viber {
-                @include md(margin, 0 9px 0 0);
-                @include md(width, 20px);
-                @include md(height, 21px);
+                @include xl(margin, 0 9px 0 0);
+                @include xl(width, 20px);
+                @include xl(height, 21px);
                 margin: 0 40px 0 0;
             }
             .icon-whatsapp {
-                @include md(margin, 0 9px 0 0);
-                @include md(width, 20px);
-                @include md(height, 19px);
+                @include xl(margin, 0 9px 0 0);
+                @include xl(width, 20px);
+                @include xl(height, 19px);
                 margin: 0 34px 0 0;
             }
             .favorite-box {
-                @include md(display, none);
+                @include xl(display, none);
                 margin: 0 51px 0 0;
                 > a {
                     display: inline-block;
@@ -88,8 +88,8 @@ header {
                 }
             }
             .favorite-box-mobile {
-                @include md(display, flex);
-                @include md(align-items, center);
+                @include xl(display, flex);
+                @include xl(align-items, center);
                 display: none;
                 margin: 0 0 0 auto;
                 a {
@@ -100,12 +100,12 @@ header {
                 }
             }
             .phone {
-                @include md(font-size, 14px);
-                @include md(margin, 0 auto 0 11px);
+                @include xl(font-size, 14px);
+                @include xl(margin, 0 auto 0 11px);
                 margin: 0 66px 0 39px;
             }
             .recall-me {
-                @include md(display, none);
+                @include xl(display, none);
                 margin: 0 3.5rem 0 0;
                 &:hover {
                     text-decoration: underline;
@@ -123,19 +123,19 @@ header {
             }
             > div {
                 &:nth-child(2) {
-                    @include md(margin, 0);
+                    @include xl(margin, 0);
                     margin: 0 0 0 auto;
                 }
                 &:first-child {
-                    @include md(display, none);
+                    @include xl(display, none);
                 }
                 &:nth-child(3) {
-                    @include md(flex-grow, 1);
+                    @include xl(flex-grow, 1);
                 }
             }
         }
         .menu-line {
-            @include md(margin, 15px 0);
+            @include xl(margin, 15px 0);
             order: -1;
             width: 100%;
             margin: 20px 0 0 40px;
@@ -150,14 +150,14 @@ header {
                 }
             }
             .burger-mob {
-                @include md(display, block);
+                @include xl(display, block);
             }
             .search-box {
-                @include md(margin, 0 0 0 auto);
+                @include xl(margin, 0 0 0 auto);
                 margin: 0 0 0 36px;
             }
             > *:not(a) {
-                @include md(display, none);
+                @include xl(display, none);
             }
             >ul {
                 flex-grow: 1;
@@ -215,39 +215,39 @@ header {
                             }
                         }
                         &.active {
-                            @include md(font-size, 20px);
+                            @include xl(font-size, 20px);
                             font-size: 22px;
                         }
                     }
                     .submenu {
-                        @include md(display, block);
-                        @include md(position, relative);
-                        @include md(top, unset);
-                        @include md(left, unset);
-                        @include md(padding-top, 0);
+                        @include xl(display, block);
+                        @include xl(position, relative);
+                        @include xl(top, unset);
+                        @include xl(left, unset);
+                        @include xl(padding-top, 0);
                         display: none;
                         position: absolute;
                         top: 22px;
                         left: 0;
                         padding-top: 32px;
                         &-box {
-                            @include md(padding, 1rem 0 0 0);
-                            @include md(flex-wrap, wrap);
-                            @include md(border-top, none);
-                            @include md(background, none);
+                            @include xl(padding, 1rem 0 0 0);
+                            @include xl(flex-wrap, wrap);
+                            @include xl(border-top, none);
+                            @include xl(background, none);
                             flex-wrap: nowrap;
                             align-items: flex-start;
                             padding: 1rem 2rem 0;
                             border-top: 1px solid rgba(255, 255, 255, 0.3);
                             background-color: $bgMainWithAlpha;
                             ul {
-                                @include md(margin-bottom, 0);
+                                @include xl(margin-bottom, 0);
                                 & + ul {
-                                    @include md(margin, 0 0 0 auto);
+                                    @include xl(margin, 0 0 0 auto);
                                     margin: 0 0 0 5rem;
                                 }
                                 li {
-                                    @include md(margin, 0);
+                                    @include xl(margin, 0);
                                     display: block;
                                     padding: 0 0 .5rem 0;
                                     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -280,13 +280,13 @@ header {
     }
 }
 header.is-sticky {
-    @include md(top, -45px);
-    @include md(padding, 18px 32px 0 32px);
+    @include xl(top, -45px);
+    @include xl(padding, 18px 32px 0 32px);
     top: -65px;
     .col-socials-menu .menu-line > ul {
         > li .submenu {
-            @include md(padding-top, 0);
-            @include md(top, 0);
+            @include xl(padding-top, 0);
+            @include xl(top, 0);
             padding-top: 47px;
             top: 21px;
         }
@@ -295,7 +295,7 @@ header.is-sticky {
         }
     }
     .socials-line {
-        @include md(display, none);
+        @include xl(display, none);
         overflow: hidden;
     }
     .col-socials-menu {
@@ -307,7 +307,7 @@ header.is-sticky {
     }
     .col-logo {
         img {
-            @include md(margin, 0);
+            @include xl(margin, 0);
             margin: 45px 0 0 0;
             max-width: 100px;
         }

@@ -2,11 +2,11 @@
     max-width: 1440px;
     margin: 15px auto;
     ul {
-        @include sm(text-align, left);
+        @include xl(text-align, left);
         margin: 0;
         li {
-            @include sm(margin, 0 0 0 10px);
-            @include sm(padding, 0);
+            @include xl(margin, 0 0 0 10px);
+            @include xl(padding, 0);
             font-size: 14px;
             color: #000000;
             display: inline-block;
@@ -14,7 +14,7 @@
             z-index: 10;
             padding: 0 0 0 20px;
             &:after {
-                @include sm(margin, 0 0 0 14px);
+                @include xl(margin, 0 0 0 14px);
                 content: "/";
                 margin: 0 0 0 20px;
             }
@@ -35,7 +35,7 @@
 }
 .breadcrumbs-p-o {
     .breadcrumbs {
-        @include sm(margin, 15px auto 15px 15px);
+        @include xl(margin, 15px auto 15px 15px);
         ul {
             li {
                 &:first-child {
@@ -50,7 +50,7 @@
         ul {
             li {
                 &:first-child {
-                    @include sm(padding, 0 0 0 8px);
+                    @include xl(padding, 0 0 0 8px);
                     padding: 0 0 0 30px;
                 }
             }

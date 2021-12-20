@@ -1,12 +1,12 @@
 .for-customers {
-    @include md(padding, 54px 0);
+    @include xl(padding, 54px 0);
     padding: 85px 0 111px 0;
     background-color: $mainBg;
     .section-header {
-        @include md(margin, 0);
+        @include xl(margin, 0);
         margin: 0 0 76px 370px;
         .section-title {
-            @include md(margin, 0 0 40px 28px);
+            @include xl(margin, 0 0 40px 28px);
             color: #ffffff;
             padding: 0;
         }
@@ -15,19 +15,19 @@
         align-items: flex-start;
     }
     .col-text {
-        @include md(padding, 0 18px);
+        @include xl(padding, 0 18px);
         max-width: 450px;
         color: #ffffff;
         &.first-col {
-            @include md(margin, 0);
+            @include xl(margin, 0);
             margin: 0 0 0 65px;
         }
         &.last-col {
-            @include md(margin, 0);
+            @include xl(margin, 0);
             margin: 0 100px 0 auto;
         }
         p {
-            @include md(font-size, 14px);
+            @include xl(font-size, 14px);
             text-align: left;
             text-indent: 35px;
             font-size: 18px;

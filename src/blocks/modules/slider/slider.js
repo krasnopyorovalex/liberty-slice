@@ -22,7 +22,8 @@ $(document).ready(function(){
             'dots': true,
             'smartSpeed': 1200,
             'navText': ['', ''],
-            'loop': true
+            'loop': true,
+            'lazyLoad': true
         });
     } else if (mainSlider.length && mainSlider.find('.main-slider-item').length > 1 && !mainSlider.hasClass('rybrika-slider')) {
         const owl = mainSlider.find('.owl-carousel');
@@ -37,14 +38,14 @@ $(document).ready(function(){
             'loop': true,
             'lazyLoad': true,
             onDragged: function (event) {
-                if (sliderNav && screenWidth > 576) {
+                if (sliderNav && screenWidth > 992) {
                     let idx = event.item.index === 5 ? 0 : event.item.index - 2;
                     sliderNav.find('.main-slider-nav-control:eq(' + idx + ')').addClass('active').siblings('div').removeClass('active');
                 }
             }
         });
 
-        if (sliderNav.length && screenWidth > 576) {
+        if (sliderNav.length && screenWidth > 992) {
             sliderNav.on("click", ".main-slider-nav-control", function () {
                 const _this = $(this);
                 const pos = parseInt(_this.index());

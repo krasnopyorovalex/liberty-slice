@@ -1,13 +1,13 @@
 .download {
-    @include sm(text-align, left);
-    @include sm(font-size, 15px);
+    @include xl(text-align, left);
+    @include xl(font-size, 15px);
     position: relative;
     z-index: 0;
     padding: 28px 0 24px;
     font-size: 20px;
     text-align: center;
     &:before {
-        @include sm(border-radius, 0);
+        @include xl(border-radius, 0);
         content: "";
         position: absolute;
         z-index: -1;
@@ -27,10 +27,10 @@
         max-width: 1572px;
     }
     &.uppercase {
-        @include sm(text-transform, none);
+        @include xl(text-transform, none);
     }
     a {
-        @include sm(padding, 5px 0 0 31px);
+        @include xl(padding, 5px 0 0 31px);
         color: #ffffff;
         text-decoration: none;
         &:hover {
@@ -40,29 +40,33 @@
 }
 .category-list {
     //.container-full {
-    //    @include sm(padding, 0);
+    //    @include xl(padding, 0);
     //}
-    //.row {
-    //    @include sm(margin, 0);
-    //    .col-4, .col-8 {
-    //        @include sm(margin, 0);
-    //    }
-    //}
+    .container-full {
+        > .row {
+            > [class*=col-] {
+                @include size-xl(12);
+            }
+        }
+    }
     &-items {
-        @include sm(flex-wrap, wrap);
-        @include sm(width, 100%);
+        @include xl(flex-wrap, wrap);
+        @include xl(width, 100%);
         flex-wrap: nowrap;
+        .col-4 {
+            @include size-xl(12);
+        }
         .col-4:first-child {
             .title {
-                @include sm(margin, 0);
+                @include xl(margin, 0);
             }
         }
         .title {
-            @include sm(text-align, left);
-            @include sm(margin, 16px 0 0 0);
-            @include sm(padding, 26px 0 24px 36px);
-            @include sm(font-size, 15px);
-            @include sm(width, 263px);
+            @include xl(text-align, left);
+            @include xl(margin, 16px 0 0 0);
+            @include xl(padding, 26px 0 24px 36px);
+            @include xl(font-size, 15px);
+            @include xl(width, 263px);
             position: relative;
             width: 100%;
             padding: 26px 0 24px;
@@ -86,7 +90,7 @@
             line-height: 0;
         }
         .info {
-            @include sm(font-size, 15px);
+            @include xl(font-size, 15px);
             background-color: $mainBg;
             color: #ffffff;
             padding: 25px 29px 24px 27px;
@@ -99,35 +103,33 @@
     }
 }
 .types-list {
-    @include sm(display, flex);
-    @include sm(justify-content, space-between);
-    @include sm(flex-wrap, wrap);
-    @include sm(width, 100%);
+    @include xl(display, flex);
+    @include xl(justify-content, space-between);
+    @include xl(flex-wrap, wrap);
+    @include xl(width, 100%);
     list-style: none;
     &-item {
-        @include sm(text-align, center);
-        @include sm(display, inline-block);
-        @include sm(margin, 2px);
-        @include sm(min-width, 76px);
-        //@include sm(width, 100%);
+        @include xl(margin-top, .5rem);
+        @include xl(text-align, center);
+        @include xl(display, inline-block);
+        @include xl(margin, 2px);
+        @include xl(min-width, 76px);
+        //@include xl(width, 100%);
         text-align: right;
         //& + & {
-        //    @include sm(margin, 0 2px);
+        //    @include xl(margin, 0 2px);
         //}
-        &:nth-child(n+5) {
-            @include sm(margin-top, .5rem);
-        }
         &.active {
             a {
-                @include sm(background-color, $mainBg);
-                @include sm(color, #fff);
+                @include xl(background-color, $mainBg);
+                @include xl(color, #fff);
                 color: #2f3130;
             }
         }
         a {
-            @include sm(padding, 8px 12px);
-            @include sm(background-color, #e5e1d8);
-            @include sm(font-size, 12px);
+            @include xl(padding, 8px 12px);
+            @include xl(background-color, #e5e1d8);
+            @include xl(font-size, 12px);
             font-size: 20px;
             color: #7d7d7d;
             &:hover {
@@ -137,15 +139,15 @@
     }
 }
 .collection-full-item {
-    @include sm(margin, 0 0 37px 0);
+    @include xl(margin, 0 0 37px 0);
     position: relative;
     line-height: 0;
     margin: 0 0 129px 0;
     img {
-        @include sm(min-height, 565px);
+        @include xl(min-height, 565px);
     }
     .info {
-        @include sm(top, 100px);
+        @include xl(top, 100px);
         color: #ffffff;
         position: absolute;
         top: 130px;
@@ -153,7 +155,7 @@
         bottom: 100px;
         left: 0;
         .title, .text, .btn-box {
-            @include sm(padding, 0 0 0 26px);
+            @include xl(padding, 0 0 0 26px);
             padding: 0 0 0 24%;
             line-height: normal;
         }
@@ -161,15 +163,15 @@
             max-width: 740px;
         }
         .title {
-            @include sm(margin, 0 0 37px 0);
-            @include sm(font-size, 28px);
+            @include xl(margin, 0 0 37px 0);
+            @include xl(font-size, 28px);
             font-size: 60px;
             font-family: "Bukvarnaya Bold", sans-serif;
         }
         .text {
-            @include sm(font-size, 14px);
-            @include sm(padding, 34px 10px 35px 29px);
-            @include sm(margin, 0 15px 0 0);
+            @include xl(font-size, 14px);
+            @include xl(padding, 34px 10px 35px 29px);
+            @include xl(margin, 0 15px 0 0);
             background-color: rgba(90, 110, 121, 0.6);
             padding: 25px 132px 39px 24%;
             font-size: 18px;
@@ -184,7 +186,7 @@
         }
     }
     .download {
-        @include sm(padding, 28px 0);
+        @include xl(padding, 28px 0);
         padding: 38px 0 30px;
     }
 }

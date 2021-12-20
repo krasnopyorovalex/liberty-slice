@@ -42,7 +42,8 @@ gulp.task("styles", () => {
                     removeDuplicateRules: true,
                     removeUnusedAtRules: false
                 }
-            }
+            },
+            format: 'keep-breaks'
         })))
         .pipe(gulpif(production, rename({
             suffix: ".min"

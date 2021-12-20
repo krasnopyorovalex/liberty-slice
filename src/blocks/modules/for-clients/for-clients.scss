@@ -2,24 +2,24 @@
     padding: 0 0 207px 0;
     .first-screen-text {
         .text {
-            @include sm(margin, 0);
+            @include xl(margin, 0);
             margin: -145px 0 50px auto;
             padding-top: 20%;
             h1 {
-                @include sm(font-size, 30px);
-                @include sm(padding, 0 0 0 31px);
-                @include sm(margin, 197px 0 0 0);
+                @include xl(font-size, 30px);
+                @include xl(padding, 0 0 0 31px);
+                @include xl(margin, 197px 0 0 0);
                 padding: 0 0 0 20%;
             }
             .btn-box {
-                @include sm(padding, 0 0 0 35px);
+                @include xl(padding, 0 0 0 35px);
                 margin: 20px 0 0 0;
                 padding: 0 0 0 20%;
             }
         }
     }
     &.sub-page {
-        @include sm(margin, -145px 0 0 0);
+        @include xl(margin, -145px 0 0 0);
         background-position: center top;
     }
 }

@@ -20,7 +20,12 @@ $.ajaxSetup({
 
 
 $(document).ready(function () {
-    //const variants = ["Moscow", "Pekin", "London", "Paris", "Tokyo", "Minsk", "Madrid"];
+    [].forEach.call(document.querySelectorAll('.lazy-box img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+            img.removeAttribute('data-src');
+        };
+    });
 
     $("#search-input").autocompleter('/autocomplete', []);
 

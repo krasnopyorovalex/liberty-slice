@@ -47,10 +47,10 @@
     .owl-carousel {
         .owl-nav {
             button.owl-prev, button.owl-next {
-                @include sm(background-image, url("../img/slider-nav-mob.png"));
-                @include sm(height, 23px);
-                @include sm(width, 10px);
-                @include sm(top, calc(50% - 11px));
+                @include xl(background-image, url("../img/slider-nav-mob.png"));
+                @include xl(height, 23px);
+                @include xl(width, 10px);
+                @include xl(top, calc(50% - 11px));
             }
         }
     }
@@ -61,7 +61,7 @@
         position: relative;
         overflow: hidden;
         img {
-            @include sm(height, auto);
+            @include xl(height, auto);
             height: 157px;
         }
     }

@@ -1,6 +1,6 @@
 footer {
-    @include md(padding, 0 0 60px 0);
-    @include md(overflow, hidden);
+    @include xl(padding, 0 0 60px 0);
+    @include xl(overflow, hidden);
     background-color: #2f3130;
     padding: 34px 0 20px;
     color: #ffffff;
@@ -8,15 +8,15 @@ footer {
         align-items: flex-start;
 
         .col-2, .col-8, .col-3, .col-6 {
-            @include md(width, 100%);
-            @include md(margin, 0);
+            @include xl(width, 100%);
+            @include xl(margin, 0);
             height: 100%;
         }
     }
     .our-salons {
         position: relative;
         &:after {
-            @include md(background, rgba(90, 110, 121, .3));
+            @include xl(background, rgba(90, 110, 121, .3));
             content: "";
             position: absolute;
             top: 0;
@@ -26,18 +26,18 @@ footer {
             z-index: -1;
         }
         &-title {
-            @include md(background, none);
-            @include md(font-size, 16px);
-            @include md(padding, 32px 0 32px 15px);
-            @include md(margin, 0);
-            @include md(text-align, center);
+            @include xl(background, none);
+            @include xl(font-size, 16px);
+            @include xl(padding, 32px 0 32px 15px);
+            @include xl(margin, 0);
+            @include xl(text-align, center);
             font-size: 16px;
             margin: 31px 0 16px 0;
         }
 
         ul {
-            @include md(margin, 20px 0 0 0);
-            @include md(display, none);
+            @include xl(margin, 20px 0 0 0);
+            @include xl(display, none);
             list-style: none;
 
             li {
@@ -57,27 +57,27 @@ footer {
     }
 
     .footer-first-col {
-        @include md(margin, 0);
-        @include md(display, flex);
+        @include xl(margin, 0);
+        @include xl(display, flex);
         margin: 0 0 0 2.2rem;
 
         > div {
-            @include md(width, 50%);
+            @include xl(width, 50%);
 
             &:first-child {
-                @include md(text-align, center);
+                @include xl(text-align, center);
             }
 
             img {
-                @include md(margin, 24px 0 0 0);
-                @include md(max-width, 110px);
+                @include xl(margin, 24px 0 0 0);
+                @include xl(max-width, 110px);
                 width: 100%;
                 max-width: 135px;
             }
         }
 
         .copyright {
-            @include md(display, none);
+            @include xl(display, none);
             font-size: 13px;
             line-height: 21px;
             margin: auto 0 0 0;
@@ -85,20 +85,20 @@ footer {
     }
 
     .footer-middle-col {
-        @include md(margin, 70px 0 0 0);
+        @include xl(margin, 70px 0 0 0);
 
         > div:nth-child(3) {
-            @include md(display, none);
+            @include xl(display, none);
         }
 
         .developer {
-            @include md(font-size, 14px);
+            @include xl(font-size, 14px);
             font-size: 13px;
             margin: 35px 0 0 0;
 
             .copyright-mob {
-                @include md(display, block);
-                @include md(margin, 0 0 18px 0);
+                @include xl(display, block);
+                @include xl(margin, 0 0 18px 0);
                 display: none;
             }
 
@@ -122,8 +122,8 @@ footer {
     }
 
     .btn {
-        @include md(font-size, 18px);
-        @include md(border-radius, 25px);
+        @include xl(font-size, 18px);
+        @include xl(border-radius, 25px);
         display: inline-block;
         margin: 26px 0 37px;
         border: 3px solid #cac1b2;
@@ -140,7 +140,7 @@ footer {
     }
 
     .info {
-        @include md(margin, 10px 0 47px);
+        @include xl(margin, 10px 0 47px);
         font-size: 14px;
         line-height: 21px;
         margin: 26px 0 47px;
@@ -159,8 +159,8 @@ footer {
     }
 
     .footer-menu {
-        @include md(margin, 0);
-        @include md(display, none);
+        @include xl(margin, 0);
+        @include xl(display, none);
         list-style: none;
         margin: 0 0 0 8rem;
 

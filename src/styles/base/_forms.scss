@@ -15,7 +15,7 @@ form {
     margin: 0 0 13px 0;
 
     input, .as-input, textarea {
-        @include sm(padding, 17px 22px);
+        @include xl(padding, 17px 22px);
         box-sizing: border-box;
         width: 100%;
         border: 1px solid #c6c3bc;
@@ -31,22 +31,22 @@ form {
 
     &.two-elements {
         > * {
-            @include sm(width, 100%);
+            @include xl(width, 100%);
             position: relative;
             width: 48%;
 
             &:last-child:not(textarea) {
-                @include sm(margin, 12px 0 0 0);
+                @include xl(margin, 12px 0 0 0);
                 margin: 0 0 0 auto;
             }
 
             .as-input {
-                @include sm(order, 1);
+                @include xl(order, 1);
             }
         }
 
         input + .as-input {
-            @include sm(margin, 11px 0 0 0);
+            @include xl(margin, 11px 0 0 0);
             margin: 0 0 0 auto;
         }
 
@@ -66,8 +66,8 @@ form {
     }
 
     &.personal-data-agree {
-        @include sm(flex-wrap, wrap);
-        @include sm(margin, 17px 0 24px 28px);
+        @include xl(flex-wrap, wrap);
+        @include xl(margin, 17px 0 24px 28px);
         position: relative;
         margin: 25px 0 0 0;
         text-align: left;
@@ -89,7 +89,7 @@ form {
         }
 
         label {
-            @include sm(font-size, 11px);
+            @include xl(font-size, 11px);
             color: #333537;
             font-size: 13px;
 
@@ -109,16 +109,16 @@ form {
     }
 
     &.with-captcha {
-        @include sm(margin, 17px 0 24px 16px);
+        @include xl(margin, 17px 0 24px 16px);
 
         > * {
             &:first-child {
-                @include sm(width, 100%);
+                @include xl(width, 100%);
                 width: 46%;
             }
 
             &:last-child {
-                @include sm(width, 100%);
+                @include xl(width, 100%);
                 width: 50%;
                 margin: 0 0 0 auto;
             }
@@ -137,7 +137,7 @@ form {
         }
 
         .as-input {
-            @include sm(order, 2);
+            @include xl(order, 2);
             border: none;
             padding: 16px 22px;
             background-color: rgba(238, 231, 228, 0.3);
@@ -145,7 +145,7 @@ form {
 
         &.two-elements {
             input + .as-input {
-                @include sm(margin, 17px 0 0 0);
+                @include xl(margin, 17px 0 0 0);
             }
         }
 
@@ -170,8 +170,8 @@ form {
 }
 
 .form-cost-calculation-content-box {
-    @include sm(padding, 24px 30px 36px);
-    @include sm(margin, 0 0 37px 0);
+    @include xl(padding, 24px 30px 36px);
+    @include xl(margin, 0 0 37px 0);
     margin: 0 0 80px 0;
     padding: 105px 0 76px 60px;
     text-align: center;
@@ -181,7 +181,7 @@ form {
     background-repeat: no-repeat;
 
     .form-box {
-        @include sm(padding, 30px 16px 23px 16px);
+        @include xl(padding, 30px 16px 23px 16px);
         box-sizing: border-box;
         max-width: 835px;
         margin: 0 auto;
@@ -189,7 +189,7 @@ form {
         background-color: rgba(90, 110, 121, 0.6);
 
         .title {
-            @include sm(font-size, 30px);
+            @include xl(font-size, 30px);
             color: #e9dfd1;
             font-family: "Bukvarnaya Bold", sans-serif;
             font-size: 48px;
@@ -215,7 +215,7 @@ form {
 
             .form-group {
                 .as-input {
-                    @include sm(background-color, rgba(249, 248, 246, .6));
+                    @include xl(background-color, rgba(249, 248, 246, .6));
                     background-color: rgba(236, 231, 227, .2);
 
                     .label-file {
@@ -229,18 +229,18 @@ form {
                 }
 
                 &.personal-data-agree label {
-                    @include sm(text-align, left);
-                    @include sm(margin, 0 0 0 25px);
+                    @include xl(text-align, left);
+                    @include xl(margin, 0 0 0 25px);
                     color: #ffffff;
 
                     &:before {
-                        @include sm(left, 0);
+                        @include xl(left, 0);
                     }
                 }
 
                 &.with-captcha {
-                    @include sm(margin, 17px 0 24px);
-                    @include sm(text-align, center);
+                    @include xl(margin, 17px 0 24px);
+                    @include xl(text-align, center);
                 }
             }
 

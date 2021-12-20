@@ -1,5 +1,5 @@
 .about-text-first-screen {
-    @include sm(top, 330px);
+    @include xl(top, 330px);
     position: absolute;
     top: 357px;
     right: 25%;
@@ -12,23 +12,23 @@
         }
     }
     h1 {
-        @include sm(font-size, 30px);
+        @include xl(font-size, 30px);
     }
 }
 .about-text {
     .section-sub-title {
-        @include sm(padding, 11px 0 11px 25px);
-        @include sm(width, calc(100% - 32px));
+        @include xl(padding, 11px 0 11px 25px);
+        @include xl(width, calc(100% - 32px));
         padding: 11px 33px 11px 42%;
         text-transform: uppercase;
     }
     &-seo {
-        @include sm(margin, 50px 20px 58px 20px);
+        @include xl(margin, 50px 20px 58px 20px);
         max-width: 1233px;
         color: #444444;
         margin: 76px 0 61px 13.4%;
         p {
-            @include sm(font-size, 16px);
+            @include xl(font-size, 16px);
             font-size: 20px;
             line-height: 25px;
             text-align: left;
@@ -53,17 +53,17 @@
             background-color: $mainBg;
         }
         &-info {
-            @include sm(padding, 100px 31px 65px);
+            @include xl(padding, 100px 31px 65px);
             background-repeat: no-repeat;
             &-title {
-                @include sm(min-height, 64px);
+                @include xl(min-height, 64px);
                 align-items: flex-start;
                 min-height: 95px;
             }
             &-desc {
                 p {
-                    @include sm(font-size, 13px);
-                    @include sm(text-align, left);
+                    @include xl(font-size, 13px);
+                    @include xl(text-align, left);
                 }
             }
         }
@@ -71,40 +71,40 @@
 }
 .page-about {
     .authors-slider {
-        @include sm(margin, 31px 0 80px);
+        @include xl(margin, 31px 0 80px);
         margin: 52px 0;
         .owl-nav {
             button.owl-prev, button.owl-next {
-                @include sm(background-image, url("../img/slider-nav-authors-2-mob.png"));
-                @include sm(width, 12px);
-                @include sm(height, 27px);
+                @include xl(background-image, url("../img/slider-nav-authors-2-mob.png"));
+                @include xl(width, 12px);
+                @include xl(height, 27px);
                 top: calc(50% - 80px);
                 width: 23px;
                 height: 53px;
                 background-image: url("../img/slider-nav-authors-2.png");
             }
             button.owl-prev {
-                @include sm(left, 10px);
+                @include xl(left, 10px);
                 left: -40px;
             }
             button.owl-next {
-                @include sm(right, 10px);
+                @include xl(right, 10px);
                 right: -40px;
                 transform: rotate(180deg);
             }
         }
         .owl-dots {
-            @include sm(bottom, -40px);
+            @include xl(bottom, -40px);
         }
     }
 }
 .about-company-slider {
     &.with-arrows {
         .owl-dots {
-            @include sm(left, 0);
-            @include sm(right, 0);
-            @include sm(bottom, 50px);
-            @include sm(text-align, center);
+            @include xl(left, 0);
+            @include xl(right, 0);
+            @include xl(bottom, 50px);
+            @include xl(text-align, center);
             position: absolute;
             bottom: 127px;
             left: 421px;
@@ -123,17 +123,17 @@
         }
         .owl-nav {
             button.owl-next {
-                @include sm(right, 3%);
+                @include xl(right, 3%);
                 right: 5%;
             }
             button.owl-prev {
-                @include sm(left, 3%);
+                @include xl(left, 3%);
                 left: 5%;
             }
             button.owl-next, button.owl-prev {
-                @include sm(background-image, url("../img/slider-nav-authors-2-mob.png"));
-                @include sm(width, 12px);
-                @include sm(height, 27px);
+                @include xl(background-image, url("../img/slider-nav-authors-2-mob.png"));
+                @include xl(width, 12px);
+                @include xl(height, 27px);
                 top: calc(50% - 6px);
                 opacity: .9;
             }

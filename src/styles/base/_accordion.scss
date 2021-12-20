@@ -10,9 +10,9 @@
         left: 0;
     }
     &-title {
-        @include sm(margin, 35px 31px 0 0);
-        @include sm(padding, 17px 20px 20px 25px);
-        @include sm(text-transform, none);
+        @include xl(margin, 35px 31px 0 0);
+        @include xl(padding, 17px 20px 20px 25px);
+        @include xl(text-transform, none);
         position: relative;
         margin: 35px 250px 0 0;
         padding: 17px 326px 20px 13.3%;
@@ -20,11 +20,11 @@
         color: #ffffff;
         line-height: 22px;
         span {
-            @include sm(background-image, url("../img/accordion-arrow-mob.png"));
-            @include sm(width, 14px);
-            @include sm(height, 6px);
-            @include sm(right, 12px);
-            @include sm(top, calc(50% - 5px));
+            @include xl(background-image, url("../img/accordion-arrow-mob.png"));
+            @include xl(width, 14px);
+            @include xl(height, 6px);
+            @include xl(right, 12px);
+            @include xl(top, calc(50% - 5px));
             display: inline-block;
             position: absolute;
             top: calc(50% - 5px);
@@ -53,7 +53,7 @@
         }
     }
     &-info {
-        @include sm(padding, 21px 32px 0 25px);
+        @include xl(padding, 21px 32px 0 25px);
         position: absolute;
         z-index: -1;
         top: -100%;
@@ -62,19 +62,19 @@
         opacity: 0;
         > div {
             & + div {
-                @include sm(width, 100%);
-                @include sm(margin, 0);
+                @include xl(width, 100%);
+                @include xl(margin, 0);
                 margin: 0 0 0 124px;
             }
         }
         .title {
-            @include sm(font-size, 17px);
+            @include xl(font-size, 17px);
             margin: 0 0 20px 0;
             font-size: 20px;
             line-height: 28px;
         }
         p {
-            @include sm(font-size, 14px);
+            @include xl(font-size, 14px);
             text-align: left;
             font-size: 16px;
         }

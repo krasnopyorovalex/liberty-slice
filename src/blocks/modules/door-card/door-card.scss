@@ -1,16 +1,16 @@
 .door-card-header {
     .section-sub-title {
-        @include sm(padding, 16px 65px 14px 32px);
-        @include sm(box-sizing, border-box);
-        @include sm(margin-right, 0);
-        @include sm(width, 100%);
+        @include xl(padding, 16px 65px 14px 32px);
+        @include xl(box-sizing, border-box);
+        @include xl(margin-right, 0);
+        @include xl(width, 100%);
         font-size: 18px;
         padding: 16px 65px 14px 14%;
         span {
-            @include sm(font-size, 14px);
-            @include sm(display, block);
+            @include xl(font-size, 14px);
+            @include xl(display, block);
             & + span {
-                @include sm(margin, 0);
+                @include xl(margin, 0);
                 margin: 0 0 0 .8rem;
             }
         }
@@ -40,10 +40,10 @@
             right: 14px;
         }
         button.owl-prev, button.owl-next {
-            @include sm(width, 13px);
-            @include sm(height, 30px);
-            @include sm(top, 50%);
-            @include sm(background-image, url("../img/door-gallery-nav-mob.png"));
+            @include xl(width, 13px);
+            @include xl(height, 30px);
+            @include xl(top, 50%);
+            @include xl(background-image, url("../img/door-gallery-nav-mob.png"));
             top: calc(50% - 12px);
         }
     }
@@ -63,24 +63,24 @@
     }
 }
 .door-card-info {
-    @include sm(margin, 20px 0 0 0);
+    @include xl(margin, 20px 0 0 0);
     margin: 44px 3rem 0 0;
     .tabs {
-        @include sm(margin, 18px 0 0 0);
+        @include xl(margin, 18px 0 0 0);
     }
     .btn-buy-box {
-        @include sm(text-align, center);
-        @include sm(margin, 23px 0 0 0);
+        @include xl(text-align, center);
+        @include xl(margin, 23px 0 0 0);
     }
 }
 .door-card-gallery-box {
-    @include sm(margin, 0);
+    @include xl(margin, 0);
     max-width: 639px;
     margin: 0 0 0 6rem;
     position: relative;
     .door-card-price-box {
-        @include sm(flex-wrap, nowrap);
-        @include sm(padding, 20px 27px 20px 27px);
+        @include xl(flex-wrap, nowrap);
+        @include xl(padding, 20px 27px 20px 27px);
         border-radius: 0 0 30px;
         padding: 20px 43px 20px 32px;
         background-color: #5a6e79;
@@ -89,28 +89,28 @@
             margin: 0 auto;
         }
         .price {
-            @include sm(order, 1);
-            @include sm(margin, 9px 0 0 0);
+            @include xl(order, 1);
+            @include xl(margin, 9px 0 0 0);
         }
         .price-name-box {
-            @include sm(flex-grow, 0);
+            @include xl(flex-grow, 0);
             flex-grow: 1;
         }
         .price, .name {
-            @include sm(width, 100%);
-            @include sm(font-size, 15px);
+            @include xl(width, 100%);
+            @include xl(font-size, 15px);
             font-size: 24px;
         }
         .btn-buy {
-            @include sm(border-radius, 15px);
-            @include sm(margin, 0 0 0 auto);
+            @include xl(border-radius, 15px);
+            @include xl(margin, 0 0 0 auto);
             padding: 8px 23px 5px;
             border-color: #ffffff;
         }
     }
 }
 .door-card-options {
-    @include sm(margin, 1.7rem .5rem 0);
+    @include xl(margin, 1.7rem .5rem 0);
     margin: 1.7rem 2rem 0;
     &-item {
         margin: 0 0 16px 0;
@@ -133,7 +133,7 @@
         }
     }
     .row > .col-3 {
-        @include size-sm(6);
+        @include size-xl(6);
     }
 }
 .tabs-flex-column {
@@ -144,8 +144,8 @@
     }
 }
 .door-card-tabs-custom {
-    @include sm(margin, 22px 0 25px 0);
-    @include sm(padding, 47px 32px 73px);
+    @include xl(margin, 22px 0 25px 0);
+    @include xl(padding, 47px 32px 73px);
     position: relative;
     overflow: hidden;
     margin: 2rem 0 3rem 6rem;
@@ -168,14 +168,14 @@
         }
     }
     p {
-        @include sm(font-size, 14px);
+        @include xl(font-size, 14px);
     }
 }
 .related-products {
-    @include sm(margin, 27px 0 25px 0);
+    @include xl(margin, 27px 0 25px 0);
     margin: 63px 0 79px 0;
     &-title {
-        @include sm(font-size, 28px);
+        @include xl(font-size, 28px);
         font-family: "Bukvarnaya Bold", sans-serif;
         font-size: 48px;
         color: $mainBg;
@@ -183,29 +183,29 @@
     .doors-cards {
         margin: 0;
         &-item {
-            @include sm(margin, 0);
+            @include xl(margin, 0);
             position: relative;
             &:nth-child(n + 2) {
-                @include sm(margin, 30px 0 0 0);
+                @include xl(margin, 30px 0 0 0);
             }
         }
     }
 }
 
 .colors {
-    margin: 51px 0;
+    margin: 42px 0;
     .col-2 {
-        @include size-sm(6);
+        @include size-xl(6);
     }
     &-col {
         & + & {
             margin: 0 0 0 15px;
         }
         &:nth-child(n + 4) {
-            @include sm(margin-top, 15px);
+            @include xl(margin-top, 15px);
         }
         &:nth-child(3n) + & {
-            @include sm(margin-left, 0);
+            @include xl(margin-left, 0);
         }
         &-item {
             justify-content: center;
@@ -220,7 +220,6 @@
             .label {
                 margin: 0 0 9px 0;
                 font-size: 16px;
-                font-weight: 700;
                 position: absolute;
             }
         }
@@ -228,9 +227,9 @@
 }
 
 .collection-pagination {
-    @include sm(margin, 0);
-    @include sm(background, none);
-    @include sm(padding, 0);
+    @include xl(margin, 0);
+    @include xl(background, none);
+    @include xl(padding, 0);
     position: relative;
     margin: 0 11rem 0 0;
     padding: 25px 0;
@@ -245,45 +244,45 @@
     }
     &.hovered {
         &:after {
-            @include sm(display, none);
+            @include xl(display, none);
             opacity: 1;
         }
     }
     .title {
-        @include sm(background-color, $mainBg);
-        @include sm(padding, 22px 0 12px 31px);
-        @include sm(text-align, left);
-        @include sm(margin, 0 33px 0 0);
-        @include sm(position, relative);
-        @include sm(font-size, 18px);
+        @include xl(background-color, $mainBg);
+        @include xl(padding, 22px 0 12px 31px);
+        @include xl(text-align, left);
+        @include xl(margin, 0 33px 0 0);
+        @include xl(position, relative);
+        @include xl(font-size, 18px);
         margin: 0 0 0 4rem;
         text-align: center;
         &:after {
-            @include sm(visibility, visible);
-            @include sm(opacity, 1);
-            @include sm(bottom, -4px);
+            @include xl(visibility, visible);
+            @include xl(opacity, 1);
+            @include xl(bottom, -4px);
             visibility: hidden;
         }
     }
     .row, [class*=col-], .container-full {
-        @include sm(margin, 0);
-        @include sm(padding, 0);
-        @include sm(width, 100%);
+        @include xl(margin, 0);
+        @include xl(padding, 0);
+        @include xl(width, 100%);
     }
 }
 .next-prev-arrows {
-    @include sm(color, #5a6e79);
-    @include sm(margin, 33px 0 0 0);
-    @include sm(padding, 0 28px);
+    @include xl(color, #5a6e79);
+    @include xl(margin, 33px 0 0 0);
+    @include xl(padding, 0 28px);
     font-size: 18px;
     justify-content: space-between;
     &:hover {
         cursor: default;
     }
     .next-arrow, .prev-arrow {
-        @include sm(width, 10px);
-        @include sm(height, 23px);
-        @include sm(background-image, url("../img/next-prev-arrow-grey.png"));
+        @include xl(width, 10px);
+        @include xl(height, 23px);
+        @include xl(background-image, url("../img/next-prev-arrow-grey.png"));
         display: inline-block;
         width: 17px;
         height: 40px;
@@ -291,15 +290,15 @@
         opacity: .9;
     }
     .prev-arrow {
-        @include sm(margin, 0);
+        @include xl(margin, 0);
         margin: 0 2rem 0 0;
         transform: rotate(180deg);
     }
 }
 .options {
-    @include sm(margin, 21px 0 0 0);
-    @include sm(padding, 29px 30px);
-    @include sm(font-size, 15px);
+    @include xl(margin, 21px 0 0 0);
+    @include xl(padding, 29px 30px);
+    @include xl(font-size, 15px);
     margin: 24px 0 0 0;
     padding: 35px 119px 35px 96px;
     color: #3c3c3c;
@@ -326,46 +325,61 @@
     }
 }
 .finishing-options {
-    @include sm(margin, 30px 0 15px);
+    @include xl(margin, 30px 0 15px);
     margin: 28px 0 0 0;
     .row {
-        //@include sm(margin-bottom, 1.2rem);
+        //@include xl(margin-bottom, 1.2rem);
         margin-bottom: 1.2rem;
         .col-2 {
-            @include size-md(4);
-            @include size-sm(4);
+            @include size-xl(4);
+            @include size-xl(4);
+            position: relative;
+            .placeholder-texture {
+                @include xl(display, none);
+            }
             &:nth-child(n+4) {
                 img {
-                    @include sm(margin-bottom, 1.2rem);
+                    @include xl(margin-top, 1.2rem);
                 }
             }
         }
     }
     .title {
-        @include sm(text-align, left);
+        @include xl(text-align, left);
         text-align: right;
         display: block;
         font-size: 20px;
         margin: 0 0 15px 0;
     }
     &-item {
-        @include sm(margin, 0 0 12px 0);
-        @include sm(width, 100px);
-        @include sm(height, 100px);
+        @include xl(margin, 0 0 12px 0);
+        @include xl(width, 100px);
+        @include xl(height, 100px);
         min-width: 80px;
         min-height: 80px;
         margin: 0 0 25px 0;
         & + & {
-            @include sm(margin, 0 0 12px 12px);
+            @include xl(margin, 0 0 12px 12px);
             margin: 0 0 25px 2%;
         }
         &:nth-child(7n) {
-            @include sm(margin, 0 0 12px 12px);
+            @include xl(margin, 0 0 12px 12px);
             margin: 0 0 25px 0;
         }
         &:nth-child(3n) + & {
-            @include sm(margin, 0 0 12px 0);
+            @include xl(margin, 0 0 12px 0);
         }
+    }
+    .label {
+        margin: 0 0 9px;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 .flex-column {
@@ -374,18 +388,18 @@
     }
 }
 .another-projects-in-collection {
-    @include sm(margin, 27px auto 30px);
+    @include xl(margin, 27px auto 30px);
     max-width: 1170px;
     margin: 44px auto 49px;
     .row, [class*=col-], .container {
-        @include sm(margin, 0);
-        @include sm(padding, 0);
-        @include sm(width, 100%);
+        @include xl(margin, 0);
+        @include xl(padding, 0);
+        @include xl(width, 100%);
     }
     .title {
-        @include sm(font-size, 18px);
-        @include sm(padding, 16px 0 16px 31px);
-        @include sm(margin, 0 35px 0 0);
+        @include xl(font-size, 18px);
+        @include xl(padding, 16px 0 16px 31px);
+        @include xl(margin, 0 35px 0 0);
         position: relative;
         overflow: hidden;
         padding: 26px 99px 26px;
@@ -400,17 +414,17 @@
         left: 0;
     }
     .doors-cards {
-        @include sm(margin, 19px 20px 0 20px);
+        @include xl(margin, 19px 20px 0 20px);
         justify-content: space-between;
         margin: 30px 0 0 0;
         max-width: unset;
         &-item {
-            @include sm(width, 100%);
-            @include sm(overflow, hidden);
+            @include xl(width, 100%);
+            @include xl(overflow, hidden);
             width: 32%;
             margin: 0 0 20px 0;
             &:nth-child(n + 2) {
-                @include sm(margin, 27px 0 0 0);
+                @include xl(margin, 27px 0 0 0);
             }
             &-info {
                 padding: 24px 15px;
@@ -430,32 +444,32 @@
     .owl-carousel {
         .owl-nav {
             .owl-prev, .owl-next {
-                @include sm(background-image, url("../img/door-gallery-nav-mob.png"));
-                @include sm(width, 13px);
-                @include sm(height, 30px);
-                @include sm(top, 40%);
+                @include xl(background-image, url("../img/door-gallery-nav-mob.png"));
+                @include xl(width, 13px);
+                @include xl(height, 30px);
+                @include xl(top, 40%);
                 opacity: .9;
             }
             .owl-prev {
-                @include sm(left, 16px);
+                @include xl(left, 16px);
                 left: 2rem;
             }
             .owl-next {
-                @include sm(right, 16px);
+                @include xl(right, 16px);
                 right: 2rem;
             }
         }
     }
     .slider-projects-item-desc:after {
-        @include sm(border-radius, 0);
+        @include xl(border-radius, 0);
     }
 }
 .door-card-slider {
-    @include sm(margin-top, -146px);
+    @include xl(margin-top, -146px);
     &.with-arrows {
         .main-slider-item-desc {
-            @include sm(top, 316px);
-            @include sm(right, 44px);
+            @include xl(top, 316px);
+            @include xl(right, 44px);
         }
     }
     .owl-carousel {
@@ -466,18 +480,18 @@
 }
 .door-card.first-screen.not-opacity {
     header {
-        @include sm(background-color, $mainBg);
+        @include xl(background-color, $mainBg);
     }
 }
 .lb-nav a.lb-next {
-    @include sm(background, url('../img/door-gallery-nav-mob-next.png') right 48% no-repeat);
-    @include sm(right, 10px);
+    @include xl(background, url('../img/door-gallery-nav-mob-next.png') right 48% no-repeat);
+    @include xl(right, 10px);
     background: url('../img/main-slider-arrow-next.png') right 48% no-repeat;
     opacity: .9;
 }
 .lb-nav a.lb-prev {
-    @include sm(background, url('../img/door-gallery-nav-mob.png') left 48% no-repeat);
-    @include sm(left, 10px);
+    @include xl(background, url('../img/door-gallery-nav-mob.png') left 48% no-repeat);
+    @include xl(left, 10px);
     background: url('../img/main-slider-arrow.png') left 48% no-repeat;
     opacity: .9;
 }

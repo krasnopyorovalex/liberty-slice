@@ -1,16 +1,16 @@
 .premium-collections {
     background-color: $mainBg;
     > img {
-        @include sm(display, none);
+        @include xl(display, none);
     }
     .section-header {
-        @include sm(padding, 20px 0 0 0);
-        @include sm(margin, 0);
+        @include xl(padding, 20px 0 0 0);
+        @include xl(margin, 0);
         margin-top: 97px;
         .section-sub-title {
-            @include sm(width, auto);
-            @include sm(margin, 0 96px 0 0);
-            @include sm(padding, 0 16px 11px 32px);
+            @include xl(width, auto);
+            @include xl(margin, 0 96px 0 0);
+            @include xl(padding, 0 16px 11px 32px);
             margin: 0 96px 51px 0;
         }
         .section-title {

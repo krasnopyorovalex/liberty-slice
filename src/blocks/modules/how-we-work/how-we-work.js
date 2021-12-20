@@ -3,7 +3,7 @@ import $ from "jquery";
 $(document).ready(function(){
     const howWeWorkCarousel = $('.how-we-work').find('.section-body .row');
     const screenWidth = $(window).width();
-    if (howWeWorkCarousel.length && screenWidth <= 768) {
+    if (howWeWorkCarousel.length && screenWidth <= 992) {
         howWeWorkCarousel.addClass('owl-carousel owl-theme');
         howWeWorkCarousel.owlCarousel({
             'items': 1,
@@ -12,18 +12,18 @@ $(document).ready(function(){
             'smartSpeed': 1200,
             'dots': true,
             'loop': true,
-            responsive : {
-                // breakpoint from 0 up
+            'responsive': {
                 0 : {
                     'items': 1
                 },
-                // breakpoint from 480 up
                 480 : {
+                    'items': 1
+                },
+                768 : {
                     'items': 2
                 },
-                // breakpoint from 768 up
-                768 : {
-                   'items': 3
+                992 : {
+                    'items': 2
                 }
             }
         });

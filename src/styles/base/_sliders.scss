@@ -1,9 +1,9 @@
 section, .container {
     .owl-carousel {
         .owl-dots {
-            @include sm(text-align, center);
+            @include xl(text-align, center);
             button {
-                @include sm(background-color, #c7c0b6);
+                @include xl(background-color, #c7c0b6);
                 width: 12px;
                 height: 12px;
                 background-color: #e9dfd1;
@@ -12,7 +12,7 @@ section, .container {
                     margin: 0 0 0 32px;
                 }
                 &.active {
-                    @include sm(background-color, #5a6e79);
+                    @include xl(background-color, #5a6e79);
                     background-color: #cbbbac;
                 }
             }
@@ -25,10 +25,10 @@ section, .container {
     background-color: #fff;
     overflow: hidden;
     &-item {
-        @include sm(min-height, 450px);
+        @include md(min-height, 450px);
         position: relative;
         > img {
-            @include sm(min-height, 450px);
+            @include md(min-height, 450px);
         }
         &-desc {
             position: relative;
@@ -49,7 +49,7 @@ section, .container {
                 border-radius: 0 0 50px 0;
             }
             .title {
-                @include sm(font-size, 13px);
+                @include xl(font-size, 13px);
                 margin: 0 0 14px;
                 text-transform: uppercase;
             }
@@ -60,7 +60,7 @@ section, .container {
             }
         }
         .btn-box {
-            @include sm(bottom, 122px);
+            @include xl(bottom, 122px);
             position: absolute;
             right: 0;
             bottom: 163px;
@@ -73,7 +73,7 @@ section, .container {
     }
     &.owl-carousel {
         .owl-dots {
-            @include sm(bottom, 87px);
+            @include xl(bottom, 87px);
         }
     }
     & + & {
@@ -106,16 +106,32 @@ section, .container {
             left: 0;
             text-align: center;
             button {
-                @include sm(background-color, #e9dfd1);
+                @include xl(background-color, #e9dfd1);
                 background-color: #e9dfd1;
                 &.active {
-                    @include sm(background-color, #989593);
+                    @include xl(background-color, #989593);
                     background-color: #cbbbac;
                 }
             }
         }
     }
 }
+
+.premium-collections {
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev {
+                @include xl(left, 32px);
+                left: 22%;
+            }
+            .owl-next {
+                @include xl(right, 32px);
+                right: 22%;
+            }
+        }
+    }
+}
+
 
 .sales-leaders-slider-mobile, .why-choose-us {
     margin: 16px 0 0 0;

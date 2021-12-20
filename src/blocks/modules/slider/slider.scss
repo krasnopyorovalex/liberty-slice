@@ -5,10 +5,10 @@
         position: relative;
         overflow: hidden;
         &-desc {
-            @include sm(font-size, 12px);
-            @include sm(left, 34px);
-            @include sm(line-height, 20px);
-            @include sm(top, calc(#{$main-slider-nav} + 180px));
+            @include xl(font-size, 12px);
+            @include xl(left, 34px);
+            @include xl(line-height, 20px);
+            @include xl(top, calc(#{$main-slider-nav} + 180px));
             position: absolute;
             top: calc(#{$main-slider-nav} + 235px);
             right: 0;
@@ -22,26 +22,26 @@
                 margin: 48px 0 0 0;
             }
             > p {
-                @include sm(display, none);
+                @include xl(display, none);
                 background-color: $bgMainWithAlpha;
                 font-family: Pragmatica, sans-serif;
                 margin: 0;
                 padding: 38px 32px 38px 28%;
             }
             .btn-main-slider-box {
-                @include sm(margin, 50px 0 0 0);
+                @include xl(margin, 50px 0 0 0);
                 margin: 65px 0 0 28%;
             }
         }
         img {
-            @include sm(object-fit, fill);
+            @include xl(object-fit, fill);
             height: 100vh;
         }
     }
     &-nav {
-        @include sm(width, 100%);
-        @include sm(left, 34px);
-        @include sm(top, calc(#{$main-slider-nav} + 20px));
+        @include lg(width, 100%);
+        @include lg(left, 34px);
+        @include lg(top, calc(#{$main-slider-nav} + 20px));
         position: absolute;
         z-index: 100;
         top: #{$main-slider-nav};
@@ -50,21 +50,24 @@
         width: #{$main-slider-width};
         margin: 0 auto;
         &-control {
-            @include sm(width, 100%);
+            @include lg(width, 100%);
+            @include lg(margin, 0 32px);
+            @include md(margin, 0);
             position: relative;
             & + & {
-                @include sm(margin, 15px 0 0 0);
+                @include lg(margin, 15px 0 0 0);
+                @include xl(margin, 0 0 0 40px);
                 margin: 0 0 0 108px;
             }
             span {
-                @include sm(font-size, 30px);
+                @include lg(font-size, 30px);
                 font-family: "Bukvarnaya Bold", serif;
                 font-size: 72px;
                 font-weight: 400;
                 display: block;
                 text-transform: uppercase;
                 &:first-child {
-                    @include sm(display, none);
+                    @include lg(display, none);
                     font-size: 18px;
                     font-family: "Pragmatica", sans-serif;
                 }
@@ -108,9 +111,9 @@
     }
     &.with-arrows {
         .title {
-            @include sm(font-size, 26px);
-            @include sm(left, 32px);
-            @include sm(top, 74px);
+            @include xl(font-size, 26px);
+            @include xl(left, 32px);
+            @include xl(top, 74px);
             position: absolute;
             z-index: 100;
             top: #{$main-slider-nav-with-arrows};
@@ -120,36 +123,36 @@
             margin: 0 auto;
             font-size: 31px;
             span {
-                @include sm(font-size, 55px);
-                @include sm(display, block);
+                @include xl(font-size, 55px);
+                @include xl(display, block);
                 font-size: 65px;
                 text-transform: uppercase;
                 font-family: "Bukvarnaya Bold", sans-serif;
             }
         }
         .main-slider-item-desc {
-            @include sm(top, 200px);
-            @include sm(left, 0);
-            @include sm(right, 30px);
+            @include xl(top, 200px);
+            @include xl(left, 0);
+            @include xl(right, 30px);
             top: calc(#{$main-slider-nav-with-arrows} + 115px);
             max-width: 1300px;
             .btn-main-slider-box {
-                @include sm(margin, 35px 0 0 31px);
-                @include sm(text-align, left);
+                @include xl(margin, 35px 0 0 31px);
+                @include xl(text-align, left);
                 margin: 47px 0 0 28%;
                 text-align: right;
             }
             .door-card-slider-text {
-                @include sm(padding, 70px 0 38px 31px);
+                @include xl(padding, 70px 0 38px 31px);
                 background-color: $bgMainWithAlpha;
                 padding: 70px 0 38px 50%;
                 p {
-                    @include sm(font-size, 16px);
+                    @include xl(font-size, 16px);
                     font-size: 20px;
                 }
                 h1 {
-                    @include sm(margin, 0 0 1rem 0);
-                    @include sm(font-size, 36px);
+                    @include xl(margin, 0 0 1rem 0);
+                    @include xl(font-size, 36px);
                     color: #d0c8bb;
                     font-family: "Bukvarnaya Bold", sans-serif;
                     font-size: 59px;
@@ -157,9 +160,9 @@
                 }
             }
             > p {
-                @include sm(font-size, 14px);
-                @include sm(display, block);
-                @include sm(padding, 23px 56px 26px 30px);
+                @include xl(font-size, 14px);
+                @include xl(display, block);
+                @include xl(padding, 23px 56px 26px 30px);
                 text-align: left;
                 font-size: 16px;
                 padding: 38px 56px 38px 36%;
@@ -177,11 +180,11 @@
         }
         .owl-nav {
             .owl-next, .owl-prev {
-                @include sm(background-image, url("../img/slider-nav-mob.png"));
-                @include sm(width, 10px);
-                @include sm(height, 23px);
-                @include sm(top, unset);
-                @include sm(bottom, 35px);
+                @include xl(background-image, url("../img/slider-nav-mob.png"));
+                @include xl(width, 10px);
+                @include xl(height, 23px);
+                @include xl(top, unset);
+                @include xl(bottom, 35px);
                 opacity: .9;
             }
         }
@@ -196,37 +199,37 @@
         }
         .owl-nav {
             button.owl-prev, button.owl-next {
-                @include sm(bottom, 34px);
-                @include sm(top, unset);
+                @include xl(bottom, 34px);
+                @include xl(top, unset);
                 top: calc(50% - 25px);
             }
             button.owl-prev {
-                @include sm(left, 27px);
+                @include xl(left, 27px);
                 left: 170px;
             }
             button.owl-next {
-                @include sm(right, 27px);
+                @include xl(right, 27px);
                 right: 170px;
             }
         }
     }
     &.rybrika-slider {
-        @include sm(margin-top, -100px);
+        @include xl(margin-top, -100px);
         &.with-arrows {
             .main-slider-item-desc {
-                @include sm(top, 320px);
+                @include xl(top, 320px);
                 right: 43px;
                 > p {
-                    @include sm(padding, 23px 18px 26px 30px);
+                    @include xl(padding, 23px 18px 26px 30px);
                     padding: 38px 56px 38px 32.5%;
                 }
             }
             .title {
-                @include sm(top, 200px);
+                @include xl(top, 200px);
             }
         }
         img {
-            @include sm(height, 100vh);
+            @include xl(height, 100vh);
             height: auto;
         }
         .title {
@@ -244,22 +247,22 @@
             }
         }
         .owl-dots {
-            @include sm(bottom, 30px);
+            @include xl(bottom, 30px);
         }
         .owl-nav {
             button.owl-prev, button.owl-next {
                 top: calc(50% + 10px);
             }
             button.owl-prev {
-                @include sm(left, 27px);
-                @include sm(top, unset);
-                @include sm(bottom, 27px);
+                @include xl(left, 27px);
+                @include xl(top, unset);
+                @include xl(bottom, 27px);
                 left: 237px;
             }
             button.owl-next {
-                @include sm(top, unset);
-                @include sm(bottom, 27px);
-                @include sm(right, 27px);
+                @include xl(top, unset);
+                @include xl(bottom, 27px);
+                @include xl(right, 27px);
                 right: 237px;
             }
         }
@@ -287,7 +290,7 @@
 }
 .index-page {
     .main-slider {
-        @include sm(margin, -142px 0 0 0);
+        @include xl(margin, -142px 0 0 0);
         margin: -146px 0 0 0;
     }
 }

@@ -10,7 +10,8 @@ $(document).ready(function () {
             'navText': ['', ''],
             'smartSpeed': 1200,
             // 'rewind': true,
-            'loop': true
+            'loop': true,
+            'lazyLoad': true
         });
 
         const forLightbox = $('.for-lightbox');

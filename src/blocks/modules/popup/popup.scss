@@ -1,8 +1,8 @@
 .popup {
-    @include sm(top, 10px);
-    @include sm(left, 31px);
-    @include sm(right, 31px);
-    @include sm(padding, 30px 14px);
+    @include xl(top, 10px);
+    @include xl(left, 31px);
+    @include xl(right, 31px);
+    @include xl(padding, 30px 14px);
     box-sizing: border-box;
     display: none;
     position: fixed;
@@ -16,30 +16,30 @@
     border-radius: 20px;
     overflow-y: auto;
     &.as-cost-calculation {
-        @include sm(height, 100%);
-        @include sm(width, auto);
-        @include sm(left, 31px);
-        @include sm(padding, 30px 16px 26px);
+        @include xl(height, 100%);
+        @include xl(width, auto);
+        @include xl(left, 31px);
+        @include xl(padding, 30px 16px 26px);
         left: calc(50% - 366px);
         width: 733px;
         max-width: 733px;
         padding: 37px 51px 35px 68px;
         border-radius: 0;
         .popup-title {
-            @include sm(font-size, 30px);
+            @include xl(font-size, 30px);
             font-size: 36px;
         }
     }
     &-title {
-        @include sm(font-size, 30px);
-        @include sm(margin, 0 0 10px 0);
+        @include xl(font-size, 30px);
+        @include xl(margin, 0 0 10px 0);
         margin: 0 0 25px 0;
         color: #5a6e79;
         font-size: 22px;
         font-family: "Bukvarnaya Bold", serif;
     }
     &-btn-box {
-        @include sm(order, 1);
+        @include xl(order, 1);
         text-align: center;
         .btn {
             color: #646462;
@@ -53,8 +53,8 @@
         top: 14px;
         right: 16px;
         .icon-close {
-            @include sm(width, 11px);
-            @include sm(height, 11px);
+            @include xl(width, 11px);
+            @include xl(height, 11px);
             width: 17px;
             height: 17px;
             fill: #bdac9a;
